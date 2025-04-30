@@ -121,13 +121,13 @@ export const navLinks = [
   },
   {
     id: 2,
-    path: "kelas",
+    path: "Films",
     text: "Films",
   },
   {
     id: 3,
-    path: "testimonial",
-    text: "Music",
+    path: "Musics",
+    text: "Musics",
   },
 ];
 

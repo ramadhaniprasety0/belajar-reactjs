@@ -9,9 +9,9 @@ const NavbarComponents = () => {
   const location = useLocation();
 
   const changeBackgroundColor = () => {
-    if (window.scrollY > 10 || location.pathname === "/") {
+    if (window.scrollY > 10 || location.pathname !== "/") {
       setChangeColor(true);
-    } else {
+    } else{
       setChangeColor(false);
     }
   };

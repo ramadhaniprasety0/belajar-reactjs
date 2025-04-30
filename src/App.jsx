@@ -4,10 +4,10 @@ import NavbarComponent from './components/NavbarComponents';
 import FooterComponent from './components/FooterComponents';
 
 import HomePage from './pages/HomePage';
-import KelasPage from './pages/KelasPage';
+import FilmsPage from './pages/FilmsPage';
 import FaqPage from './pages/FaqPage';
 import SyaratKetenPage from './pages/SyaratKetenPage';
-import TestimonialPage from './pages/TestimonialPage';
+import MusicsPage from './pages/MusicsPage';
 
 
 
@@ -16,11 +16,9 @@ function App() {
     <div>
       <NavbarComponent />
       <Routes>
-        <Route path='/' Component={HomePage} />
-        <Route path='/kelas' Component={KelasPage} />
-        <Route path='/testimonial' Component={TestimonialPage} />
-        <Route path='/faq' Component={FaqPage} />
-        <Route path='/syarat-keten' Component={SyaratKetenPage} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/Films' element={<FilmsPage/>} />
+        <Route path='/Musics' element={<MusicsPage/>} />
       </Routes>
       <FooterComponent />
     </div>

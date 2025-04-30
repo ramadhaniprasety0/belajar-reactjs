@@ -55,12 +55,12 @@ const HomePage = () => {
           <div className='d-flex flex-column align-items-center'>
             <h1>Welcome to FindFun!</h1>
             <p>Tempat dimana para cinephile dan audiophile saling bertemu secara online</p>
-            <a href="" className='btn-explore mt-3'>Mulai Eksplorasi</a>
+            <a href="#homepage" className='btn-explore mt-3'>Mulai Eksplorasi</a>
           </div>
           
         </Container>
       </header>
-      <div className="homepage w-100 min-vh-100 pb-3 pt-3">
+      <div className="homepage w-100 min-vh-100 pb-3 pt-3" id="homepage">
         <div>
           <Container>
           <Row className="header-box d-flex align-items-center p-3">
