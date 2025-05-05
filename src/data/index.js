@@ -12,58 +12,98 @@ import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
 
-import BrandNew1 from "../assets/img/news/brand1.png";
+// Carousel News
+import FilmsNew1 from "../assets/img/thumnail/films/wakanda.jpg";
+import FilmsNew2 from "../assets/img/thumnail/films/breakingbad.jpg";
+import FilmsNew3 from "../assets/img/thumnail/films/theboys.jpg";
+import FilmsNew4 from "../assets/img/thumnail/films/drive.jpg";
 
+
+// Carousel News IMG Title
+import FilmsImgTitle1 from "../assets/img/thumnail/films/wakandatitle.png";
+import FilmsImgTitle2 from "../assets/img/thumnail/films/breakingbadtitle.png";
+import FilmsImgTitle3 from "../assets/img/thumnail/films/theboystitle.png";
+import FilmsImgTitle4 from "../assets/img/thumnail/films/drivetitle.png";
+
+
+//Films Thumnail
 import Films01 from "../assets/img/films/films1.svg";
 import Films02 from "../assets/img/films/films2.svg";
 import Films03 from "../assets/img/films/films3.svg";
 import Films04 from "../assets/img/films/films4.svg";
 
+//Music Tumnail
+import Music01 from "../assets/img/thumnail/music/musicthumnail1.png";
+import Music02 from "../assets/img/thumnail/music/musicthumnail2.png";
+import Music03 from "../assets/img/thumnail/music/musicthumnail3.png";
+import Music04 from "../assets/img/thumnail/music/musicthumnail4.png";
+import Music05 from "../assets/img/thumnail/music/musicthumnail5.png";
+
+import BrandNew1 from "../assets/img/news/brand1.png";
+
 export const carouselItems = [
   {
     id: 1,
-    image: KelasImage1,
+    image: FilmsNew1,
+    title: FilmsImgTitle1,
+    description: "Action & Adventure | 2022",
+    path: "/films",
   },
   {
     id: 2,
-    image: KelasImage2,
+    image: FilmsNew2,
+    title: FilmsImgTitle2,
+    description: "Action & Adventure | 2022",
+    path: "/films",
   },
   {
     id: 3,
-    image: KelasImage3,
+    image: FilmsNew3,
+    title: FilmsImgTitle3,
+    description: "Action & Adventure | 2022",
+    path: "/films",
+  },
+  {
+    id: 4,
+    image: FilmsNew4,
+    title: FilmsImgTitle4,
+    description: "Action & Adventure | 2022",
+    path: "/films",
   },
 ];
 
 export const musickHits = [
   {
     id: 1,
-    image: KelasImage1,
+    image: Music01,
     title: "Hot Hits Indonesia",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Hits terpanas dari Idgitaf, Olivia Rodrigo…",
   },
   {
     id: 2,
-    image: KelasImage2,
+    image: Music02,
     title: "Puncak Klasman",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Deretan musik Indonesia terpopuler saat ini.…",
   },
   {
     id: 3,
-    image: KelasImage3,
+    image: Music03,
     title: "Sedang Viral",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Kumpulan lagu yang sedang menyebar luas.…",
   },
   {
     id: 4,
-    image: KelasImage4,
+    image: Music04,
     title: "Hits Banget",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Kumpulan lagu Hits hingga beberapa tahun…",
+    icon: "fas fa-play icon",
+    path: "/Musics", 
   },
   {
     id: 5,
-    image: KelasImage5,
+    image: Music05,
     title: "Today's Top Hits",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Jung Kook is on top of the Hottest 50!",
   },
 ];
 

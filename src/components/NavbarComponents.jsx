@@ -29,7 +29,7 @@ const NavbarComponents = () => {
     <div>
       <Navbar expand="lg" className={changeColor ? "color-active" : ""} >
         <Container>
-          <Navbar.Brand href="#home" className='fw-bold fs-3 text-white'><img src="/findfun.svg" alt="FindFun" width="30" height="30" className='me-2' />Find Fun</Navbar.Brand>
+          <Navbar.Brand href="#home" className='montserrat-font fw-bold fs-3 text-white'><img src="/findfun.svg" alt="FindFun" width="30" height="30" className='me-2' />FindFun</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center align-items-center gap-2">

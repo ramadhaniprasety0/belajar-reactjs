@@ -1,6 +1,7 @@
 import {Container, Row, Col, Carousel, } from 'react-bootstrap';
 import HeroImage from '../assets/img/hero.png';
 import {kelasTerbaru, carouselItems, musickHits, hotsNews, filmsTerbaru} from '../data/index';
+import PopularComponentFilm from '../components/PopularComponentFilm';
 
 
 const CarouselComponent = ({ carouselItems }) => {
@@ -11,9 +12,10 @@ const CarouselComponent = ({ carouselItems }) => {
           return (
             <Carousel.Item key={item.id}>
               <img src={item.image} alt="Carousel" height={433}/>
-              <Carousel.Caption>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+              <Carousel.Caption className='d-flex flex-column align-items-start gap-1 justify-content-center'>
+                <img src={item.title} alt="Carousel Title" className='img-fluid' />
+                <p className='text-white'>{item.description}</p>
+                <a href={item.path} className="btn-seemore">See More</a>
               </Carousel.Caption>
             </Carousel.Item>
           );
@@ -53,14 +55,13 @@ const HomePage = () => {
       <header className='w-100 min-vh-100 d-flex align-items-center justify-content-center'>
         <Container>
           <div className='d-flex flex-column align-items-center'>
-            <h1>Welcome to FindFun!</h1>
+            <h1 className='montserrat-font fw-bold'>Welcome to FindFun!</h1>
             <p>Tempat dimana para cinephile dan audiophile saling bertemu secara online</p>
             <a href="#homepage" className='btn-explore mt-3'>Mulai Eksplorasi</a>
           </div>
-          
         </Container>
       </header>
-      <div className="homepage w-100 min-vh-100 pb-3 pt-3" id="homepage">
+      <div className="homepage w-100 min-vh-100" id="homepage">
         <div>
           <Container>
           <Row className="header-box d-flex align-items-center p-3">
@@ -74,10 +75,11 @@ const HomePage = () => {
               {musickHits.map((hits) =>{
                 return(
                   <Col lg={2} md={3} sm={6} className='p-1 d-flex justify-content-center'>
-                  <div className='card-hits  p-3 rounded-4' key={hits.id}>
-                    <img src={hits.image} alt=""/>
-                    <h2 className='fs-5'>{hits.title}</h2>
-                    <p >{hits.desc}</p>
+                  <div className='card-hits  p-3 rounded-4 position-relative' key={hits.id}>
+                    <img src={hits.image} alt="" className='img-fluid' />
+                    <a href={hits.path} className='link-icon'><i className={hits.icon}></i></a>
+                    <h2>{hits.title}</h2>
+                    <p>{hits.desc}</p>
                   </div>
                 </Col>
                 )
@@ -105,16 +107,7 @@ const HomePage = () => {
             <Col lg={12}>
               <h1 className=" text-white fs-3">Check also</h1>
             </Col>
-            {filmsTerbaru.map((films) => {
-              return (
-                <Col key={films.id} lg={3} md={6} sm={12}>
-                  <div className='card-hits-films rounded-4' key={films.id}>
-                    <img src={films.image} alt="films" className='img-fluid mb-2'/>
-                    <h2 className='fs-6 text-white text-center'>{films.title}</h2>
-                  </div>
-                </Col>
-              )
-            })}
+            <PopularComponentFilm />
           </Row>
         </Container>
       </div>
