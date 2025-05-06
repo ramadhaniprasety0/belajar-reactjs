@@ -585,6 +585,44 @@ header .container .btn-explore{
   filter: blur(40px);
 }
 
+.homepage-films .box-hots-news h1{
+  font-size: 2rem;
+  color: #ffffff;
+ 
+}
+
+.homepage-films .news-card .img-brand{
+  width: 372px;
+  height: 287px;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.homepage-films .news-card .news-caption{
+  padding: 16px;
+  background: linear-gradient(to bottom, #635c8e, #1c1a282c);
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.homepage-films .news-card .news-caption img{
+  width: 140px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.homepage-films .news-card .news-caption p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+
+.homepage-films .news-card .news-caption h5{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 /* .homepage-films .box-populer-films h1{
   font-size: 40px;
   color: #ffffff;
@@ -601,7 +639,314 @@ header .container .btn-explore{
   height: 384px;
 } */
 
+/* CSS PAGE MUSICS */
+.homepage-musics{
+  padding-top: 80px;
+  background: linear-gradient(to bottom, #F19C92 0%, #8F6FB8 30%, #F19C92 66%, #644996 98%);
+}
 
+.homepage-musics .box-carousel-musics h1{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.homepage-musics .box-carousel-musics img{
+  width: 100%;
+  border-radius: 17px;
+}
+
+.homepage-musics .box-carousel-musics .carousel-caption img{
+  width: 350px;
+  height: 180px;
+}
+
+.homepage-musics .box-carousel-musics .carousel-caption{
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right,rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 47%);
+  border-radius: 17px;
+  padding: 48px;
+}
+
+.homepage-musics .box-carousel-musics .carousel-caption h5{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.homepage-musics .box-carousel-musics .carousel-caption p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+
+.homepage-musics .box-carousel-musics .carousel-caption .btn-seemore{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #F9503C;
+  border-radius: 30px;
+  padding: 4px 20px 4px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.homepage-musics .box-carousel-musics .carousel img{
+  border-radius: 17px;
+}
+
+.homepage-musics .box-carousel-musics .carousel{
+  border-radius: 17px;
+  padding: 5px;
+}
+
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators button{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators .active{
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/* CSS PAGE FILMS POPULER CINEMA */
+.homepage-musics .box-konser-musics{
+  border-radius: 17px;
+  background: linear-gradient(to bottom, rgba(249, 80, 60, 1) 0%, #FC887A 50%, #FFC0B8 100%  );
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homepage-musics .card-konser-musics{
+  position: relative;
+  border-radius: 17px;
+}
+
+.homepage-musics .card-konser-musics::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 17px;
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.homepage-musics .card-music{
+  width: 100%;
+  height: 100%;
+  border: inherit;
+  overflow: hidden;
+  border-radius: 17px;
+}
+
+.homepage-musics .card-music .card-music-img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
+
+
+.homepage-musics .card-music .card-music-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  object-fit: cover;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.homepage-musics .card-music .card-music-caption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.homepage-musics .card-music .card-music-caption .heading{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.card-music:hover .card-music-caption{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.card-music:hover .card-music-img{
+  scale: 1.2;
+  rotate: 5deg;
+  filter: blur(40px);
+}
+
+.homepage-musics .box-populer-musics{
+  border-radius: 17px;
+  background: linear-gradient(to bottom, #F9503C 10%, #FFC0B8 100%  );
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.music-popular-wrapper {
+  border-radius: 16px;
+}
+
+.music-popular-card {
+  background-color: #4b3f6b;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.music-popular-card:hover {
+  transform: scale(1.03);
+}
+
+.music-popular-image {
+  width: 100%;
+  height: 266px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.music-popular-info {
+  background-color: #6D6699;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130px;
+}
+
+.music-popular-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.music-popular-artist {
+  font-size: 16px;
+  color: #d1cfe3;
+  font-weight: bold;
+  font-style: italic;
+  margin: 4px 0 12px;
+}
+
+.music-popular-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #7a6c9c;
+}
+
+.music-popular-controls .icon-group-left {
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  color: black;
+}
+
+.music-popular-controls .icon-group-left i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.music-popular-controls .icon-group-left i:hover {
+  color: #ff5b5b;
+}
+
+.music-popular-controls .play-button {
+  border: 1.5px solid black;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 16px;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.music-popular-controls .play-button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+/* Section: Berita */
+.homepage-musics .box-hots-news h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.homepage-musics .news-card .img-brand {
+  width: 372px;
+  height: 287px;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.homepage-musics .news-card .news-caption {
+  padding: 16px;
+  background: linear-gradient(to bottom, #635c8e, #1c1a282c);
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.homepage-musics .news-card .news-caption img {
+  width: 140px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.homepage-musics .news-card .news-caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+
+.homepage-musics .news-card .news-caption h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
 
 
 
