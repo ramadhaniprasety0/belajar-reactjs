@@ -39,6 +39,12 @@ import Music03 from "../assets/img/thumnail/music/musicthumnail3.png";
 import Music04 from "../assets/img/thumnail/music/musicthumnail4.png";
 import Music05 from "../assets/img/thumnail/music/musicthumnail5.png";
 
+//Music populer
+import Music1 from "../assets/img/musics/music4.png";
+import Music2 from "../assets/img/musics/music3.png";
+import Music3 from "../assets/img/musics/music2.png";
+import Music4 from "../assets/img/musics/music1.png";
+
 import BrandNew1 from "../assets/img/news/brand1.png";
 
 export const carouselItems = [
@@ -152,6 +158,60 @@ export const filmsTerbaru = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
   }
 ]
+
+export const konserTerbaru = [
+  {
+    id: 1,
+    image: Films01,
+    title: "One Piece",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+  },
+  {
+    id: 2,
+    image: Films02,
+    title: "Everything Everywhere All at Once",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+  },
+  {
+    id: 3,
+    image: Films03,
+    title: "Barbie",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+  },
+  {
+    id: 4,
+    image: Films04,
+    title: "Oppenheimer",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+  }
+]
+
+export const musicsTerbaru = [
+  {
+    id: 1,
+    image: Music1,
+    title: "Cupid",
+    artist: "Fifty Fifty"
+  },
+  {
+    id: 2,
+    image: Music2,
+    title: "Seven",
+    artist: "Jung Kook feat. Latto"
+  },
+  {
+    id: 3,
+    image: Music3,
+    title: "Ditto",
+    artist: "NewJeans"
+  },
+  {
+    id: 4,
+    image: Music4,
+    title: "Hype Boy",
+    artist: "NewJeans"
+  }
+];
 
 export const navLinks = [
   {
