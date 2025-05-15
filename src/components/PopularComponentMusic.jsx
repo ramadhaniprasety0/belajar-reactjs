@@ -23,7 +23,9 @@ const PopularComponentMusic = () => {
                     <i class="fa-solid fa-ellipsis"></i>
                   </div>
                   <div class="icon-group-right">
-                    <i class="fa-solid fa-circle-play play-button"></i>
+                    <div class="play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
                   </div>
                 </div>
               </div>

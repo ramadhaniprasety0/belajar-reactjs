@@ -25,6 +25,15 @@ import FilmsImgTitle2 from "../assets/img/thumnail/films/breakingbadtitle.png";
 import FilmsImgTitle3 from "../assets/img/thumnail/films/theboystitle.png";
 import FilmsImgTitle4 from "../assets/img/thumnail/films/drivetitle.png";
 
+// Carousel News
+import MusicNew1 from "../assets/img/thumnail/music/riize.png";
+import MusicNew2 from "../assets/img/thumnail/music/cupid.png";
+import MusicNew3 from "../assets/img/thumnail/music/killbill.png";
+
+// Carousel News IMG Title
+import MusicTitle1 from "../assets/img/thumnail/music/riizetitle.png";
+import MusicTitle2 from "../assets/img/thumnail/music/cupidtitle.png";
+import MusicTitle3 from "../assets/img/thumnail/music/killbilltitle.png";
 
 //Films Thumnail
 import Films01 from "../assets/img/films/films1.svg";
@@ -110,6 +119,30 @@ export const musickHits = [
     image: Music05,
     title: "Today's Top Hits",
     desc: "Jung Kook is on top of the Hottest 50!",
+  },
+];
+
+export const carouselMusicItems = [
+  {
+    id: 1,
+    image: MusicNew1,
+    title: MusicTitle1,
+    description: "R&B Soul    POP   Doo-Woop",
+    path: "/musics",
+  },
+  {
+    id: 2,
+    image: MusicNew2,
+    title: MusicTitle2,
+    description: "Bubblegum    POP    Synth-pop",
+    path: "/musics",
+  },
+  {
+    id: 3,
+    image: MusicNew3,
+    title: MusicTitle3,
+    description: "R&B Soul    POP   Doo-Woop",
+    path: "/musics",
   },
 ];
 
