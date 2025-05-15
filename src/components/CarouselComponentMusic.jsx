@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Carousel } from "react-bootstrap";
-import { carouselItems } from "../data/index";
+import { carouselMusicItems } from "../data/index";
 
 const CarouselComponentMusic = () => {
   return (
     <Col lg={12}>
       <Carousel indicators={true} controls={false}>
-        {carouselItems.map((item) => {
+        {carouselMusicItems.map((item) => {
           return (
             <Carousel.Item key={item.id}>
               <img src={item.image} alt="Carousel" height={433}/>

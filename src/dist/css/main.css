@@ -895,18 +895,30 @@ header .container .btn-explore{
 }
 
 .music-popular-controls .play-button {
-  border: 1.5px solid black;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
   border-radius: 50%;
-  padding: 5px 8px;
-  font-size: 16px;
-  color: black;
-  background: transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
+}
+
+.music-popular-controls .play-button i {
+  color: black;
+  font-size: 14px;
+  margin-left: 2px;
 }
 
 .music-popular-controls .play-button:hover {
-  background: rgba(255,255,255,0.1);
+  border-color: #ff5b5b;
+}
+
+.music-popular-controls .play-button:hover i {
+  color: #ff5b5b;
 }
 
 
