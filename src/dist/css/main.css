@@ -21,7 +21,7 @@
 }
 
 .navbar {
-  background-color: #1C1A28;
+  background-color: #8E97FD;
   color: var(--navbar-color);
   position: sticky;
   padding: 15px 0 15px 0;
@@ -32,7 +32,7 @@
 
 .navbar.color-active {
   position: fixed;
-  background-color: #F9503C;
+  background-color: #8E97FD;
 }
 
 .navbar.color-active .nav-link a:hover{
@@ -85,7 +85,7 @@
 
 .footer{
   margin: 0;
-  background-color: #F9503C;
+  background-color: #E1AFAF;
 }
 
 .footer .icons-sosmed ul li a{
@@ -102,8 +102,8 @@ footer .row{
 
 .copyright{
   padding: 10px;
-  color: #A7A7A7;
-  background-color: #1C1A28;
+  color: #FFECCC;
+  background-color: #A6ADFB;
 }
 
 header{
@@ -127,7 +127,7 @@ header .container p{
 }
 
 header .container .btn-explore{
-  background-color: #F9503C;
+  background-color: #8E97FD;
   border-radius: 10px;
   padding: 8px 16px 8px 16px;
   font-weight: 500;
@@ -139,8 +139,7 @@ header .container .btn-explore{
 }
 
 .homepage {
-  background: -webkit-linear-gradient(to bottom, #1C1A28, #8E79B2, #3F3B57, #1C1A28); 
-  background: linear-gradient(to bottom, #1C1A28, #8E79B2, #3F3B57, #1C1A28);
+  background-color: #DCDDFF;
   padding-top: 120px; 
 }
 
@@ -412,7 +411,7 @@ header .container .btn-explore{
 
 .homepage-films{
   padding-top: 80px;
-  background: linear-gradient(to bottom, rgba(143, 111, 184, 1) 0%, rgba(156, 152, 185, 1) 39%, rgba(100, 73, 150, 1) 72%, rgba(156, 152, 185, 1) 88%);
+  background-color: #DCDDFF;
 }
 
 .homepage-films .box-carousel-films h1{
@@ -642,7 +641,7 @@ header .container .btn-explore{
 /* CSS PAGE MUSICS */
 .homepage-musics{
   padding-top: 80px;
-  background: linear-gradient(to bottom, #F19C92 0%, #8F6FB8 30%, #F19C92 66%, #644996 98%);
+  background-color: #DCDDFF;
 }
 
 .homepage-musics .box-carousel-musics h1{
@@ -728,7 +727,7 @@ header .container .btn-explore{
 /* CSS PAGE FILMS POPULER CINEMA */
 .homepage-musics .box-konser-musics{
   border-radius: 17px;
-  background: linear-gradient(to bottom, rgba(249, 80, 60, 1) 0%, #FC887A 50%, #FFC0B8 100%  );
+  background: #808AD5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -817,7 +816,7 @@ header .container .btn-explore{
 
 .homepage-musics .box-populer-musics{
   border-radius: 17px;
-  background: linear-gradient(to bottom, #F9503C 10%, #FFC0B8 100%  );
+  background: #808AD5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -848,7 +847,7 @@ header .container .btn-explore{
 }
 
 .music-popular-info {
-  background-color: #6D6699;
+  background-color: #2E388A;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -875,14 +874,14 @@ header .container .btn-explore{
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
-  border-top: 1px solid #7a6c9c;
+  border-top: 1px solid #1C1A28;
 }
 
 .music-popular-controls .icon-group-left {
   display: flex;
   gap: 15px;
   font-size: 16px;
-  color: black;
+  color: white;
 }
 
 .music-popular-controls .icon-group-left i {
@@ -897,7 +896,7 @@ header .container .btn-explore{
 .music-popular-controls .play-button {
   width: 24px;
   height: 24px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 50%;
   background-color: transparent;
   display: flex;
@@ -908,7 +907,7 @@ header .container .btn-explore{
 }
 
 .music-popular-controls .play-button i {
-  color: black;
+  color: white;
   font-size: 14px;
   margin-left: 2px;
 }
@@ -920,7 +919,6 @@ header .container .btn-explore{
 .music-popular-controls .play-button:hover i {
   color: #ff5b5b;
 }
-
 
 /* Section: Berita */
 .homepage-musics .box-hots-news h1 {
@@ -1083,3 +1081,175 @@ header .container .btn-explore{
   }
 
 }
+
+.detail-lagu-page {
+  background-color: #d6d3f8;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 40px;
+}
+
+.detail-lagu-info {
+  border-left: 2px solid #636FF8;
+  border-right: 2px solid #636FF8;
+  padding: 0 30px;
+}
+
+.detail-cover-image {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.detail-lagu-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #2d2d74;
+}
+
+.detail-lagu-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d74;
+  margin-bottom: 5px;
+}
+
+.detail-lagu-subinfo {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.badge-genre {
+  display: inline-block;
+  background-color: #b3b2ff;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-right: 6px;
+  border-radius: 12px;
+}
+
+.detail-lagu-lyrics {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #2d2d2d;
+}
+
+.detail-artis-info {
+  display: flex;
+  align-items: center;
+}
+
+.detail-artis-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.detail-artis-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}
+
+.detail-artis-nama {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1d1c7d;
+  margin: 0;
+}
+
+.btn-double-group {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 0;
+}
+
+.btn-lagu-container {
+  flex: 3;
+}
+
+.btn-mv {
+  flex: 1;
+}
+
+.btn-lagu{
+  background-color: #2E388A;
+  color: white;
+  font-size: 0.85rem;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+}
+
+.btn-mv {
+  background-color: #2E388A;
+  color: white;
+  font-size: 0.85rem;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
+
+.btn-lagu:hover,
+.btn-mv:hover {
+  background-color: #1f2a66;
+}
+
+.dropdown-menu {
+  font-size: 0.85rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+}
+
+.btn-detail-button,
+.detail-button2 {
+  display: block;
+  background-color: #2E388A;
+  color: white;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-detail-button:hover,
+.detail-button2:hover {
+  background-color: #3535cc;
+}
+
+
