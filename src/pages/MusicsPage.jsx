@@ -1,6 +1,6 @@
 import ErrorComponents from '../components/ErrorComponents'
 import { Container, Row, Col} from "react-bootstrap";
-import CarouselComponentFilm from "../components/CarouselComponentFilm";
+import CarouselComponentMusic from "../components/CarouselComponentMusic";
 import PopularComponentMusic from "../components/PopularComponentMusic";
 import KonserMusicComponent from "../components/KonserMusicComponent";
 import NewsMusicComponent from "../components/NewsMusicComponent";
@@ -13,8 +13,8 @@ const MusicsPage = () => {
          <div>
             <Container >
               <Row className="box-carousel-musics  d-flex justify-content-center">
-                <h1>Populer Musik di FindFun</h1>
-                <CarouselComponentFilm className="rounded-4" />
+                <h1>Populer di FindFun</h1>
+                <CarouselComponentMusic className="rounded-4" />
               </Row>
               <Row className="box-konser-musics p-3 m-1 mt-4" >
                 <h1 className="text-black">Konser Mendatang</h1>
