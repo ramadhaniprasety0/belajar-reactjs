@@ -2,14 +2,30 @@ import { Col } from "react-bootstrap";
 import { musicsTerbaru } from "../data";
 import { Link } from "react-router-dom";
 
-const PopularComponentMusic = () => {
+const PopularComponentMusic = ({ limit }) => {
+  // Batasi jumlah musik yang ditampilkan jika ada limit
+  const displayedMusics = limit ? musicsTerbaru.slice(0, limit) : musicsTerbaru;
+
   return (
     <>
-      {musicsTerbaru.map((musics) => (
-        <Col key={musics.id} lg={3} md={6} sm={12} className="music-popular-wrapper p-2">
-          <Link to={`/Musics/${musics.id}`} className="text-decoration-none text-light">
+      {displayedMusics.map((musics) => (
+        <Col
+          key={musics.id}
+          lg={3}
+          md={6}
+          sm={12}
+          className="music-popular-wrapper p-2"
+        >
+          <Link
+            to={`/Musics/${musics.id}`}
+            className="text-decoration-none text-light"
+          >
             <div className="music-popular-card">
-              <img src={musics.image} alt={musics.title} className="music-popular-image" />
+              <img
+                src={musics.image}
+                alt={musics.title}
+                className="music-popular-image"
+              />
               <div className="music-popular-info px-3 py-2">
                 <p className="music-popular-title">{musics.title}</p>
                 <p className="music-popular-artist">{musics.artist}</p>

@@ -9,6 +9,7 @@ import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
 import MusicsPage from "./pages/MusicsPage";
 import DetailMusicsPage from "./pages/DetailMusicsPage";
+import PopulerMusicsPage from "./pages/PopulerMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Musics/:id" element={<DetailMusicsPage />} />
         <Route path="/Films/:id" element={<DetailFilmsPage />} />
         <Route path="/TicketFilms" element={<TicketFilmsPage />} />
+        <Route path="/Populer" element={<PopulerMusicsPage />} />
       </Routes>
       <FooterComponent />
     </div>
