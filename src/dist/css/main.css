@@ -66,12 +66,12 @@
 
 .search-box input {
   width: 314px;
-  background-color: #1c1a28;
+  background-color: #ffffff;
   border: 1px solid var(--navbar-color);
 }
 
 .search-box input::placeholder {
-  color: #ffffff67;
+  color: #251551;
 }
 
 .navbar form .form-control {
@@ -79,8 +79,9 @@
 }
 
 .navbar form .form-control:focus {
-  box-shadow: #ffffff 0px 0px 0px 2px;
-  background-color: #1c1a28;
+  box-shadow: #251551 0px 0px 0px 2px;
+  background-color: #ffff;
+  color: #251551;
 }
 
 .footer {
@@ -1329,4 +1330,220 @@ header .container .btn-explore {
 .ticketfilms .date-ticketfilms .p-month-year {
   font-size: 14px;
   margin-top: -18px;
+}
+
+.detail-film-page {
+  background-color: #dcd6f7;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  padding-top: 80px;
+}
+
+/* Poster */
+.detail-film-page .poster-section {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.detail-film-page .poster-section img {
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.detail-film-page .btn-double-group {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 0;
+}
+
+/* Container tombol dropdown */
+.detail-film-page .btn-film-container {
+  flex: 2.3; /* sedikit lebih besar */
+}
+
+/* Tombol trailer */
+.detail-film-page .btn-trailer {
+  flex: 1.7; /* sedikit lebih kecil */
+}
+
+/* Tombol dropdown utama */
+.detail-film-page .btn-film {
+  background-color: #5562FC;
+  color: white;
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+}
+
+/* Tombol trailer (mirip btn-mv) */
+.detail-film-page .btn-trailer {
+  background-color: #5562FC;
+  color: white;
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
+
+/* Hover state untuk keduanya */
+.detail-film-page .btn-film:hover,
+.detail-film-page .btn-trailer:hover {
+  background-color: #1f2a66;
+}
+
+/* Dropdown menu */
+.detail-film-page .dropdown-menu {
+  font-size: 0.85rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Item di dalam dropdown */
+.detail-film-page .dropdown-item {
+  padding: 8px 12px;
+}
+
+/* Info Film */
+.detail-film-page .info-section {
+  flex-grow: 1;
+  max-width: 600px;
+  min-width: 0;
+}
+
+.detail-film-page .info-section h3 {
+  color: #2b2b2b;
+}
+
+.detail-film-page .info-section .badge-genre {
+  background-color: #5562FC;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.4em 0.7em;
+  border-radius: 0.8em;
+}
+
+/* Interaksi Pengguna */
+.detail-film-page .interaction-section {
+  width: 287px;
+  height: 300px;
+  background-color: #a29bfe;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #2d2d2d;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ikon atas (Ditonton & Suka) */
+.detail-film-page .interaction-section .icon-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.detail-film-page .interaction-section .icon-row span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Rating */
+.detail-film-page .interaction-section .rating {
+  color: #fdcb6e;
+  font-size: 1.5rem;
+}
+
+/* Label dan ikon tambahan */
+.detail-film-page .interaction-section .label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.detail-film-page .interaction-section .interaction-icon {
+  font-size: 1.4rem;
+  color: #2d2d2d;
+}
+
+/* Pemeran / Cast */
+.detail-film-page .cast-section .card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  height: 233px;
+  width: 150px;
+}
+
+.detail-film-page .cast-section .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 15222222px;
+  object-fit: cover;
+}
+
+.detail-film-page .cast-section .card-body {
+  padding: 1rem;
+}
+
+.detail-film-page .cast-section .card-body p {
+  margin-bottom: 0.25rem;
+}
+
+/* Pemeran */
+.detail-film-page .cast-section .card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.detail-film-page .cast-section .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+.detail-film-page .cast-section .card-body {
+  padding: 1rem;
+  background-color: #8E97FD;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: left;
+  color: #ECEDFF;
+}
+
+.detail-film-page .cast-section .card-body p {
+  margin-bottom: 0.25rem;
+}
+
+.detail-film-page .cast-section .card-body .text-muted small {
+  color: #56334F;
 }

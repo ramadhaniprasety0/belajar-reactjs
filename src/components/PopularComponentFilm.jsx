@@ -1,27 +1,27 @@
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { filmsTerbaru } from '../data/index';
 
 const PopularComponentFilm = () => {
-    return (
-        <>
-            {filmsTerbaru.map((films) => {
-                return(
-                    <Col lg={3} md={6} sm={12} className='card-populer-films p-2'>
-                        <div className='card-film'>
-                            <div className='card-film-img'>
-                                <img src={films.image} alt="films" className='img-fluid mb-2'/>
-                            </div>
-                            <div className='card-film-caption'>
-                                <p className='heading'>{films.title}</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, praesentium?</p>
-                                <a href="#" className='btn btn-dark'>See More <i className="fa-solid fa-play text-danger"></i></a>
-                            </div>
-                        </div>
-                    </Col>
-                )
-            })}
-        </>
-    );
+  return (
+    <>
+      {filmsTerbaru.map((films, index) => (
+        <Col key={films.id || index} lg={3} md={6} sm={12} className='card-populer-films p-2'>
+          <Link to={`/films/${films.id}`} className="text-decoration-none text-dark">
+            <div className='card-film'>
+              <div className='card-film-img'>
+                <img src={films.image} alt={films.title} className='img-fluid mb-2' />
+              </div>
+              <div className='card-film-caption'>
+                <p className='heading'>{films.title}</p>
+                <p className="small">Klik untuk melihat detail lengkap</p>
+              </div>
+            </div>
+          </Link>
+        </Col>
+      ))}
+    </>
+  );
 };
 
 export default PopularComponentFilm;
