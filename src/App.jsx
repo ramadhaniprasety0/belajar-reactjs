@@ -9,6 +9,7 @@ import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
 import MusicsPage from "./pages/MusicsPage";
 import DetailMusicsPage from "./pages/DetailMusicsPage";
+import DetailFilmsPage from "./pages/DetailFilmsPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Films" element={<FilmsPage />} />
         <Route path="/Musics" element={<MusicsPage />} />
         <Route path="/Musics/:id" element={<DetailMusicsPage />} />
+        <Route path="/Films/:id" element={<DetailFilmsPage />} />
         <Route path="/TicketFilms" element={<TicketFilmsPage />} />
       </Routes>
       <FooterComponent />

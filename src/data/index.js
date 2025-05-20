@@ -14,6 +14,12 @@ import People3 from "../assets/img/testimonial/people-3.jpg";
 
 import Artist1 from "../assets/img/artist/sza_artist.png";
 
+import Pemeran1 from "../assets/img/pemeran/the_nun1.png";
+import Pemeran2 from "../assets/img/pemeran/the_nun2.png";
+import Pemeran3 from "../assets/img/pemeran/the_nun3.png";
+import Hero1 from "../assets/img/hero films/the_nun.png";
+import Poster1 from "../assets/img/poster films/the_nun.png";
+
 // Carousel News
 import FilmsNew1 from "../assets/img/thumnail/films/wakanda.jpg";
 import FilmsNew2 from "../assets/img/thumnail/films/breakingbad.jpg";
@@ -174,10 +180,81 @@ export const hotsNews = [
   },
 ];
 
+export const detailFilms = [
+  {
+    id: 1,
+    title: "The Nun II",
+    year: 2022,
+    director: "Michael Chaves",
+    genre: ["Horror", "Mystery", "Thriller", "Fantasy"],
+    description:
+      "The Nun 2 berlatar beberapa tahun setelah Suster Irene mengalami teror mengerikan di film pertamanya. Pada 1956 di Perancis, kehidupan Suster Irene mendadak berubah karena Valak kembali datang untuk menerornya. Ternyata selama ini Valak bersembunyi di dalam raga teman Suster Irene, Maurice sebagaimana akhir film pertama.",
+    heroImage: Hero1,
+    poster: Poster1,
+    trailerUrl: "https://www.youtube.com/watch?v=QF-oyCwaArU",
+    cast: [
+      { name: "Bonnie Aarons", role: "Valak", image: Pemeran1 },
+      { name: "Taissa Farmiga", role: "Suster Irene", image: Pemeran2 },
+      { name: "Jonas Bloquet", role: "Frenchie", image: Pemeran3 },
+    ],
+  },
+  {
+    id: 2,
+    title: "Barbie",
+    year: 2023,
+    director: "Greta Gerwig",
+    genre: ["Comedy", "Adventure", "Fantasy"],
+    description:
+      "Barbie dan Ken memulai petualangan dari Barbieland ke dunia nyata untuk menemukan arti kehidupan dan identitas mereka. Film ini menyentuh tema eksistensial, identitas perempuan, dan budaya populer.",
+    heroImage: Hero1,
+    poster: Poster1,
+    trailerUrl: "https://www.youtube.com/watch?v=pBk4NYhWNMM",
+    cast: [
+      { name: "Margot Robbie", role: "Barbie", image: Pemeran1 },
+      { name: "Ryan Gosling", role: "Ken", image: Pemeran2 },
+      { name: "Issa Rae", role: "President Barbie", image: Pemeran3 },
+    ],
+  },
+  {
+    id: 3,
+    title: "Oppenheimer",
+    year: 2023,
+    director: "Christopher Nolan",
+    genre: ["Biography", "Drama", "History"],
+    description:
+      "Kisah hidup J. Robert Oppenheimer, fisikawan teoritis yang dikenal sebagai bapak bom atom, dari masa kejayaannya hingga konflik moral dan politik atas senjata yang ia bantu ciptakan.",
+    heroImage: Hero1,
+    poster: Poster1,
+    trailerUrl: "https://www.youtube.com/watch?v=uYPbbksJxIg",
+    cast: [
+      { name: "Cillian Murphy", role: "J. Robert Oppenheimer", image: Pemeran1 },
+      { name: "Emily Blunt", role: "Katherine Oppenheimer", image: Pemeran2 },
+      { name: "Robert Downey Jr.", role: "Lewis Strauss", image: Pemeran3 },
+    ],
+  },
+  {
+    id: 4,
+    title: "One Piece Live Action",
+    year: 2023,
+    director: "Marc Jobst",
+    genre: ["Action", "Adventure", "Fantasy"],
+    description:
+      "Monkey D. Luffy memulai petualangan epiknya untuk menjadi Raja Bajak Laut bersama kru Topi Jerami. Adaptasi live action dari manga dan anime legendaris karya Eiichiro Oda.",
+    heroImage: Hero1,
+    poster: Poster1,
+    trailerUrl: "https://www.youtube.com/watch?v=l6kp780S-os",
+    cast: [
+      { name: "Iñaki Godoy", role: "Monkey D. Luffy", image: Pemeran1 },
+      { name: "Mackenyu", role: "Roronoa Zoro", image: Pemeran2 },
+      { name: "Emily Rudd", role: "Nami", image: Pemeran3 },
+    ],
+  },
+];
+
 export const filmsTerbaru = [
   {
     id: 1,
-    image: Films01,
+    image: Poster1,
     title: "One Piece",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
   },
