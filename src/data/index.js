@@ -56,7 +56,14 @@ import Music2 from "../assets/img/musics/music3.png";
 import Music3 from "../assets/img/musics/music2.png";
 import Music4 from "../assets/img/musics/music1.png";
 
+// Films Bioskop
+import jumbo from "../assets/img/filmbioskop/jumbo.png";
+import mendadakdangdut from "../assets/img/filmbioskop/mendadakdangdut.png";
+import pengepungan from "../assets/img/filmbioskop/pengepungan.png";
+
+
 import BrandNew1 from "../assets/img/news/brand1.png";
+import TicketFilms from "../components/TicketFilmsComponent";
 
 export const carouselItems = [
   {
@@ -301,6 +308,42 @@ You're my chemical hype boy...`,
   ytMusicUrl: 'https://music.youtube.com/watch?v=example'
   }
 ];
+
+export const BioskopFIlms = [
+  {
+    id: 1,
+    image: mendadakdangdut,
+    genre: "Musikal",
+    title: "Mendadak Dangdut",
+    text: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
+    date: "30",
+    month: "Apr",
+    year: "2025"
+    
+  },
+  {
+    id: 2,
+    image: jumbo,
+    genre: "Fantasi",
+    title: "Jumbo",
+    text: "Jumbo adalah film petualangan dengan genre fantasi animasi Indonesia tahun 2025 yang disutradarai oleh Ryan Adriandhy.",
+    date: "31",
+    month: "Mar",
+    year: "2025"
+  },
+  {
+    id: 3,
+    image: pengepungan,
+    genre: "Drama-Thriller",
+    title: "Pengepungan di Bukit Duri",
+    text: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
+    date: "17",
+    month: "Apr",
+    year: "2025"
+  }
+];
+
+
 
 
 export const navLinks = [

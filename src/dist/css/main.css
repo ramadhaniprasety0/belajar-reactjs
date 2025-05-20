@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .montserrat-font {
@@ -21,7 +21,7 @@
 }
 
 .navbar {
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   color: var(--navbar-color);
   position: sticky;
   padding: 15px 0 15px 0;
@@ -32,18 +32,18 @@
 
 .navbar.color-active {
   position: fixed;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
 }
 
-.navbar.color-active .nav-link a:hover{
-  color: #1C1A28;
+.navbar.color-active .nav-link a:hover {
+  color: #1c1a28;
 }
 
-.navbar.color-active .nav-link .active{  
-  border: 2px solid #1C1A28;
+.navbar.color-active .nav-link .active {
+  border: 2px solid #1c1a28;
 }
 
-.navbar .nav-link a{
+.navbar .nav-link a {
   color: var(--navbar-color);
   border-radius: 0.5rem;
   padding: 5px 10px 5px 10px;
@@ -51,26 +51,26 @@
   text-decoration: none;
 }
 
-.navbar .nav-link a:hover{
-  color: #F9503C;
+.navbar .nav-link a:hover {
+  color: #f9503c;
 }
 
-.navbar .nav-link .active{
-    color: var(--primary-color);
-    border: 2px solid #F9503C;
+.navbar .nav-link .active {
+  color: var(--primary-color);
+  border: 2px solid #f9503c;
 }
 
-.navbar .nav-link .active:hover{
-    color: var(--primary-color);
+.navbar .nav-link .active:hover {
+  color: var(--primary-color);
 }
 
-.search-box input{
+.search-box input {
   width: 314px;
-  background-color: #1C1A28;
+  background-color: #1c1a28;
   border: 1px solid var(--navbar-color);
 }
 
-.search-box input::placeholder{
+.search-box input::placeholder {
   color: #ffffff67;
 }
 
@@ -80,54 +80,54 @@
 
 .navbar form .form-control:focus {
   box-shadow: #ffffff 0px 0px 0px 2px;
-  background-color: #1C1A28;
+  background-color: #1c1a28;
 }
 
-.footer{
+.footer {
   margin: 0;
-  background-color: #E1AFAF;
+  background-color: #8e97fd;
 }
 
-.footer .icons-sosmed ul li a{
+.footer .icons-sosmed ul li a {
   color: #ffffff;
 }
 
-.footer .icons-sosmed ul li a:hover{
- color: #1C1A28;
+.footer .icons-sosmed ul li a:hover {
+  color: #1c1a28;
 }
 
-footer .row{
-  --bs-gutter-x: 0 !important; 
+footer .row {
+  --bs-gutter-x: 0 !important;
 }
 
-.copyright{
+.copyright {
   padding: 10px;
-  color: #FFECCC;
-  background-color: #A6ADFB;
+  color: #ffeccc;
+  background-color: #a6adfb;
 }
 
-header{
+header {
   background-image: url("/public/bg-header.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-header .container h1{
+header .container h1 {
   font-weight: 600;
   font-size: 96px;
   text-align: center;
   color: #ffffff;
 }
 
-header .container p{
+header .container p {
   font-size: 30px;
   text-align: center;
   color: #ffffff;
 }
 
-header .container .btn-explore{
-  background-color: #8E97FD;
+header .container .btn-explore {
+  background-color: #8e97fd;
   border-radius: 10px;
   padding: 8px 16px 8px 16px;
   font-weight: 500;
@@ -139,47 +139,51 @@ header .container .btn-explore{
 }
 
 .homepage {
-  background-color: #DCDDFF;
-  padding-top: 120px; 
+  background-color: #dcddff;
+  padding-top: 120px;
 }
 
-.homepage .header-box{
+.homepage .header-box {
   padding-top: 16px;
 }
 
-.homepage .header-box p{
+.homepage .header-box p {
   line-height: 2;
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--color-text);
 }
 
-.homepage .header-box img{
+.homepage .header-box img {
   border-radius: 17px;
   width: 100%;
 }
 
-.homepage .header-box .carousel-caption{
+.homepage .header-box .carousel-caption {
   width: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right,rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 47%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 47%
+  );
   border-radius: 17px;
   padding: 48px;
 }
 
-.homepage .header-box .carousel-caption img{
+.homepage .header-box .carousel-caption img {
   width: 350px;
   height: 180px;
 }
 
-.homepage .header-box .carousel-caption .btn-seemore{
+.homepage .header-box .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #F9503C;
+  background-color: #f9503c;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
@@ -187,25 +191,23 @@ header .container .btn-explore{
   transition: all 0.3s ease;
 }
 
-.homepage .header-box .carousel-caption .btn-seemore:hover{
-  background-color: #1C1A28;
-  color: #F9503C;
+.homepage .header-box .carousel-caption .btn-seemore:hover {
+  background-color: #1c1a28;
+  color: #f9503c;
 }
 
-.homepage .header-box .carousel{
-  
+.homepage .header-box .carousel {
   border-radius: 17px;
   padding: 5px;
-
 }
 
-.homepage .header-box .carousel .carousel-indicators{
+.homepage .header-box .carousel .carousel-indicators {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homepage .header-box .carousel .carousel-indicators button{
+.homepage .header-box .carousel .carousel-indicators button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -213,22 +215,20 @@ header .container .btn-explore{
   opacity: 0.6;
 }
 
-.homepage .header-box .carousel .carousel-indicators .active{
+.homepage .header-box .carousel .carousel-indicators .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
   opacity: 1;
 }
 
-.homepage .box-hits{
+.homepage .box-hits {
   border-radius: 17px;
-  background: -webkit-linear-gradient(to bottom, #635C8E, #1C1A28);
+  background: -webkit-linear-gradient(to bottom, #635c8e, #1c1a28);
   background: linear-gradient(to bottom, #635c8e70, #1c1a284d);
 }
 
-
-
-.homepage .card-hits{
+.homepage .card-hits {
   width: 190px;
   height: 280px;
   background-color: #181818;
@@ -236,7 +236,7 @@ header .container .btn-explore{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.homepage .card-hits h2{
+.homepage .card-hits h2 {
   margin-top: 6px;
   font-size: 16px;
   line-height: 0.8;
@@ -244,13 +244,13 @@ header .container .btn-explore{
   color: #ffffff;
 }
 
-.homepage .card-hits p{
+.homepage .card-hits p {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.homepage .card-hits img{
+.homepage .card-hits img {
   width: 100%;
   height: 158px;
   border-radius: 10px;
@@ -258,19 +258,19 @@ header .container .btn-explore{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.homepage .card-hits .link-icon{
+.homepage .card-hits .link-icon {
   text-decoration: none;
-  color: #1C1A28;
+  color: #1c1a28;
 }
 
-.homepage .card-hits .icon{
+.homepage .card-hits .icon {
   position: absolute;
   top: 50%;
   right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #F9503C;
+  background-color: #f9503c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,30 +278,30 @@ header .container .btn-explore{
   transition: all 0.3s ease;
 }
 
-.homepage .card-hits .icon:hover{
+.homepage .card-hits .icon:hover {
   font-size: 20px;
-  background-color: #1C1A28;
-  color: #F9503C;
+  background-color: #1c1a28;
+  color: #f9503c;
   transition: all 0.3s ease;
 }
 
-.homepage .card-populer-films{
+.homepage .card-populer-films {
   position: relative;
   border-radius: 17px;
 }
 
-.homepage .card-populer-films::before{
+.homepage .card-populer-films::before {
   content: "";
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 17px;
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
 }
 
-.homepage .card-film{
+.homepage .card-film {
   width: 100%;
   height: 100%;
   border: inherit;
@@ -309,7 +309,7 @@ header .container .btn-explore{
   border-radius: 17px;
 }
 
-.homepage .card-film .card-film-img{
+.homepage .card-film .card-film-img {
   width: 100%;
   height: 100%;
   display: flex;
@@ -319,16 +319,15 @@ header .container .btn-explore{
   transition: scale 0.6s, rotate 0.6s, filter 1s;
 }
 
-
-.homepage .card-film .card-film-img img{
+.homepage .card-film .card-film-img img {
   width: 100%;
   height: 100%;
   border-radius: 17px;
   object-fit: cover;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage .card-film .card-film-caption{
+.homepage .card-film .card-film-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,116 +346,118 @@ header .container .btn-explore{
   opacity: 0;
   pointer-events: none;
   transform: translateY(50px);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage .card-film .card-film-caption .heading{
+.homepage .card-film .card-film-caption .heading {
   color: #ffffff;
   font-size: 30px;
   font-weight: 800;
 }
 
-.card-film:hover .card-film-caption{
+.card-film:hover .card-film-caption {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.card-film:hover .card-film-img{
+.card-film:hover .card-film-img {
   scale: 1.2;
   rotate: 5deg;
   filter: blur(40px);
 }
 
-.homepage .box-hots-news h1{
+.homepage .box-hots-news h1 {
   font-size: 2rem;
   color: #ffffff;
- 
 }
 
-.homepage .news-card .img-brand{
+.homepage .news-card .img-brand {
   width: 372px;
   height: 287px;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
 }
 
-.homepage .news-card .news-caption{
+.homepage .news-card .news-caption {
   padding: 16px;
   background: linear-gradient(to bottom, #635c8e, #1c1a282c);
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
 
-.homepage .news-card .news-caption img{
+.homepage .news-card .news-caption img {
   width: 140px;
   height: 24px;
   margin-bottom: 10px;
 }
 
-.homepage .news-card .news-caption p{
+.homepage .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.homepage .news-card .news-caption h5{
+.homepage .news-card .news-caption h5 {
   font-size: 1.3rem;
   font-weight: 500;
   color: #ffffff;
 }
 
-
 /* CSS PAGE FILMS */
 
-.homepage-films{
+.homepage-films {
   padding-top: 80px;
-  background-color: #DCDDFF;
+  background-color: #dcddff;
 }
 
-.homepage-films .box-carousel-films h1{
+.homepage-films .box-carousel-films h1 {
   font-size: 40px;
   color: #ffffff;
 }
 
-.homepage-films .box-carousel-films img{
+.homepage-films .box-carousel-films img {
   width: 100%;
   border-radius: 17px;
 }
 
-.homepage-films .box-carousel-films .carousel-caption img{
+.homepage-films .box-carousel-films .carousel-caption img {
   width: 350px;
   height: 180px;
 }
 
-.homepage-films .box-carousel-films .carousel-caption{
+.homepage-films .box-carousel-films .carousel-caption {
   width: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right,rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 47%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 47%
+  );
   border-radius: 17px;
   padding: 48px;
 }
 
-.homepage-films .box-carousel-films .carousel-caption h5{
+.homepage-films .box-carousel-films .carousel-caption h5 {
   font-size: 1.3rem;
   font-weight: 500;
   color: #ffffff;
 }
 
-.homepage-films .box-carousel-films .carousel-caption p{
+.homepage-films .box-carousel-films .carousel-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.homepage-films .box-carousel-films .carousel-caption .btn-seemore{
+.homepage-films .box-carousel-films .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #F9503C;
+  background-color: #f9503c;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
@@ -464,22 +465,22 @@ header .container .btn-explore{
   transition: all 0.3s ease;
 }
 
-.homepage-films .box-carousel-films .carousel img{
+.homepage-films .box-carousel-films .carousel img {
   border-radius: 17px;
 }
 
-.homepage-films .box-carousel-films .carousel{
+.homepage-films .box-carousel-films .carousel {
   border-radius: 17px;
   padding: 5px;
 }
 
-.homepage-films .box-carousel-films .carousel .carousel-indicators{
+.homepage-films .box-carousel-films .carousel .carousel-indicators {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homepage-films .box-carousel-films .carousel .carousel-indicators button{
+.homepage-films .box-carousel-films .carousel .carousel-indicators button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -487,7 +488,7 @@ header .container .btn-explore{
   opacity: 0.6;
 }
 
-.homepage-films .box-carousel-films .carousel .carousel-indicators .active{
+.homepage-films .box-carousel-films .carousel .carousel-indicators .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -495,29 +496,33 @@ header .container .btn-explore{
 }
 
 /* CSS PAGE FILMS POPULER CINEMA */
-.homepage-films .box-populer-films{
+.homepage-films .box-populer-films {
   border-radius: 17px;
-  background: linear-gradient(to bottom, rgba(64, 55, 91, 1) 0%, rgba(136, 117, 193, 1) 100% );
+  background: linear-gradient(
+    to bottom,
+    rgba(64, 55, 91, 1) 0%,
+    rgba(136, 117, 193, 1) 100%
+  );
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.homepage-films .card-populer-films{
+.homepage-films .card-populer-films {
   position: relative;
   border-radius: 17px;
 }
 
-.homepage-films .card-populer-films::before{
+.homepage-films .card-populer-films::before {
   content: "";
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 17px;
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
 }
 
-.homepage-films .card-film{
+.homepage-films .card-film {
   width: 100%;
   height: 100%;
   border: inherit;
@@ -525,7 +530,7 @@ header .container .btn-explore{
   border-radius: 17px;
 }
 
-.homepage-films .card-film .card-film-img{
+.homepage-films .card-film .card-film-img {
   width: 100%;
   height: 100%;
   display: flex;
@@ -535,16 +540,15 @@ header .container .btn-explore{
   transition: scale 0.6s, rotate 0.6s, filter 1s;
 }
 
-
-.homepage-films .card-film .card-film-img img{
+.homepage-films .card-film .card-film-img img {
   width: 100%;
   height: 100%;
   border-radius: 17px;
   object-fit: cover;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage-films .card-film .card-film-caption{
+.homepage-films .card-film .card-film-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -563,60 +567,59 @@ header .container .btn-explore{
   opacity: 0;
   pointer-events: none;
   transform: translateY(50px);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage-films .card-film .card-film-caption .heading{
+.homepage-films .card-film .card-film-caption .heading {
   color: #ffffff;
   font-size: 30px;
   font-weight: 800;
 }
 
-.card-film:hover .card-film-caption{
+.card-film:hover .card-film-caption {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.card-film:hover .card-film-img{
+.card-film:hover .card-film-img {
   scale: 1.2;
   rotate: 5deg;
   filter: blur(40px);
 }
 
-.homepage-films .box-hots-news h1{
+.homepage-films .box-hots-news h1 {
   font-size: 2rem;
   color: #ffffff;
- 
 }
 
-.homepage-films .news-card .img-brand{
+.homepage-films .news-card .img-brand {
   width: 372px;
   height: 287px;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
 }
 
-.homepage-films .news-card .news-caption{
+.homepage-films .news-card .news-caption {
   padding: 16px;
   background: linear-gradient(to bottom, #635c8e, #1c1a282c);
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
 
-.homepage-films .news-card .news-caption img{
+.homepage-films .news-card .news-caption img {
   width: 140px;
   height: 24px;
   margin-bottom: 10px;
 }
 
-.homepage-films .news-card .news-caption p{
+.homepage-films .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.homepage-films .news-card .news-caption h5{
+.homepage-films .news-card .news-caption h5 {
   font-size: 1.3rem;
   font-weight: 500;
   color: #ffffff;
@@ -639,54 +642,58 @@ header .container .btn-explore{
 } */
 
 /* CSS PAGE MUSICS */
-.homepage-musics{
+.homepage-musics {
   padding-top: 80px;
-  background-color: #DCDDFF;
+  background-color: #dcddff;
 }
 
-.homepage-musics .box-carousel-musics h1{
+.homepage-musics .box-carousel-musics h1 {
   font-size: 40px;
   color: #ffffff;
 }
 
-.homepage-musics .box-carousel-musics img{
+.homepage-musics .box-carousel-musics img {
   width: 100%;
   border-radius: 17px;
 }
 
-.homepage-musics .box-carousel-musics .carousel-caption img{
+.homepage-musics .box-carousel-musics .carousel-caption img {
   width: 350px;
   height: 180px;
 }
 
-.homepage-musics .box-carousel-musics .carousel-caption{
+.homepage-musics .box-carousel-musics .carousel-caption {
   width: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right,rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 47%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 47%
+  );
   border-radius: 17px;
   padding: 48px;
 }
 
-.homepage-musics .box-carousel-musics .carousel-caption h5{
+.homepage-musics .box-carousel-musics .carousel-caption h5 {
   font-size: 1.3rem;
   font-weight: 500;
   color: #ffffff;
 }
 
-.homepage-musics .box-carousel-musics .carousel-caption p{
+.homepage-musics .box-carousel-musics .carousel-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.homepage-musics .box-carousel-musics .carousel-caption .btn-seemore{
+.homepage-musics .box-carousel-musics .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #F9503C;
+  background-color: #f9503c;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
@@ -694,22 +701,22 @@ header .container .btn-explore{
   transition: all 0.3s ease;
 }
 
-.homepage-musics .box-carousel-musics .carousel img{
+.homepage-musics .box-carousel-musics .carousel img {
   border-radius: 17px;
 }
 
-.homepage-musics .box-carousel-musics .carousel{
+.homepage-musics .box-carousel-musics .carousel {
   border-radius: 17px;
   padding: 5px;
 }
 
-.homepage-musics .box-carousel-musics .carousel .carousel-indicators{
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homepage-musics .box-carousel-musics .carousel .carousel-indicators button{
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -717,7 +724,7 @@ header .container .btn-explore{
   opacity: 0.6;
 }
 
-.homepage-musics .box-carousel-musics .carousel .carousel-indicators .active{
+.homepage-musics .box-carousel-musics .carousel .carousel-indicators .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -725,29 +732,29 @@ header .container .btn-explore{
 }
 
 /* CSS PAGE FILMS POPULER CINEMA */
-.homepage-musics .box-konser-musics{
+.homepage-musics .box-konser-musics {
   border-radius: 17px;
-  background: #808AD5;
+  background: #808ad5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.homepage-musics .card-konser-musics{
+.homepage-musics .card-konser-musics {
   position: relative;
   border-radius: 17px;
 }
 
-.homepage-musics .card-konser-musics::before{
+.homepage-musics .card-konser-musics::before {
   content: "";
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 17px;
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
 }
 
-.homepage-musics .card-music{
+.homepage-musics .card-music {
   width: 100%;
   height: 100%;
   border: inherit;
@@ -755,7 +762,7 @@ header .container .btn-explore{
   border-radius: 17px;
 }
 
-.homepage-musics .card-music .card-music-img{
+.homepage-musics .card-music .card-music-img {
   width: 100%;
   height: 100%;
   display: flex;
@@ -765,16 +772,15 @@ header .container .btn-explore{
   transition: scale 0.6s, rotate 0.6s, filter 1s;
 }
 
-
-.homepage-musics .card-music .card-music-img img{
+.homepage-musics .card-music .card-music-img img {
   width: 100%;
   height: 100%;
   border-radius: 17px;
   object-fit: cover;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage-musics .card-music .card-music-caption{
+.homepage-musics .card-music .card-music-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -793,30 +799,30 @@ header .container .btn-explore{
   opacity: 0;
   pointer-events: none;
   transform: translateY(50px);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.homepage-musics .card-music .card-music-caption .heading{
+.homepage-musics .card-music .card-music-caption .heading {
   color: #ffffff;
   font-size: 30px;
   font-weight: 800;
 }
 
-.card-music:hover .card-music-caption{
+.card-music:hover .card-music-caption {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.card-music:hover .card-music-img{
+.card-music:hover .card-music-img {
   scale: 1.2;
   rotate: 5deg;
   filter: blur(40px);
 }
 
-.homepage-musics .box-populer-musics{
+.homepage-musics .box-populer-musics {
   border-radius: 17px;
-  background: #808AD5;
+  background: #808ad5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -831,7 +837,7 @@ header .container .btn-explore{
   color: white;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
 
@@ -847,7 +853,7 @@ header .container .btn-explore{
 }
 
 .music-popular-info {
-  background-color: #2E388A;
+  background-color: #2e388a;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -874,7 +880,7 @@ header .container .btn-explore{
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
-  border-top: 1px solid #1C1A28;
+  border-top: 1px solid #1c1a28;
 }
 
 .music-popular-controls .icon-group-left {
@@ -949,7 +955,7 @@ header .container .btn-explore{
 .homepage-musics .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .homepage-musics .news-card .news-caption h5 {
@@ -958,141 +964,134 @@ header .container .btn-explore{
   color: #ffffff;
 }
 
-
-
 @media screen and (max-width: 992px) {
-
-  header .container h1{
+  header .container h1 {
     font-size: 3rem;
   }
 
-  header .container p{
+  header .container p {
     font-size: 1.5rem;
   }
 
-  .homepage .header-box{
+  .homepage .header-box {
     padding-top: 8rem;
   }
 
-  .homepage .card-hits img{
+  .homepage .card-hits img {
     width: 100%;
     height: 100px;
   }
 
-  .homepage .card-hits h2{
+  .homepage .card-hits h2 {
     font-size: 0.6rem;
   }
 
-  .homepage .card-hits p{
+  .homepage .card-hits p {
     font-size: 0.6rem;
   }
-  
-  .homepage .header-box img{
+
+  .homepage .header-box img {
     width: 400px;
     display: block;
     margin-inline: auto;
   }
 
-  .homepage .news-card .news-caption img{
+  .homepage .news-card .news-caption img {
     width: 100px;
     height: 20px;
   }
 
-  .homepage .news-card .news-caption h5{
+  .homepage .news-card .news-caption h5 {
     font-size: 14px;
   }
 
-  .homepage .news-card .news-caption p{
+  .homepage .news-card .news-caption p {
     font-size: 10px;
   }
 
-  .homepage .card-hits-films img{
+  .homepage .card-hits-films img {
     width: 100%;
     height: 300px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  
-  .homepage .header-box h1{
+  .homepage .header-box h1 {
     font-size: 3rem;
   }
 
-  .homepage .header-box img{
+  .homepage .header-box img {
     width: 400px;
     display: block;
     margin-inline: auto;
   }
 
-  .homepage .news-card .img-brand{
+  .homepage .news-card .img-brand {
     width: 300px;
   }
 
-  .homepage .card-hits-films img{
+  .homepage .card-hits-films img {
     width: 100%;
     height: 200px;
   }
 }
 
 @media screen and (max-width: 475px) {
-  
-
-  .homepage .header-box h1{
+  .homepage .header-box h1 {
     font-size: 2.4rem;
   }
-  .homepage .header-box p{
+  .homepage .header-box p {
     font-size: 14px;
   }
-  .homepage .header-box img{
+  .homepage .header-box img {
     width: 300px;
   }
 
-  .homepage .news-card .img-brand{
+  .homepage .news-card .img-brand {
     width: 200px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .homepage .header-box h1{
+  .homepage .header-box h1 {
     font-size: 2rem;
   }
-  .homepage .header-box p{
+  .homepage .header-box p {
     font-size: 12px;
   }
-  .homepage .header-box img{
+  .homepage .header-box img {
     width: 300px;
   }
-  .homepage .box-hits .col h1{
+  .homepage .box-hits .col h1 {
     font-size: 20px;
   }
 
-  .homepage .box-hots-news h1{
+  .homepage .box-hots-news h1 {
     font-size: 20px;
   }
-  .homepage .news-card .img-brand{
+  .homepage .news-card .img-brand {
     width: 150px;
   }
-  .homepage .news-card .news-caption h5{
+  .homepage .news-card .news-caption h5 {
     font-size: 12px;
   }
 
-  .homepage .news-card .news-caption p{
+  .homepage .news-card .news-caption p {
     font-size: 8px;
   }
-
 }
 
 .detail-lagu-page {
   background-color: #d6d3f8;
   min-height: 100vh;
   padding-top: 80px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   padding-bottom: 40px;
 }
 
 .detail-lagu-info {
-  border-left: 2px solid #636FF8;
-  border-right: 2px solid #636FF8;
+  border-left: 2px solid #636ff8;
+  border-right: 2px solid #636ff8;
   padding: 0 30px;
 }
 
@@ -1181,8 +1180,8 @@ header .container .btn-explore{
   flex: 1;
 }
 
-.btn-lagu{
-  background-color: #2E388A;
+.btn-lagu {
+  background-color: #2e388a;
   color: white;
   font-size: 0.85rem;
   padding: 10px 0;
@@ -1200,7 +1199,7 @@ header .container .btn-explore{
 }
 
 .btn-mv {
-  background-color: #2E388A;
+  background-color: #2e388a;
   color: white;
   font-size: 0.85rem;
   padding: 10px 0;
@@ -1235,7 +1234,7 @@ header .container .btn-explore{
 .btn-detail-button,
 .detail-button2 {
   display: block;
-  background-color: #2E388A;
+  background-color: #2e388a;
   color: white;
   font-size: 0.85rem;
   padding: 8px 16px;
@@ -1252,4 +1251,82 @@ header .container .btn-explore{
   background-color: #3535cc;
 }
 
+/* Ticket FILMS PAGES */
+.ticketfilms {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
 
+.h1-ticketfilms {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.ticketfilms .img-ticketfilms {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.ticketfilms .card-ticketfilms {
+  background-color: #8e97fd;
+  border-radius: 20px;
+  border: black 1px solid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticketfilms .card-ticketfilms:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.ticketfilms .btn-ticketfilms {
+  font-size: 14px;
+  background-color: #5562fc;
+  color: #ffeccc;
+  border-radius: 100px;
+}
+
+.ticketfilms .btn-ticketfilms:hover {
+  background-color: #3f51b5;
+}
+
+.card-ticketfilms .card-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-ticketfilms .card-text {
+  text-align: justify;
+}
+
+.ticketfilms .link-ticketfilms {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.ticketfilms .link-ticketfilms:hover {
+  text-decoration: underline;
+}
+
+.ticketfilms .date-ticketfilms {
+  position: absolute;
+  background-color: #a9b0fe;
+  border-radius: 30px;
+  text-align: center;
+  padding: 4px;
+  width: 112px;
+  margin-left: 260px;
+  margin-top: 15px;
+}
+
+.ticketfilms .date-ticketfilms .p-date {
+  font-size: 32px;
+}
+
+.ticketfilms .date-ticketfilms .p-month-year {
+  font-size: 14px;
+  margin-top: -18px;
+}
