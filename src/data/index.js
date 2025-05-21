@@ -127,7 +127,7 @@ export const musickHits = [
     title: "Hits Banget",
     desc: "Kumpulan lagu Hits hingga beberapa tahun…",
     icon: "fas fa-play icon",
-    path: "/Musics", 
+    path: "/Musics",
   },
   {
     id: 5,
@@ -329,9 +329,9 @@ I did it all for love (love)I did it all on no drugs (drugs)I did all of this so
 I did it all for love (love)I did it all of this on no drugs (drugs)I did all of this soberDon't you know I did it all for us? (I'll kill your ass tonight)
 Uh, I just killed my ex (my ex)Not the best idea (idea)Killed his girlfriend next, how'd I get here?I just killed my ex (my ex)I still love him, though (I do)Rather be in Hell than alone`,
     videoUrl: "https://www.youtube.com/watch?v=VG9AGf66tXM",
-  spotifyUrl: 'https://open.spotify.com/track/example',
-  appleMusicUrl: 'https://music.apple.com/us/album/example',
-  ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
   },
   {
     id: 2,
@@ -345,10 +345,10 @@ Uh, I just killed my ex (my ex)Not the best idea (idea)Killed his girlfriend nex
     lyrics: `Weight of the world on your shoulders...
 I kiss your waist and ease your mind...`,
     videoUrl: "https://www.youtube.com/watch?v=QU9c0053UAU",
-     videoUrl: 'https://www.youtube.com/watch?v=video_id',
-  spotifyUrl: 'https://open.spotify.com/track/example',
-  appleMusicUrl: 'https://music.apple.com/us/album/example',
-  ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
   },
   {
     id: 3,
@@ -362,10 +362,10 @@ I kiss your waist and ease your mind...`,
     lyrics: `Stay in the middle, like you a little...
 Don't want no riddle...`,
     videoUrl: "https://www.youtube.com/watch?v=Km71Rr9K-Bw",
-     videoUrl: 'https://www.youtube.com/watch?v=video_id',
-  spotifyUrl: 'https://open.spotify.com/track/example',
-  appleMusicUrl: 'https://music.apple.com/us/album/example',
-  ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
   },
   {
     id: 4,
@@ -379,10 +379,166 @@ Don't want no riddle...`,
     lyrics: `Cause I know what you like boy...
 You're my chemical hype boy...`,
     videoUrl: "https://www.youtube.com/watch?v=js1CtxSY38I",
-     videoUrl: 'https://www.youtube.com/watch?v=video_id',
-  spotifyUrl: 'https://open.spotify.com/track/example',
-  appleMusicUrl: 'https://music.apple.com/us/album/example',
-  ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 5,
+    image: Music1,
+    title: "Kill Bill",
+    artist: "SZA",
+    album: "Album SOS",
+    artistImage: Artist1,
+    year: 2022,
+    genre: ["K-Pop", "Dance", "Pop"],
+    lyrics: `I'm still a fan even though I was salty
+Hate to see you with some other broad, know you happy
+Hate to see you happy if I'm not the one driving
+I'm so mature, I'm so mature
+I'm so mature, I got me a therapist to tell me there's other menI don't want none, I just want youIf I can't have you, no one shouldI might
+I might kill my ex, not the best ideaHis new girlfriend's next, how'd I get here?I might kill my ex, I still love him thoughRather be in jail than alone
+I get the sense that it's a lost causeI get the sense that you might really love herThe text gon' be evidence, this text is evidenceI tried to ration with you, no murders or crimes of passion, but damn
+You was out of reachYou was at the farmer's market with your perfect peachNow I'm in the basement, planning home invasionNow you laying face-down, got me singing over a beat
+I'm so mature, I'm so matureI'm so mature, I got me a therapist to tell me there's other menI don't want none, I just want youIf I can't have you, no one will(I might)
+I might kill my ex, not the best ideaHis new girlfriend's next, how'd I get here?I might kill my ex, I still love him thoughRather be in jail than alone
+I did it all for love (love)I did it all on no drugs (drugs)I did all of this soberI did it all for us, oh
+I did it all for love (love)I did it all of this on no drugs (drugs)I did all of this soberDon't you know I did it all for us? (I'll kill your ass tonight)
+Uh, I just killed my ex (my ex)Not the best idea (idea)Killed his girlfriend next, how'd I get here?I just killed my ex (my ex)I still love him, though (I do)Rather be in Hell than alone`,
+    videoUrl: "https://www.youtube.com/watch?v=VG9AGf66tXM",
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 6,
+    image: Music2,
+    title: "Seven",
+    artist: "Jung Kook feat. Latto",
+    artistImage: Artist1,
+    album: "Seven - Single",
+    year: 2023,
+    genre: ["K-Pop", "R&B", "Pop"],
+    lyrics: `Weight of the world on your shoulders...
+I kiss your waist and ease your mind...`,
+    videoUrl: "https://www.youtube.com/watch?v=QU9c0053UAU",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 7,
+    image: Music3,
+    title: "Ditto",
+    artist: "NewJeans",
+    artistImage: Artist1,
+    album: "OMG",
+    year: 2022,
+    genre: ["K-Pop", "Electronic", "Alternative"],
+    lyrics: `Stay in the middle, like you a little...
+Don't want no riddle...`,
+    videoUrl: "https://www.youtube.com/watch?v=Km71Rr9K-Bw",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 8,
+    image: Music4,
+    title: "Hype Boy",
+    artist: "NewJeans",
+    artistImage: Artist1,
+    album: "New Jeans",
+    year: 2022,
+    genre: ["K-Pop", "Dance Pop"],
+    lyrics: `Cause I know what you like boy...
+You're my chemical hype boy...`,
+    videoUrl: "https://www.youtube.com/watch?v=js1CtxSY38I",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 9,
+    image: Music1,
+    title: "Kill Bill",
+    artist: "SZA",
+    album: "Album SOS",
+    artistImage: Artist1,
+    year: 2022,
+    genre: ["K-Pop", "Dance", "Pop"],
+    lyrics: `I'm still a fan even though I was salty
+Hate to see you with some other broad, know you happy
+Hate to see you happy if I'm not the one driving
+I'm so mature, I'm so mature
+I'm so mature, I got me a therapist to tell me there's other menI don't want none, I just want youIf I can't have you, no one shouldI might
+I might kill my ex, not the best ideaHis new girlfriend's next, how'd I get here?I might kill my ex, I still love him thoughRather be in jail than alone
+I get the sense that it's a lost causeI get the sense that you might really love herThe text gon' be evidence, this text is evidenceI tried to ration with you, no murders or crimes of passion, but damn
+You was out of reachYou was at the farmer's market with your perfect peachNow I'm in the basement, planning home invasionNow you laying face-down, got me singing over a beat
+I'm so mature, I'm so matureI'm so mature, I got me a therapist to tell me there's other menI don't want none, I just want youIf I can't have you, no one will(I might)
+I might kill my ex, not the best ideaHis new girlfriend's next, how'd I get here?I might kill my ex, I still love him thoughRather be in jail than alone
+I did it all for love (love)I did it all on no drugs (drugs)I did all of this soberI did it all for us, oh
+I did it all for love (love)I did it all of this on no drugs (drugs)I did all of this soberDon't you know I did it all for us? (I'll kill your ass tonight)
+Uh, I just killed my ex (my ex)Not the best idea (idea)Killed his girlfriend next, how'd I get here?I just killed my ex (my ex)I still love him, though (I do)Rather be in Hell than alone`,
+    videoUrl: "https://www.youtube.com/watch?v=VG9AGf66tXM",
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 10,
+    image: Music2,
+    title: "Seven",
+    artist: "Jung Kook feat. Latto",
+    artistImage: Artist1,
+    album: "Seven - Single",
+    year: 2023,
+    genre: ["K-Pop", "R&B", "Pop"],
+    lyrics: `Weight of the world on your shoulders...
+I kiss your waist and ease your mind...`,
+    videoUrl: "https://www.youtube.com/watch?v=QU9c0053UAU",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 11,
+    image: Music3,
+    title: "Ditto",
+    artist: "NewJeans",
+    artistImage: Artist1,
+    album: "OMG",
+    year: 2022,
+    genre: ["K-Pop", "Electronic", "Alternative"],
+    lyrics: `Stay in the middle, like you a little...
+Don't want no riddle...`,
+    videoUrl: "https://www.youtube.com/watch?v=Km71Rr9K-Bw",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  },
+  {
+    id: 12,
+    image: Music4,
+    title: "Hype Boy",
+    artist: "NewJeans",
+    artistImage: Artist1,
+    album: "New Jeans",
+    year: 2022,
+    genre: ["K-Pop", "Dance Pop"],
+    lyrics: `Cause I know what you like boy...
+You're my chemical hype boy...`,
+    videoUrl: "https://www.youtube.com/watch?v=js1CtxSY38I",
+    videoUrl: 'https://www.youtube.com/watch?v=video_id',
+    spotifyUrl: 'https://open.spotify.com/track/example',
+    appleMusicUrl: 'https://music.apple.com/us/album/example',
+    ytMusicUrl: 'https://music.youtube.com/watch?v=example'
   }
 ];
 
@@ -396,7 +552,7 @@ export const BioskopFIlms = [
     date: "30",
     month: "Apr",
     year: "2025"
-    
+
   },
   {
     id: 2,

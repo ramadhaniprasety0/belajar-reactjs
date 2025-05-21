@@ -809,6 +809,25 @@ header .container .btn-explore {
   font-weight: 800;
 }
 
+
+.homepage-musics .btn-lihat-semua {
+  background-color: #2E388A; /* Sesuaikan warna biru sesuai gambar */
+  color: #fff; /* Teks putih */
+  border: none;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border-radius: 999px; /* Full rounded */
+  font-weight: 500;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-musics .btn-lihat-semua:hover {
+  background-color: #25287a;
+  color: #fff;
+  text-decoration: none;
+}
+
 .card-music:hover .card-music-caption {
   opacity: 1;
   pointer-events: auto;
@@ -1546,4 +1565,214 @@ header .container .btn-explore {
 
 .detail-film-page .cast-section .card-body .text-muted small {
   color: #56334F;
+}
+
+.popular-musics-page {
+  padding-top: 80px;
+  background-color: #dcddff;
+  padding-bottom: 40px;
+}
+
+/* === CAROUSEL SECTION === */
+.popular-musics-page .box-carousel-musics h1 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.popular-musics-page .box-carousel-musics img {
+  width: 100%;
+  border-radius: 17px;
+}
+
+.popular-musics-page .box-carousel-musics .carousel-caption {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 47%
+  );
+  border-radius: 17px;
+  padding: 48px;
+}
+
+.popular-musics-page .box-carousel-musics .carousel-caption h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.popular-musics-page .box-carousel-musics .carousel-caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a7a7a7;
+}
+
+.popular-musics-page .box-carousel-musics .carousel-caption .btn-seemore {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f9503c;
+  border-radius: 30px;
+  padding: 4px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.popular-musics-page .box-carousel-musics .carousel {
+  border-radius: 17px;
+  padding: 5px;
+}
+
+.popular-musics-page .box-carousel-musics .carousel .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.popular-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/* === FILTER BUTTONS === */
+.popular-musics-page .filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 40px;
+}
+
+.popular-musics-page .filter-buttons button {
+  background-color: transparent;
+  border: 2px solid #2e388a;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e388a;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-musics-page .filter-buttons .btn.active {
+  background-color: #2e388a;
+  color: #ffffff;
+  border-color: #2e388a;
+  font-weight: 600;
+}
+
+.popular-musics-page .filter-buttons button:hover,
+.popular-musics-page .filter-buttons button.active {
+  background-color: #2e388a;
+  color: #ffffff;
+}
+
+/* === POPULAR MUSIC CARD === */
+.popular-musics-page .music-popular-wrapper {
+  border-radius: 16px;
+}
+
+.popular-musics-page .music-popular-card {
+  background-color: #4b3f6b;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.popular-musics-page .music-popular-card:hover {
+  transform: scale(1.03);
+}
+
+.popular-musics-page .music-popular-image {
+  width: 100%;
+  height: 266px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.popular-musics-page .music-popular-info {
+  background-color: #2e388a;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130px;
+}
+
+.popular-musics-page .music-popular-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.popular-musics-page .music-popular-artist {
+  font-size: 16px;
+  color: #d1cfe3;
+  font-weight: bold;
+  font-style: italic;
+  margin: 4px 0 12px;
+}
+
+.popular-musics-page .music-popular-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #1c1a28;
+}
+
+.popular-musics-page .music-popular-controls .icon-group-left {
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  color: white;
+}
+
+.popular-musics-page .music-popular-controls .icon-group-left i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.popular-musics-page .music-popular-controls .icon-group-left i:hover {
+  color: #ff5b5b;
+}
+
+.popular-musics-page .music-popular-controls .play-button {
+  width: 24px;
+  height: 24px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.popular-musics-page .music-popular-controls .play-button i {
+  color: white;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.popular-musics-page .music-popular-controls .play-button:hover {
+  border-color: #ff5b5b;
+}
+
+.popular-musics-page .music-popular-controls .play-button:hover i {
+  color: #ff5b5b;
 }
