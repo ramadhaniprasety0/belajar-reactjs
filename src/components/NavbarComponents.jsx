@@ -56,7 +56,7 @@ const NavbarComponents = () => {
                     <div className="mx-2 fs-5">|</div>
                   </Col>
                   <Col xs="auto">
-                    <NavLink to="/login" className="text-decoration-none btn text-white">
+                    <NavLink to="/Login" className="text-decoration-none btn text-white">
                       <i className="fa-regular fa-user fs-5"></i>
                     </NavLink>
                   </Col>

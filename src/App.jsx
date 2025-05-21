@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
-import NavbarComponent from "./components/NavbarComponents";
-import FooterComponent from "./components/FooterComponents";
+import MainLayout from "./MainLayout";
 
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import RegisPage from "./pages/RegisterPage";
 import FilmsPage from "./pages/FilmsPage";
 import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
@@ -15,19 +16,24 @@ import TicketFilmsPage from "./pages/TicketFilmsPage";
 
 function App() {
   return (
-    <div>
-      <NavbarComponent />
-      <Routes>
+    <Routes>
+      {/* Halaman Login tanpa navbar/footer */}
+      <Route path="/Login" element={<LoginPage />} />
+      <Route path="/Register" element={<RegisPage />} />
+
+      {/* Semua halaman lain dengan layout lengkap */}
+      <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Films" element={<FilmsPage />} />
-        <Route path="/Musics" element={<MusicsPage />} />
-        <Route path="/Musics/:id" element={<DetailMusicsPage />} />
-        <Route path="/Films/:id" element={<DetailFilmsPage />} />
-        <Route path="/TicketFilms" element={<TicketFilmsPage />} />
-        <Route path="/Populer" element={<PopulerMusicsPage />} />
-      </Routes>
-      <FooterComponent />
-    </div>
+        <Route path="/films" element={<FilmsPage />} />
+        <Route path="/musics" element={<MusicsPage />} />
+        <Route path="/musics/:id" element={<DetailMusicsPage />} />
+        <Route path="/films/:id" element={<DetailFilmsPage />} />
+        <Route path="/ticketfilms" element={<TicketFilmsPage />} />
+        <Route path="/populer" element={<PopulerMusicsPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/syaratketen" element={<SyaratKetenPage />} />
+      </Route>
+    </Routes>
   );
 }
 

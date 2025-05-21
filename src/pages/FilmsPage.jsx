@@ -17,11 +17,11 @@ const FilmsPage = () => {
                 <CarouselComponentFilm className="rounded-4" />
               </Row>
               <Row className="box-populer-films p-3 m-1 mt-4" >
-                <h1 className="text-white">Popular in Cinema</h1>
+                <h1 className="text-white">Film Hits</h1>
                 <PopularComponentFilm />
               </Row>
               <Row>
-                <h1>Whats Going On</h1>
+                <h1 className="text-black pt-4">Whats Going On</h1>
                 <NewsFimlComponen />
               </Row>
             </Container>
