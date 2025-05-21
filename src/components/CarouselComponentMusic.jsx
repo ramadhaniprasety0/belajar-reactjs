@@ -13,7 +13,7 @@ const CarouselComponentMusic = () => {
               <Carousel.Caption className='d-flex flex-column align-items-start gap-1 justify-content-center'>
                 <img src={item.title} alt="Carousel Title" className='img-fluid' />
                 <p className='text-white'>{item.description}</p>
-                <a href={item.path} className="btn-seemore">See More</a>
+                <a href={item.path} className="btn-seemore">Lihat</a>
               </Carousel.Caption>
             </Carousel.Item>
           );
