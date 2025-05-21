@@ -20,6 +20,7 @@
   --navbar-color-text: #000000;
 }
 
+/* NAVBAR */
 .navbar {
   background-color: #8e97fd;
   color: var(--navbar-color);
@@ -52,12 +53,12 @@
 }
 
 .navbar .nav-link a:hover {
-  color: #0000;
+  color: black;
 }
 
 .navbar .nav-link .active {
   color: var(--primary-color);
-  border: 2px solid #000;
+  border: 2px solid #f9503c;
 }
 
 .navbar .nav-link .active:hover {
@@ -71,7 +72,9 @@
 }
 
 .search-box input::placeholder {
-  color: #251551;
+  color: rgb(138, 138, 138);
+  font-style: italic;
+  font-size: 15px;
 }
 
 .navbar form .form-control {
@@ -83,10 +86,34 @@
   background-color: #ffff;
   color: #251551;
 }
+/* NAVBAR */
 
+/* FOOTER */
 .footer {
   margin: 0;
   background-color: #8e97fd;
+}
+.footer .findfun p {
+  text-align: Justify;
+  margin-top: 20px;
+}
+
+.footer .produk ul {
+  text-align: Justify;
+  margin-top: 35px;
+  margin-right: 21px;
+}
+.footer .support ul {
+  text-align: Justify;
+  margin-top: 35px;
+  margin-right: 100px;
+}
+.footer .support h1 {
+  margin-right: 165px;
+}
+
+.footer .icons-sosmed p {
+  margin-top: 35px;
 }
 
 .footer .icons-sosmed ul li a {
@@ -116,21 +143,23 @@ header {
 
 header .container h1 {
   font-weight: 600;
-  font-size: 96px;
+  font-size: 70px;
   text-align: center;
   color: #ffffff;
+  font-style: italic;
 }
 
 header .container p {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: #ffffff;
+  font-style: italic;
 }
 
 header .container .btn-explore {
   background-color: #8e97fd;
-  border-radius: 10px;
-  padding: 8px 16px 8px 16px;
+  border-radius: 20px;
+  padding: 10px 18px 10px 18px;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
@@ -138,15 +167,18 @@ header .container .btn-explore {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+header .container .btn-explore:hover {
+  background-color: #251551;
+}
 
 /* src/styles/LoginPage.css */
 .login-page {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .login-left {
   width: 100%;
-  background-image: url('/src/assets/img/login/bg-login.png'); /* Ganti dengan path asli */
+  background-image: url("/src/assets/img/login/bg-login.png"); /* Ganti dengan path asli */
   background-size: cover;
   background-position: center;
 }
@@ -158,8 +190,8 @@ header .container .btn-explore {
 
 /* Input fields */
 .login-form .form-control {
-  background-color: #DCDDFF;
-  border: 1px solid #DCDDFF;
+  background-color: #dcddff;
+  border: 1px solid #dcddff;
   border-radius: 1rem;
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
@@ -172,7 +204,7 @@ header .container .btn-explore {
 }
 
 .login-form .btn-primary {
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border: none;
 }
 
@@ -187,15 +219,15 @@ header .container .btn-explore {
 
 .login-form hr {
   border: none;
-  border-top: 2px solid #8E97FD;
-  width: 150%; 
-  margin: 2rem -25% 2rem -25%; 
+  border-top: 2px solid #8e97fd;
+  width: 150%;
+  margin: 2rem -25% 2rem -25%;
   opacity: 0.9;
 }
 
 /* Base layout */
 .register-page {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 /* Left: Form register */
@@ -207,7 +239,7 @@ header .container .btn-explore {
 /* Right: Background image & welcome message */
 .register-right {
   width: 100%;
-  background-image: url('/src/assets/img/login/bg-regis.png'); 
+  background-image: url("/src/assets/img/login/bg-regis.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,8 +266,8 @@ header .container .btn-explore {
 
 /* Form fields */
 .register-form .form-control {
-  background-color: #DCDDFF;
-  border: 1px solid #DCDDFF;
+  background-color: #dcddff;
+  border: 1px solid #dcddff;
   border-radius: 1rem;
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
@@ -249,7 +281,7 @@ header .container .btn-explore {
 
 /* Button styling */
 .register-form .btn-primary {
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border: none;
 }
 
@@ -264,7 +296,7 @@ header .container .btn-explore {
 
 .register-form hr {
   border: none;
-  border-top: 2px solid #8E97FD;
+  border-top: 2px solid #8e97fd;
   width: 150%;
   margin: 2rem -25% 2rem -25%;
   opacity: 0.9;
@@ -275,8 +307,11 @@ header .container .btn-explore {
   padding-top: 120px;
 }
 
-.homepage .header-box {
-  padding-top: 16px;
+.homepage h1 {
+  margin-top: 40px;
+  color: #251551;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .homepage .header-box p {
@@ -315,17 +350,19 @@ header .container .btn-explore {
 .homepage .header-box .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
   font-size: 20px;
+  font-style: italic;
+  width: 110px;
   transition: all 0.3s ease;
 }
 
 .homepage .header-box .carousel-caption .btn-seemore:hover {
-  background-color: #B3B6C1;
-  color: #ffff;
+  background-color: #251551;
+  color: white;
 }
 
 .homepage .header-box .carousel {
@@ -356,18 +393,37 @@ header .container .btn-explore {
 
 .homepage .box-hits {
   border-radius: 17px;
-  background: -webkit-linear-gradient(to bottom, #635c8e, #1c1a28);
-  background: linear-gradient(to bottom, #635c8e70, #1c1a284d);
+  background-color: #9599f6;
+  width: 1286px;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+.homepage .box-hits h1 {
+  margin-left: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -1px;
+  padding-top: 20px;
+  color: #251551;
 }
 
 .homepage .card-hits {
+  margin-top: 10px;
   width: 190px;
   height: 280px;
-  background-color: #181818;
-  border-radius: 17px;
+  background-color: #2e388a;
+  border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
 }
 
+.homepage .card-hits h1 {
+  margin-top: -200px;
+  font-size: 16px;
+  line-height: 0.8;
+  font-weight: 500;
+  color: #ffffff;
+}
 .homepage .card-hits h2 {
   margin-top: 6px;
   font-size: 16px;
@@ -500,8 +556,8 @@ header .container .btn-explore {
 }
 
 .homepage .box-hots-news h1 {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 40px;
+  color: #251551;
 }
 
 .homepage .news-card .img-brand {
@@ -513,7 +569,7 @@ header .container .btn-explore {
 
 .homepage .news-card .news-caption {
   padding: 16px;
-  background: linear-gradient(to bottom, #635c8e, #1c1a282c);
+  background-color: #9599f6;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -527,7 +583,17 @@ header .container .btn-explore {
 .homepage .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #a7a7a7;
+  color: rgb(213, 212, 212);
+}
+.homepage .news-card .news-caption a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+.homepage .news-card .news-caption a:hover {
+  text-decoration: underline;
+  font-weight: 400;
+  color: white;
 }
 
 .homepage .news-card .news-caption h5 {
@@ -545,7 +611,8 @@ header .container .btn-explore {
 
 .homepage-films .box-carousel-films h1 {
   font-size: 40px;
-  color: #ffffff;
+  color: #251551;
+  font-weight: bold;
 }
 
 .homepage-films .box-carousel-films img {
@@ -589,17 +656,19 @@ header .container .btn-explore {
 .homepage-films .box-carousel-films .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
   font-size: 20px;
+  font-style: italic;
+  width: 110px;
   transition: all 0.3s ease;
 }
 
 .homepage-films .box-carousel-films .carousel-caption .btn-seemore:hover {
-  background-color: #B3B6C1;
-  color: #ffff;
+  background-color: #251551;
+  color: white;
 }
 
 .homepage-films .box-carousel-films .carousel img {
@@ -635,7 +704,7 @@ header .container .btn-explore {
 /* CSS PAGE FILMS POPULER CINEMA */
 .homepage-films .box-populer-films {
   border-radius: 17px;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -735,7 +804,7 @@ header .container .btn-explore {
 
 .homepage-films .news-card .news-caption {
   padding: 16px;
-  background-color: #8E97FD;
+  background: linear-gradient(to bottom, #635c8e, #1c1a282c);
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -749,7 +818,7 @@ header .container .btn-explore {
 .homepage-films .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #a7a7a7;
 }
 
 .homepage-films .news-card .news-caption h5 {
@@ -758,21 +827,44 @@ header .container .btn-explore {
   color: #ffffff;
 }
 
-/* .homepage-films .box-populer-films h1{
+.homepage-films .box-populer-films h1 {
   font-size: 40px;
-  color: #ffffff;
+  color: #251551;
+  font-weight: bold;
 }
 
-.homepage-films .box-populer-films h2{
+.homepage-films .box-berita h1 {
+  font-size: 40px;
+  color: #251551;
+  font-weight: bold;
+}
+
+.homepage-films .box-berita a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+.homepage-films .box-berita a:hover {
+  text-decoration: underline;
+  font-weight: 400;
+  color: white;
+}
+
+/* .homepage-films .box-populer-films h2{
   text-align: center;
   font-size: 20px;
   color: #ffffff;
-}
+} */
 
-.homepage-films .card-populer-films img{
+.homepage-films .card-populer-films img {
   width: 254px;
   height: 384px;
-} */
+}
+*/ .homepage-films h1 {
+  font-size: 40px;
+  color: #251551;
+  font-weight: bold;
+}
 
 /* CSS PAGE MUSICS */
 .homepage-musics {
@@ -826,17 +918,19 @@ header .container .btn-explore {
 .homepage-musics .box-carousel-musics .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   font-weight: 400;
   font-size: 20px;
+  font-style: italic;
+  width: 110px;
   transition: all 0.3s ease;
 }
 
 .homepage-musics .box-carousel-musics .carousel-caption .btn-seemore:hover {
-  background-color: #B3B6C1;
-  color: #ffff;
+  background-color: #251551;
+  color: white;
 }
 
 .homepage-musics .box-carousel-musics .carousel img {
@@ -946,9 +1040,8 @@ header .container .btn-explore {
   font-weight: 800;
 }
 
-
 .homepage-musics .btn-lihat-semua {
-  background-color: #2E388A; /* Sesuaikan warna biru sesuai gambar */
+  background-color: #2e388a; /* Sesuaikan warna biru sesuai gambar */
   color: #fff; /* Teks putih */
   border: none;
   padding: 6px 16px;
@@ -1490,7 +1583,7 @@ header .container .btn-explore {
 
 .detail-film-page {
   background-color: #dcd6f7;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #333;
   padding-top: 80px;
 }
@@ -1526,7 +1619,7 @@ header .container .btn-explore {
 
 /* Tombol dropdown utama */
 .detail-film-page .btn-film {
-  background-color: #5562FC;
+  background-color: #5562fc;
   color: white;
   font-size: 0.85rem;
   padding: 5px 0;
@@ -1545,7 +1638,7 @@ header .container .btn-explore {
 
 /* Tombol trailer (mirip btn-mv) */
 .detail-film-page .btn-trailer {
-  background-color: #5562FC;
+  background-color: #5562fc;
   color: white;
   font-size: 0.85rem;
   padding: 5px 0;
@@ -1592,7 +1685,7 @@ header .container .btn-explore {
 }
 
 .detail-film-page .info-section .badge-genre {
-  background-color: #5562FC;
+  background-color: #5562fc;
   color: #fff;
   font-size: 0.75rem;
   padding: 0.4em 0.7em;
@@ -1689,11 +1782,11 @@ header .container .btn-explore {
 
 .detail-film-page .cast-section .card-body {
   padding: 1rem;
-  background-color: #8E97FD;
+  background-color: #8e97fd;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   text-align: left;
-  color: #ECEDFF;
+  color: #ecedff;
 }
 
 .detail-film-page .cast-section .card-body p {
@@ -1701,7 +1794,7 @@ header .container .btn-explore {
 }
 
 .detail-film-page .cast-section .card-body .text-muted small {
-  color: #56334F;
+  color: #56334f;
 }
 
 .popular-musics-page {
@@ -1752,7 +1845,7 @@ header .container .btn-explore {
 .popular-musics-page .box-carousel-musics .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8E97FD;
+  background-color: #f9503c;
   border-radius: 30px;
   padding: 4px 20px;
   font-weight: 400;
@@ -1760,17 +1853,16 @@ header .container .btn-explore {
   transition: all 0.3s ease;
 }
 
-.popular-musics-page .box-carousel-music .carousel-caption .btn-seemore:hover {
-  background-color: #B3B6C1;
-  color: #ffff;
-}
-
 .popular-musics-page .box-carousel-musics .carousel {
   border-radius: 17px;
   padding: 5px;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators button {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1778,7 +1870,11 @@ header .container .btn-explore {
   opacity: 0.6;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;

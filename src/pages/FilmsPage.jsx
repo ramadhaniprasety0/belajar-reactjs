@@ -13,20 +13,20 @@ const FilmsPage = () => {
          <div>
             <Container >
               <Row className="box-carousel-films  d-flex justify-content-center">
-                <h1>Popular Film on FindFun</h1>
+                <h1 className="mt-4"><b>Film Populer di FindFun</b></h1>
                 <CarouselComponentFilm className="rounded-4" />
               </Row>
-              <Row className="box-populer-films p-3 m-1 mt-4" >
-                <h1 className="text-white">Film Hits</h1>
+              <Row className="box-populer-films p-3 m-1 mt-5" >
+                <h1><b>Film Hits</b></h1>
                 <PopularComponentFilm />
               </Row>
-              <Row>
-                <h1 className="text-black pt-4">Whats Going On</h1>
+              <Row className="box-berita mt-5">
+                <h1><b>Berita hari ini</b></h1>
                 <NewsFimlComponen />
               </Row>
             </Container>
          </div>
-      </div>
+      </div>  
   )
 }
 

@@ -46,8 +46,8 @@ const NavbarComponents = () => {
                     <div className="search-box position-relative">
                       <input
                         type="text"
-                        className="form-control text-white pe-5"
-                        placeholder="Search movies, tv shows, artist, etc."
+                        className="form-control pe-5"
+                        placeholder="Cari film, musik, artis, dll"
                       />
                       <i className="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y pe-3"></i>
                     </div>
@@ -56,7 +56,7 @@ const NavbarComponents = () => {
                     <div className="mx-2 fs-5">|</div>
                   </Col>
                   <Col xs="auto">
-                    <NavLink to="/Login" className="text-decoration-none btn text-white">
+                    <NavLink to="/login" className="text-decoration-none btn text-white">
                       <i className="fa-regular fa-user fs-5"></i>
                     </NavLink>
                   </Col>
