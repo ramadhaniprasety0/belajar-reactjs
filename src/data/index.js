@@ -548,7 +548,7 @@ export const BioskopFIlms = [
     image: mendadakdangdut,
     genre: "Musikal",
     title: "Mendadak Dangdut",
-    text: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
+    description: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
     date: "30",
     month: "Apr",
     year: "2025"
@@ -559,21 +559,21 @@ export const BioskopFIlms = [
     image: jumbo,
     genre: "Fantasi",
     title: "Jumbo",
-    text: "Jumbo adalah film petualangan dengan genre fantasi animasi Indonesia tahun 2025 yang disutradarai oleh Ryan Adriandhy.",
+    description: "Jumbo adalah film petualangan dengan genre fantasi animasi Indonesia tahun 2025 yang disutradarai oleh Ryan Adriandhy.",
     date: "31",
     month: "Mar",
     year: "2025"
   },
-  {
-    id: 3,
-    image: pengepungan,
-    genre: "Drama-Thriller",
-    title: "Pengepungan di Bukit Duri",
-    text: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
-    date: "17",
-    month: "Apr",
-    year: "2025"
-  }
+  // {
+  //   id: 3,
+  //   image: pengepungan,
+  //   genre: "Drama-Thriller",
+  //   title: "Pengepungan di Bukit Duri",
+  //   description: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
+  //   date: "17",
+  //   month: "Apr",
+  //   year: "2025"
+  // }
 ];
 
 

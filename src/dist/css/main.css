@@ -58,7 +58,7 @@
 
 .navbar .nav-link .active {
   color: var(--primary-color);
-  border: 2px solid #f9503c;
+  border: 2px solid #251551;
 }
 
 .navbar .nav-link .active:hover {
@@ -394,61 +394,89 @@ header .container .btn-explore:hover {
 .homepage .box-hits {
   border-radius: 17px;
   background-color: #9599f6;
-  width: 1286px;
-  margin-top: 50px;
-  margin-left: 5px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 50px auto 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
+/* Judul bagian musik hits */
 .homepage .box-hits h1 {
   margin-left: 5px;
   font-size: 40px;
   font-weight: bold;
-  margin-top: -1px;
-  padding-top: 20px;
   color: #251551;
 }
 
+.homepage .judul-hits {
+  margin: 30px 0 20px 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #251551;
+}
+
+/* Kontainer kartu musik */
+.homepage .card-hits-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Kartu individu */
 .homepage .card-hits {
-  margin-top: 10px;
+  flex: 0 0 auto;
   width: 190px;
   height: 280px;
   background-color: #2e388a;
   border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
 }
 
+/* Gambar dalam kartu */
+.homepage .card-hits img {
+  width: 100%;
+  height: 158px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+}
+
+/* Judul & subjudul kartu */
 .homepage .card-hits h1 {
-  margin-top: -200px;
   font-size: 16px;
   line-height: 0.8;
   font-weight: 500;
   color: #ffffff;
-}
-.homepage .card-hits h2 {
-  margin-top: 6px;
-  font-size: 16px;
-  line-height: 0.8;
-  font-weight: 500;
-  color: #ffffff;
+  margin-top: -5px;
 }
 
+.homepage .card-hits h2 {
+  font-size: 16px;
+  line-height: 0.8;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+/* Deskripsi */
 .homepage .card-hits p {
   font-size: 0.8rem;
   font-weight: 400;
   color: #a7a7a7;
 }
 
-.homepage .card-hits img {
-  width: 100%;
-  height: 158px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
+/* Icon tombol play (jika ada) */
 .homepage .card-hits .link-icon {
   text-decoration: none;
-  color: #1c1a28;
+  color: #ffff;
 }
 
 .homepage .card-hits .icon {
@@ -458,7 +486,7 @@ header .container .btn-explore:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f9503c;
+  background-color: #9599F6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,8 +496,8 @@ header .container .btn-explore:hover {
 
 .homepage .card-hits .icon:hover {
   font-size: 20px;
-  background-color: #1c1a28;
-  color: #f9503c;
+  background-color: #ffff;
+  color: #9599F6;
   transition: all 0.3s ease;
 }
 
@@ -485,18 +513,20 @@ header .container .btn-explore:hover {
   inset: 0;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 17px;
-  transform: translate3d(0, 0, 0) scale(0.95);
+  transform: scale(0.95);
   filter: blur(20px);
 }
 
+/* Kartu film populer */
 .homepage .card-film {
   width: 100%;
   height: 100%;
-  border: inherit;
-  overflow: hidden;
   border-radius: 17px;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Gambar film */
 .homepage .card-film .card-film-img {
   width: 100%;
   height: 100%;
@@ -515,6 +545,7 @@ header .container .btn-explore:hover {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/* Caption saat hover */
 .homepage .card-film .card-film-caption {
   position: absolute;
   top: 0;
@@ -804,7 +835,7 @@ header .container .btn-explore:hover {
 
 .homepage-films .news-card .news-caption {
   padding: 16px;
-  background: linear-gradient(to bottom, #635c8e, #1c1a282c);
+ background-color: #9599f6;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -860,10 +891,92 @@ header .container .btn-explore:hover {
   width: 254px;
   height: 384px;
 }
+
 */ .homepage-films h1 {
   font-size: 40px;
   color: #251551;
   font-weight: bold;
+}
+
+.homepage-films .box-bioskop-terbaru {
+  border-radius: 17px;
+  background-color: #8e97fd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homepage-films .bioskop-film-row {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  height: 100%;
+  max-height: 320px;
+}
+
+.homepage-films .bioskop-film-img-col,
+.homepage-films .bioskop-film-info-col {
+  width: 50%;
+}
+
+.homepage-films .bioskop-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-films .bioskop-film-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.homepage-films .bioskop-film-info-card {
+  background-color: #5b5fe3;
+  color: white;
+  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.homepage-films .bioskop-film-genre {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid white;
+  display: inline-block;
+  width: auto;
+  max-width: fit-content;
+}
+
+.homepage-films .bioskop-film-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.homepage-films .bioskop-film-desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-films .bioskop-film-link {
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+}
+
+.homepage-films .bioskop-arrow {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.homepage-films .bioskop-film-link:hover .bioskop-arrow {
+  transform: translateX(5px);
 }
 
 /* CSS PAGE MUSICS */
@@ -1058,13 +1171,13 @@ header .container .btn-explore:hover {
   text-decoration: none;
 }
 
-.card-music:hover .card-music-caption {
+.homepage-musics .card-music:hover .card-music-caption {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.card-music:hover .card-music-img {
+.homepage-musics .card-music:hover .card-music-img {
   scale: 1.2;
   rotate: 5deg;
   filter: blur(40px);
@@ -1845,7 +1958,7 @@ header .container .btn-explore:hover {
 .popular-musics-page .box-carousel-musics .carousel-caption .btn-seemore {
   color: #ffffff;
   text-decoration: none;
-  background-color: #f9503c;
+  background-color: #8e97fd;
   border-radius: 30px;
   padding: 4px 20px;
   font-weight: 400;
