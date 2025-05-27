@@ -362,74 +362,93 @@ header .container .btn-explore:hover {
   opacity: 0.9;
 }
 
-.edit-profile-page-wrapper {
+.edit-profile-wrapper {
   padding-top: 80px;
   background-color: #dcddff;
+  padding-bottom: 30px;
 }
 
-.profile-container {
+.edit-profile-wrapper .edit-profile-page-wrapper {
+  padding-top: 80px;
+  background-color: #dcddff;
+  padding-bottom: 30px;
+}
+
+.edit-profile-wrapper .profile-container {
   background-color: #9599F6;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px;
+  border-radius: 12px;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 70px 100px;
 }
 
-.profile-header-v2 {
+.edit-profile-wrapper .profile-header-v2 {
   background-color: #dcedc8;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
   margin-left: -12px;
   margin-right: -12px;
   margin-top: -24px;
   width: calc(100% + 24px);
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-header-v2 h5 {
+.edit-profile-wrapper .profile-image-wrapper {
+  z-index: 2;
+}
+
+.edit-profile-wrapper .profile-img-border {
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.edit-profile-wrapper .profile-header-v2 h5 {
   font-weight: 600;
   color: #333;
 }
 
-.ubah-button {
+.edit-profile-wrapper .ubah-button {
   font-size: 0.85em;
   border-radius: 8px;
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #DCDDFF;
+  border: 1px solid #000000; /* --- Border Hitam --- */
   color: #555;
 }
 
-.ubah-button:hover {
+.edit-profile-wrapper .ubah-button:hover {
   background-color: #f0f0f0;
 }
 
 /* GAYA FORM */
-.form-label-custom {
+.edit-profile-wrapper .form-label-custom {
   font-weight: 500;
-  color: #444;
-  font-size: 0.95em;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   text-align: left !important;
   padding-left: 0;
 }
 
 /* GAYA INPUT DEFAULT */
-.profile-form .default-input {
-  border: 1px solid #0000;
+.edit-profile-wrapper .profile-form .default-input {
+  border: 1px solid #000000; /* --- Border Hitam --- */
   border-radius: 4px;
   background-color: white !important;
   color: #495057;
   padding: 8px 12px;
   font-size: 1rem;
+  width: 100%;
 }
 
-.profile-form .default-input:focus {
-  border-color: #8e97fd;
-  box-shadow: 0 0 0 0.2rem rgba(142, 151, 253, 0.25);
+.edit-profile-wrapper .profile-form .default-input:focus {
+  border-color: #000000; 
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
-/* GAYA SELECT DEFAULT */
-.profile-form .custom-select-v3 {
-  border: 1px solid #ced4da;
+.edit-profile-wrapper .profile-form .custom-select-v3 {
+  border: 1px solid #000000;
   border-radius: 4px;
   background-color: white !important;
   color: #495057;
@@ -442,32 +461,40 @@ header .container .btn-explore:hover {
   appearance: none;
 }
 
-.profile-form .custom-select-v3:focus {
-  border-color: #8e97fd;
-  box-shadow: 0 0 0 0.2rem rgba(142, 151, 253, 0.25);
+.edit-profile-wrapper .profile-form .custom-select-v3:focus {
+  border-color: #000000; 
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1); 
 }
 
 /* GAYA TOMBOL GANTI */
-.ganti-button.v4 {
-  background-color: #f0f2f5;
-  border: 1px solid #ccc;
+.edit-profile-wrapper .ganti-button.v4 {
+  background-color: #DCDDFF;
+  border: 1px solid #000000; 
   color: #333;
   border-radius: 4px;
   font-weight: 600;
-  padding: 8px 15px;
+  padding: 8px 12px;
   transition: all 0.2s ease;
   font-size: 0.9em;
-  margin-left: 10px; /* Adjust spacing from input */
+  min-width: 140px;
+  text-align: center;
 }
 
-.ganti-button.v4:hover {
+.edit-profile-wrapper .ganti-button.v4:hover {
   background-color: #e0e2e5;
 }
 
-/* GAYA TOMBOL SIMPAN */
-.simpan-button.v3 {
-  background-color: #ffff; /* Solid background color */
-  border: 1px solid #8e97fd;
+.edit-profile-wrapper .profile-form .row.align-items-center > .col,
+.edit-profile-wrapper .profile-form .row.align-items-center > [class*="col-"] {
+  padding-right: 5px;
+}
+.edit-profile-wrapper .profile-form .row.align-items-center > .col-auto {
+  padding-left: 5px;
+}
+
+.edit-profile-wrapper .simpan-button.v3 {
+  background-color: #ffff;
+  border: 1px solid #ffff; 
   color: #8e97fd;
   font-weight: 700;
   padding: 10px 50px;
@@ -475,9 +502,10 @@ header .container .btn-explore:hover {
   transition: all 0.2s ease;
 }
 
-.simpan-button.v3:hover {
-  background-color: #7985e0;
-  border-color: #7985e0;
+.edit-profile-wrapper .simpan-button.v3:hover {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #7985e0;
 }
 
 .homepage {
