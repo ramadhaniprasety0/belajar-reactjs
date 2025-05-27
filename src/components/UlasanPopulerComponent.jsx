@@ -3,7 +3,6 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { UlasanPopulerData } from '../data/index';
-// Tidak perlu impor ikon jika menggunakan Bootstrap Icons via CSS
 
 const UlasanPopulerComponent = () => {
   return (

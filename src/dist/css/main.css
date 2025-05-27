@@ -23,8 +23,9 @@
 /* NAVBAR */
 .navbar {
   background-color: #8e97fd;
-  color: var(--navbar-color);
+  color: var(--navbar-color); 
   position: sticky;
+  top: 0; 
   padding: 15px 0 15px 0;
   width: 100%;
   transition: all 0.3s ease;
@@ -34,22 +35,25 @@
 .navbar.color-active {
   position: fixed;
   background-color: #8e97fd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar.color-active .nav-link a:hover {
-  color: #1c1a28;
+  color: #ffff;
 }
 
 .navbar.color-active .nav-link .active {
   border: 2px solid #1c1a28;
+  color: #1c1a28; 
 }
 
 .navbar .nav-link a {
-  color: var(--navbar-color);
+  color: var(--navbar-color, white); /* Default ke putih jika var tidak ada */
   border-radius: 0.5rem;
   padding: 5px 10px 5px 10px;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.2s ease; /* Transisi hover */
 }
 
 .navbar .nav-link a:hover {
@@ -57,18 +61,18 @@
 }
 
 .navbar .nav-link .active {
-  color: var(--primary-color);
+  color: var(--primary-color, #251551); /* Default ke #251551 */
   border: 2px solid #251551;
 }
 
 .navbar .nav-link .active:hover {
-  color: var(--primary-color);
+  color: var(--primary-color, #251551);
 }
 
 .search-box input {
   width: 314px;
   background-color: #ffffff;
-  border: 1px solid var(--navbar-color);
+  border: 1px solid var(--navbar-color, white);
 }
 
 .search-box input::placeholder {
@@ -85,6 +89,62 @@
   box-shadow: #251551 0px 0px 0px 2px;
   background-color: #ffff;
   color: #251551;
+  border-color: #251551; /* Tambahkan border color saat focus */
+}
+
+/* --- CSS PROFILE DROPDOWN (DIMODIFIKASI) --- */
+
+/* Menghilangkan panah default pada dropdown */
+.navbar .profile-dropdown-container .dropdown-toggle::after {
+  display: none;
+}
+
+/* Mengatur style tombol dropdown (gambar) agar tidak ada background/border */
+.navbar .profile-dropdown-container .dropdown-toggle,
+.navbar .profile-dropdown-container .dropdown-toggle:focus,
+.navbar .profile-dropdown-container .dropdown-toggle:active {
+  padding: 0 !important; /* Hapus padding */
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important; /* Hapus bayangan focus */
+}
+
+/* Memberi border pada gambar profil (opsional) */
+.navbar .profile-pic-dropdown {
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+
+/* --- GAYA BARU UNTUK MENU DROPDOWN --- */
+.navbar .profile-dropdown-container .dropdown-menu {
+  margin-top: 10px !important; /* Jarak dari navbar */
+  border-radius: 12px; /* Sudut lebih tumpul */
+  border: none; /* Hapus border */
+  background-color: #8E97FD; /* Warna ungu muda (sesuai gambar) */
+  box-shadow: none; /* Hapus bayangan */
+  min-width: 160px; /* Lebar minimum */
+  padding: 10px 0; /* Padding atas-bawah */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* --- GAYA BARU UNTUK ITEM DROPDOWN --- */
+.navbar .profile-dropdown-container .dropdown-item {
+  color: rgb(0, 0, 0); 
+  padding: 10px 20px; 
+  text-decoration: none;
+  display: block;
+  background-color: transparent; 
+  border: none;
+  font-style: italic; 
+  font-size: 1.1rem; 
+  font-weight: 500; 
+  transition: background-color 0.2s ease;
+}
+
+.navbar .profile-dropdown-container .dropdown-item:hover,
+.navbar .profile-dropdown-container .dropdown-item:focus {
+  background-color: #a0a8f0; 
+  color: white; 
 }
 /* NAVBAR */
 
@@ -300,6 +360,124 @@ header .container .btn-explore:hover {
   width: 150%;
   margin: 2rem -25% 2rem -25%;
   opacity: 0.9;
+}
+
+.edit-profile-page-wrapper {
+  padding-top: 80px;
+  background-color: #dcddff;
+}
+
+.profile-container {
+  background-color: #9599F6;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.profile-header-v2 {
+  background-color: #dcedc8;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -24px;
+  width: calc(100% + 24px);
+}
+
+.profile-header-v2 h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.ubah-button {
+  font-size: 0.85em;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #555;
+}
+
+.ubah-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* GAYA FORM */
+.form-label-custom {
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95em;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left !important;
+  padding-left: 0;
+}
+
+/* GAYA INPUT DEFAULT */
+.profile-form .default-input {
+  border: 1px solid #0000;
+  border-radius: 4px;
+  background-color: white !important;
+  color: #495057;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.profile-form .default-input:focus {
+  border-color: #8e97fd;
+  box-shadow: 0 0 0 0.2rem rgba(142, 151, 253, 0.25);
+}
+
+/* GAYA SELECT DEFAULT */
+.profile-form .custom-select-v3 {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: white !important;
+  color: #495057;
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  appearance: none;
+}
+
+.profile-form .custom-select-v3:focus {
+  border-color: #8e97fd;
+  box-shadow: 0 0 0 0.2rem rgba(142, 151, 253, 0.25);
+}
+
+/* GAYA TOMBOL GANTI */
+.ganti-button.v4 {
+  background-color: #f0f2f5;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 8px 15px;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  margin-left: 10px; /* Adjust spacing from input */
+}
+
+.ganti-button.v4:hover {
+  background-color: #e0e2e5;
+}
+
+/* GAYA TOMBOL SIMPAN */
+.simpan-button.v3 {
+  background-color: #ffff; /* Solid background color */
+  border: 1px solid #8e97fd;
+  color: #8e97fd;
+  font-weight: 700;
+  padding: 10px 50px;
+  border-radius: 25px;
+  transition: all 0.2s ease;
+}
+
+.simpan-button.v3:hover {
+  background-color: #7985e0;
+  border-color: #7985e0;
 }
 
 .homepage {
@@ -1786,7 +1964,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .bermanfaat {
-  margin-left: auto; /* Push Bermanfaat to the right */
+  margin-left: auto;
   margin-right: 0;
 }
 

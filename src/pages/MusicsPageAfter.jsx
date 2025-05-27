@@ -12,7 +12,9 @@ const MusicsPageAfter = () => {
       <div>
         <Container>
           <Row className="box-carousel-musics d-flex justify-content-center">
-            <h1>Populer di FindFun</h1>
+            <h1 className="mt-4">
+              <b>Film Populer di FindFun</b>
+            </h1>
             <CarouselComponentMusic className="rounded-4" />
           </Row>
 

@@ -12,6 +12,8 @@ import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
 
+import loggedInUsers from "../assets/img/userlogin.png";
+
 import Artist1 from "../assets/img/artist/sza_artist.png";
 
 import Pemeran1 from "../assets/img/pemeran/the_nun1.png";
@@ -657,6 +659,20 @@ export const navLinks = [
     path: "Musics",
     text: "Musics",
   },
+];
+
+export const loggedInUser = {
+  name: "Alysya Arbani",
+  username: "alysyaar_",
+  email: "alysya.a@example.com",
+  gender: "Wanita",
+  birthDate: "2000-05-15",
+  profilePic: loggedInUsers 
+};
+
+export const dropdownLinks = [
+  { id: "dd1", path: "/users/profile", text: "Edit Profile" },
+  { id: "dd4", path: "/", text: "Logout" },
 ];
 
 export const semuaKelas = [
