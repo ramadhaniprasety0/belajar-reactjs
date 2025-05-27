@@ -61,6 +61,7 @@ import Music1 from "../assets/img/musics/music4.png";
 import Music2 from "../assets/img/musics/music3.png";
 import Music3 from "../assets/img/musics/music2.png";
 import Music4 from "../assets/img/musics/music1.png";
+import Music5 from "../assets/img/musics/music5.png";
 
 // Films Bioskop
 import jumbo from "../assets/img/filmbioskop/jumbo.png";
@@ -539,6 +540,67 @@ You're my chemical hype boy...`,
     spotifyUrl: 'https://open.spotify.com/track/example',
     appleMusicUrl: 'https://music.apple.com/us/album/example',
     ytMusicUrl: 'https://music.youtube.com/watch?v=example'
+  }
+];
+
+// src/data/index.js
+
+export const UlasanPopulerData = [
+  {
+    id: 1,
+    title: "Oppenheimer",
+    year: "2023",
+    director: "Christopher Nolan",
+    image: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    reviewer: "Icha",
+    avatarColor: "green",
+    rating: "8/10",
+    text: "Ini mungkin film yang paling dilebih-lebihkan tahun ini. Seperti film biografi Amerika lainnya, film ini mengagungkan subjeknya. Menurut Nolan, Oppenheimer adalah orang terpenting yang pernah",
+    likes: "1.1 rb",
+    dislikes: "100",
+    type: "movie"
+  },
+  {
+    id: 2,
+    title: "Barbie",
+    year: "2023",
+    director: "Greta Gerwig",
+    image: Films03,
+    reviewer: "Alysya",
+    avatarColor: "yellow",
+    rating: "7/10",
+    text: "Membuat vibe yang sangat kuat soal pentingnya kenal diri sendiri.",
+    likes: "1.3 rb",
+    dislikes: "100",
+    type: "movie"
+  },
+  {
+    id: 3,
+    title: "Kill Bill",
+    artist: "SZA",
+    year: "2022",
+    image: Music1,
+    reviewer: "Farah",
+    avatarColor: "lightgreen",
+    rating: "9/10",
+    text: "Sebuah Banger Utama untuk Jiwa, \"Kill Bill\" oleh SZA hadir dengan Melodi yang menarik dan Lirik yang Relatable, menciptakan suasana Moody dan",
+    likes: "1.1 rb",
+    dislikes: "100",
+    type: "music"
+  },
+  {
+    id: 4,
+    title: "Mangu",
+    artist: "Fourtwnty",
+    year: "2023",
+    image: Music5,
+    reviewer: "Indah",
+    avatarColor: "pink",
+    rating: "10/10",
+    text: "Cocok untuk didengarkan saat momen-momen sunyi, saat ingin menenangkan pikiran, atau sekadar menikmati suasana sore yang damai.",
+    likes: "1.3 rb",
+    dislikes: "100",
+    type: "music"
   }
 ];
 

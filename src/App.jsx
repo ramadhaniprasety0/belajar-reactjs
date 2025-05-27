@@ -3,12 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./MainLayout";
 
 import HomePage from "./pages/HomePage";
+import HomePageAfter from "./pages/HomePageAfter";
 import LoginPage from "./pages/LoginPage";
 import RegisPage from "./pages/RegisterPage";
 import FilmsPage from "./pages/FilmsPage";
+import FilmsPageAfter from "./pages/FilmsPageAfter";
 import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
 import MusicsPage from "./pages/MusicsPage";
+import MusicsPageAfter from "./pages/MusicsPageAfter";
 import DetailMusicsPage from "./pages/DetailMusicsPage";
 import PopulerMusicsPage from "./pages/PopulerMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
@@ -24,6 +27,9 @@ function App() {
       {/* Semua halaman lain dengan layout lengkap */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/users" element={<HomePageAfter />} />
+        <Route path="/users/films" element={<FilmsPageAfter />} />
+        <Route path="/users/musics" element={<MusicsPageAfter />} />
         <Route path="/films" element={<FilmsPage />} />
         <Route path="/musics" element={<MusicsPage />} />
         <Route path="/musics/:id" element={<DetailMusicsPage />} />
