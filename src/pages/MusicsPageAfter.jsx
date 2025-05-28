@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import CarouselComponentMusic from "../components/CarouselComponentMusic";
 import PopularComponentMusic from "../components/PopularComponentMusic";
 import KonserMusicComponent from "../components/KonserMusicComponent";
+import UlasanPopulerComponent from "../components/UlasanPopulerComponent"; 
 import NewsMusicComponent from "../components/NewsMusicComponent";
 
-const MusicsPage = () => {
+const MusicsPageAfter = () => {
   return (
     <div className="w-100 min-vh-100 homepage-musics">
       <div>
@@ -37,16 +38,18 @@ const MusicsPage = () => {
             <PopularComponentMusic limit={4} />
           </Row>
 
-          <Row className="box-berita mt-5">
-            <h1>
-              <b>Berita hari ini</b>
-            </h1>
-            <NewsMusicComponent />
-          </Row>
+          <Row className="box-hots-news p-3">
+              <Col lg={12} className="mb-3">
+                <h1>
+                  <b>Ulasan Populer</b>
+                </h1>
+              </Col>
+              <UlasanPopulerComponent />
+            </Row>
         </Container>
       </div>
     </div>
   );
 };
 
-export default MusicsPage;
+export default MusicsPageAfter;

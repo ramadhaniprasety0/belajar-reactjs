@@ -24,7 +24,13 @@ const LoginForm = () => {
         />
       </div>
 
-      <button className="btn btn-primary rounded-pill px-4 py-2 mb-3 d-block mx-auto">Masuk</button>
+      <Link 
+        to="/users" 
+        className="btn btn-primary rounded-pill px-4 py-2 mb-3 d-block mx-auto" 
+        role="button"
+      >
+        Masuk
+      </Link>
 
       <hr />
       <p className="small">

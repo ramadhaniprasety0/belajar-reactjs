@@ -15,6 +15,7 @@ const NewsMusicComponent = () => {
                     <img src={hots.brandnews} alt="" srcset="" />
                     <h5>{hots.title}</h5>
                     <p>{hots.desc}</p>
+                    <a href="#">Lihat Lebih Banyak</a>
                   </div>
                     <p className="text-white">{hots.time}</p>
                 </div>

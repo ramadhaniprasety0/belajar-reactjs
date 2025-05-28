@@ -1,13 +1,9 @@
 import { Container, Row, Col, Carousel } from "react-bootstrap";
-import HeroImage from "../assets/img/hero.png";
-import {
-  kelasTerbaru,
-  carouselItems,
+import {carouselItems,
   musickHits,
-  hotsNews,
-  filmsTerbaru,
 } from "../data/index";
 import PopularComponentFilm from "../components/PopularComponentFilm";
+import UlasanPopulerComponent from "../components/UlasanPopulerComponent"; 
 
 const CarouselComponent = ({ carouselItems }) => {
   return (
@@ -36,32 +32,7 @@ const CarouselComponent = ({ carouselItems }) => {
   );
 };
 
-const NewsComponent = ({ hotsNews }) => {
-  return (
-    <>
-      {hotsNews.map((hots, index) => {
-        return (
-          <Col lg={12} key={index} className="mb-4">
-            <div className="news-card d-flex">
-              <img src={hots.image} alt="NewsBrand" className="img-brand" />
-              <div className="news-caption d-flex flex-column justify-content-between">
-                <div>
-                  <img src={hots.brandnews} alt="" srcset="" />
-                  <h5>{hots.title}</h5>
-                  <p>{hots.desc}</p>
-                  <a href="#">Lihat Lebih Banyak</a>
-                </div>
-                <p className="text-white">{hots.time}</p>
-              </div>
-            </div>
-          </Col>
-        );
-      })}
-    </>
-  );
-};
-
-const HomePage = () => {
+const HomePageAfter = () => {
   return (
     <div>
       <header className="w-100 min-vh-100 d-flex align-items-center justify-content-center">
@@ -133,10 +104,10 @@ const HomePage = () => {
             <Row className="box-hots-news p-3">
               <Col lg={12} className="mb-3">
                 <h1>
-                  <b>Berita hari ini</b>
+                  <b>Ulasan Populer</b>
                 </h1>
               </Col>
-              <NewsComponent hotsNews={hotsNews} />
+              <UlasanPopulerComponent />
             </Row>
           </Container>
         </div>
@@ -145,4 +116,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageAfter;

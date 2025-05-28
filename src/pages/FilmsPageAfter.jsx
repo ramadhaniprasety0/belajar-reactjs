@@ -2,10 +2,11 @@ import ErrorComponents from "../components/ErrorComponents";
 import { Container, Row, Col } from "react-bootstrap";
 import CarouselComponentFilm from "../components/CarouselComponentFilm";
 import PopularComponentFilm from "../components/PopularComponentFilm";
+import UlasanPopulerComponent from "../components/UlasanPopulerComponent";
 import NewsFimlComponen from "../components/NewsFimlComponen";
 import FilmBioskopComponent from "../components/FilmBioskopComponent"; 
 
-const FilmsPage = () => {
+const FilmsPageAfter = () => {
   return (
     <div className="w-100 min-vh-100 homepage-films">
       <div>
@@ -35,16 +36,18 @@ const FilmsPage = () => {
           </Row>
 
           {/* Berita Hari Ini */}
-          <Row className="box-berita mt-5">
-            <h1>
-              <b>Berita hari ini</b>
-            </h1>
-            <NewsFimlComponen />
-          </Row>
+            <Row className="box-hots-news p-3">
+              <Col lg={12} className="mb-3">
+                <h1>
+                  <b>Ulasan Populer</b>
+                </h1>
+              </Col>
+              <UlasanPopulerComponent />
+            </Row>
         </Container>
       </div>
     </div>
   );
 };
 
-export default FilmsPage;
+export default FilmsPageAfter;
