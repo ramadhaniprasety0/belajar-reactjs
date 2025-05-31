@@ -2596,6 +2596,11 @@ header .container .btn-explore:hover {
   border-radius: 17px;
 }
 
+.popular-musics-page .box-carousel-musics .carousel-caption img {
+  width: 350px;
+  height: 180px;
+}
+
 .popular-musics-page .box-carousel-musics .carousel-caption {
   width: 50%;
   position: absolute;
@@ -2629,10 +2634,21 @@ header .container .btn-explore:hover {
   text-decoration: none;
   background-color: #8e97fd;
   border-radius: 30px;
-  padding: 4px 20px;
+  padding: 4px 20px 4px 20px;
   font-weight: 400;
   font-size: 20px;
+  font-style: italic;
+  width: 110px;
   transition: all 0.3s ease;
+}
+
+.popular-musics-page .box-carousel-musics .carousel-caption .btn-seemore:hover {
+  background-color: #251551;
+  color: white;
+}
+
+.popular-musics-page .box-carousel-musics .carousel img {
+  border-radius: 17px;
 }
 
 .popular-musics-page .box-carousel-musics .carousel {
@@ -2640,11 +2656,13 @@ header .container .btn-explore:hover {
   padding: 5px;
 }
 
-.popular-musics-page
-  .box-carousel-musics
-  .carousel
-  .carousel-indicators
-  button {
+.popular-musics-page .box-carousel-musics .carousel .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-musics-page .box-carousel-musics .carousel .carousel-indicators button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -2652,11 +2670,7 @@ header .container .btn-explore:hover {
   opacity: 0.6;
 }
 
-.popular-musics-page
-  .box-carousel-musics
-  .carousel
-  .carousel-indicators
-  .active {
+.popular-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -2795,4 +2809,313 @@ header .container .btn-explore:hover {
 
 .popular-musics-page .music-popular-controls .play-button:hover i {
   color: #ff5b5b;
+}
+
+.konser-musics-page {
+  padding-top: 80px;
+  background-color: #dcddff;
+  padding-bottom: 40px;
+}
+
+/* === CAROUSEL SECTION === */
+.konser-musics-page .box-carousel-musics h1 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.konser-musics-page .box-carousel-musics img {
+  width: 100%;
+  border-radius: 17px;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption img {
+  width: 350px;
+  height: 180px;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 47%
+  );
+  border-radius: 17px;
+  padding: 48px;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a7a7a7;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption .btn-seemore {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #8e97fd;
+  border-radius: 30px;
+  padding: 4px 20px 4px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  width: 110px;
+  transition: all 0.3s ease;
+}
+
+.konser-musics-page .box-carousel-musics .carousel-caption .btn-seemore:hover {
+  background-color: #251551;
+  color: white;
+}
+
+.konser-musics-page .box-carousel-musics .carousel img {
+  border-radius: 17px;
+}
+
+.konser-musics-page .box-carousel-musics .carousel {
+  border-radius: 17px;
+  padding: 5px;
+}
+
+.konser-musics-page .box-carousel-musics .carousel .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.konser-musics-page .box-carousel-musics .carousel .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.konser-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+/* === FILTER BUTTONS === */
+.konser-musics-page .filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 40px;
+}
+
+.konser-musics-page .filter-buttons button {
+  background-color: transparent;
+  border: 2px solid #2e388a;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e388a;
+  transition: all 0.3s ease-in-out;
+}
+
+.konser-musics-page .filter-buttons .btn.active {
+  background-color: #2e388a;
+  color: #ffffff;
+  border-color: #2e388a;
+  font-weight: 600;
+}
+
+.konser-musics-page .filter-buttons button:hover,
+.konser-musics-page .filter-buttons button.active {
+  background-color: #2e388a;
+  color: #ffffff;
+}
+
+.konser-musics-page .konser-item-card.new-layout {
+  background-color: #7E83DF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  color: white;
+}
+
+.konser-musics-page .konser-item-card.new-layout:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.konser-musics-page .konser-image-section {
+  flex: 0 0 160px;
+  align-self: stretch;
+}
+
+.konser-musics-page .konser-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.konser-musics-page .konser-details-section {
+  flex-grow: 1;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.konser-musics-page .konser-detail-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.konser-musics-page .konser-row-1,
+.konser-musics-page .konser-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.konser-musics-page .konser-row-2 {
+    align-items: center;
+}
+
+
+.konser-musics-page .konser-item-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFECCC;
+  margin-right: 10px;
+  line-height: 1.3;
+  flex-grow: 1;
+}
+
+.konser-musics-page .badge-tiket-habis,
+.konser-musics-page .badge-tiket-gratis {
+  background-color: #DCDDFF;
+  color: #2F3881;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.konser-musics-page .konser-item-date-location {
+  font-size: 16px;
+  color: #E0E0FF;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.konser-musics-page .konser-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2E388A;
+  margin-bottom: 0;
+  text-align: right;
+  flex-shrink: 0;
+  padding-left:10px;
+}
+
+.konser-musics-page .konser-item-description {
+  font-size: 18px;
+  color: #F0F0FF;
+  line-height: 1.4;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+/* --- PERUBAHAN PADA BAGIAN TOMBOL --- */
+.konser-musics-page .konser-button-section {
+  flex: 0 0 180px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 15px; 
+}
+
+.konser-musics-page .btn-amankan-tiket { 
+  background-color: #4A4E9B !important;
+  border-color: #4A4E9B !important;
+  color: white !important;
+  border-radius: 25px; 
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  padding: 10px 25px;
+  width: auto;
+  height: auto; 
+  transition: background-color 0.2s ease;
+}
+
+.konser-musics-page .btn-amankan-tiket:hover {
+  background-color: #3A3D7A !important;
+  border-color: #3A3D7A !important;
+}
+
+@media (max-width: 991.98px) { 
+    .konser-musics-page .konser-image-section {
+        flex: 0 0 140px; 
+    }
+    .konser-musics-page .konser-button-section {
+        flex: 0 0 150px; 
+        padding: 10px;
+    }
+     .konser-musics-page .btn-amankan-tiket {
+        font-size: 0.8rem;
+        padding: 8px 20px; /* Sesuaikan padding di tablet */
+     }
+     .konser-musics-page .konser-item-title {
+        font-size: 1rem;
+     }
+}
+
+
+@media (max-width: 767.98px) {
+  .konser-musics-page .konser-item-card.new-layout {
+    flex-direction: column;
+    height: auto;
+  }
+  .konser-musics-page .konser-image-section {
+    width: 100%;
+    height: 180px; 
+    flex-basis: auto;
+  }
+  .konser-musics-page .konser-details-section {
+    padding: 15px;
+  }
+  .konser-musics-page .konser-item-description {
+    -webkit-line-clamp: 3;
+  }
+  .konser-musics-page .konser-button-section {
+    width: 100%;
+    flex-basis: auto;
+    padding: 10px 15px 15px 15px; 
+    justify-content: center; /* Pastikan tombol di tengah kolomnya */
+  }
+  .konser-musics-page .btn-amankan-tiket {
+    height: auto; 
+    padding: 10px 20px;
+    width: auto; /* Di mobile, biarkan tombol tidak full width jika tidak perlu */
+    max-width: 250px; /* Batasi lebar maksimum tombol di mobile */
+  }
 }

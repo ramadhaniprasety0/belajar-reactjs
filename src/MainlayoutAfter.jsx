@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import NavbarComponentAfter from './components/NavbarComponentAfter';
 import FooterComponent from './components/FooterComponents';
 
-const MainLayout = () => {
+const MainLayoutAfter = () => {
   return (
     <>
       <NavbarComponentAfter />
@@ -13,4 +13,4 @@ const MainLayout = () => {
   );
 };
 
-export default MainLayout;
+export default MainLayoutAfter;

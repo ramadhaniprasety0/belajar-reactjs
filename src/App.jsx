@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 import MainLayoutAfter from "./MainLayoutAfter";
-
 import HomePage from "./pages/HomePage";
 import HomePageAfter from "./pages/HomePageAfter";
 import LoginPage from "./pages/LoginPage";
@@ -16,6 +15,7 @@ import ProfilePage from "./pages/ProfilePage";
 import MusicsPageAfter from "./pages/MusicsPageAfter";
 import DetailMusicsPage from "./pages/DetailMusicsPage";
 import PopulerMusicsPage from "./pages/PopulerMusicsPage";
+import KonserMusicsPage from "./pages/KonserMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 
@@ -33,6 +33,7 @@ function App() {
         <Route path="/musics" element={<MusicsPage />} />
         <Route path="/musics/:id" element={<DetailMusicsPage />} />
         <Route path="/populer" element={<PopulerMusicsPage />} />
+        <Route path="/konser" element={<KonserMusicsPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
       </Route>

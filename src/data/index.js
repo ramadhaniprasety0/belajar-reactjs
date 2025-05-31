@@ -284,29 +284,50 @@ export const filmsTerbaru = [
 export const konserTerbaru = [
   {
     id: 1,
-    image: Films01,
-    title: "One Piece",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    image: Films01, 
+    title: "NCT DREAM TOUR THE DREAM SHOW 4",
+    dateLocation: "26-27 September 2025 • Jakarta Internasional Stadium",
+    description: "NCT Dream akan gelar konser NCT DREAM TOUR THE DREAM SHOW 4 pada 27&28 September 2025 di Jakarta International Stadium",
+    priceRange: "Rp 1.200.000 - Rp. 2.800.000",
+    status: "Tiket Tersedia", 
   },
   {
     id: 2,
-    image: Films02,
-    title: "Everything Everywhere All at Once",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    image: Films02, // Ganti dengan variabel gambar Anda
+    title: "Pesta Bebas Berselancar",
+    dateLocation: "15 Juni 2024 • Stadion Pakansari, Cibinong",
+    description: "Waktunya BerpestaRia merupakan festival musik tahunan di Cikarang, Bekasi, Bandung yang berisi pertunjukan musik, seni, dan budaya.",
+    priceRange: "Tiket Mulai Rp 0", 
+    status: "Tiket Habis",
   },
   {
     id: 3,
-    image: Films03,
-    title: "Barbie",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    image: Films03, // Ganti dengan variabel gambar Anda
+    title: "Ruang Indonesia Festival",
+    dateLocation: "15,16,17 Agustus 2025 • JIEXPO Kemayoran",
+    description: "Ruang Indonesia Festival merupakan Festival dengan berbagai acara seperti Festival Musik, Lomba 17an, Festival Kuliner dalam rangka Kemerdekaan Indonesia yang ke-78.",
+    priceRange: "Rp 99.000 - Rp. 500.000",
+    status: "Tiket Tersedia",
   },
   {
     id: 4,
-    image: Films04,
-    title: "Oppenheimer",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    image: Films04, // Ganti dengan variabel gambar Anda
+    title: "Far East Music City",
+    dateLocation: "17 Mei 2025 • ICE BSD CITY",
+    description: "Far East Music City adalah festival musik yang tidak hanya menghadirkan musisi terbaik dari K-pop, Hip-hop, dan EDM, tetapi juga pengalaman imersif yang menggabungkan seni, teknologi, dan budaya dalam satu acara spektakuler. Festival ini siap menjadi destinasi utama bagi para pecinta musik di Asia dan dunia.",
+    priceRange: "Rp 1.500.000 - Rp. 2.500.000",
+    status: "Tiket Tersedia",
+  },
+  {
+    id: 5,
+    image: Films01, // Ganti dengan variabel gambar Anda
+    title: "Prambanan Jazz 2025",
+    dateLocation: "4, 5, 6 July 2025 • Candi Prambanan, Yogyakarta",
+    description: "Prambanan Jazz Festival (PJF) merupakan acara musik internasional tahunan yang diadakan di pelataran Candi Prambanan, Yogyakarta.",
+    priceRange: "Rp 400.000 - Rp. 2.300.000",
+    status: "Tiket Tersedia",
   }
-]
+];
 
 export const musicsTerbaru = [
   {
