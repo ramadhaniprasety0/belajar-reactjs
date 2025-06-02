@@ -7,6 +7,7 @@ import HomePageAfter from "./pages/HomePageAfter";
 import LoginPage from "./pages/LoginPage";
 import RegisPage from "./pages/RegisterPage";
 import FilmsPage from "./pages/FilmsPage";
+import FormBayarPage from "./pages/FormBayarPage";
 import FilmsPageAfter from "./pages/FilmsPageAfter";
 import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
@@ -17,6 +18,7 @@ import DetailMusicsPage from "./pages/DetailMusicsPage";
 import PopulerMusicsPage from "./pages/PopulerMusicsPage";
 import KonserMusicsPage from "./pages/KonserMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
+import DetailKonserPage from "./pages/DetailKonserPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/musics/:id" element={<DetailMusicsPage />} />
         <Route path="/populer" element={<PopulerMusicsPage />} />
         <Route path="/konser" element={<KonserMusicsPage />} />
+        <Route path="/konser/:id" element={<DetailKonserPage />} />
+        <Route path="/bayar/:id" element={<FormBayarPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
       </Route>

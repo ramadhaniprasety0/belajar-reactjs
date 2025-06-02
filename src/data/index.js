@@ -51,6 +51,17 @@ import Films02 from "../assets/img/films/films2.svg";
 import Films03 from "../assets/img/films/films3.svg";
 import Films04 from "../assets/img/films/films4.svg";
 
+import Konser1 from "../assets/img/konser poster/konser1.png";
+import Konser2 from "../assets/img/konser poster/konser2.png";
+import Konser3 from "../assets/img/konser poster/konser3.png";
+import Konser4 from "../assets/img/konser poster/konser4.png";
+
+import Langsung1 from "../assets/img/foto konser/langsung1.png";
+import Langsung2 from "../assets/img/foto konser/langsung2.png";
+import Langsung3 from "../assets/img/foto konser/langsung3.png";
+import Langsung4 from "../assets/img/foto konser/langsung4.png";
+import peta from "../assets/img/foto konser/peta.png";
+
 //Music Tumnail
 import Music01 from "../assets/img/thumnail/music/musicthumnail1.png";
 import Music02 from "../assets/img/thumnail/music/musicthumnail2.png";
@@ -284,7 +295,7 @@ export const filmsTerbaru = [
 export const konserTerbaru = [
   {
     id: 1,
-    image: Films01, 
+    image: Konser2, 
     title: "NCT DREAM TOUR THE DREAM SHOW 4",
     dateLocation: "26-27 September 2025 • Jakarta Internasional Stadium",
     description: "NCT Dream akan gelar konser NCT DREAM TOUR THE DREAM SHOW 4 pada 27&28 September 2025 di Jakarta International Stadium",
@@ -293,7 +304,7 @@ export const konserTerbaru = [
   },
   {
     id: 2,
-    image: Films02, // Ganti dengan variabel gambar Anda
+    image: Konser1, // Ganti dengan variabel gambar Anda
     title: "Pesta Bebas Berselancar",
     dateLocation: "15 Juni 2024 • Stadion Pakansari, Cibinong",
     description: "Waktunya BerpestaRia merupakan festival musik tahunan di Cikarang, Bekasi, Bandung yang berisi pertunjukan musik, seni, dan budaya.",
@@ -302,7 +313,7 @@ export const konserTerbaru = [
   },
   {
     id: 3,
-    image: Films03, // Ganti dengan variabel gambar Anda
+    image: Konser4, // Ganti dengan variabel gambar Anda
     title: "Ruang Indonesia Festival",
     dateLocation: "15,16,17 Agustus 2025 • JIEXPO Kemayoran",
     description: "Ruang Indonesia Festival merupakan Festival dengan berbagai acara seperti Festival Musik, Lomba 17an, Festival Kuliner dalam rangka Kemerdekaan Indonesia yang ke-78.",
@@ -311,7 +322,7 @@ export const konserTerbaru = [
   },
   {
     id: 4,
-    image: Films04, // Ganti dengan variabel gambar Anda
+    image: Konser3, // Ganti dengan variabel gambar Anda
     title: "Far East Music City",
     dateLocation: "17 Mei 2025 • ICE BSD CITY",
     description: "Far East Music City adalah festival musik yang tidak hanya menghadirkan musisi terbaik dari K-pop, Hip-hop, dan EDM, tetapi juga pengalaman imersif yang menggabungkan seni, teknologi, dan budaya dalam satu acara spektakuler. Festival ini siap menjadi destinasi utama bagi para pecinta musik di Asia dan dunia.",
@@ -1058,3 +1069,61 @@ export const faq = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
   },
 ];
+
+const allKonserDetails = [
+  {
+    id: 1, // ID ini akan dicocokkan dari URL
+    posterImage: Konser2, // Ganti dengan path gambar poster yang lebih besar
+    title: "NCT DREAM TOUR THE DREAM SHOW 4 : DREAM THE FUTURE 2025",
+    startingPrice: "Rp 1.200.000",
+    ratingStars: 3.5,
+    reviewCount: "25 Ulasan",
+    dateTime: {
+      date: "27 dan 28 September 2025",
+      time: "19.00 - 21.00 WIB"
+    },
+    location: {
+      venueName: "Jakarta Internasional Stadium",
+      address: "Jl. Papanggo, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta"
+    },
+    // Deskripsi singkat mungkin bisa diambil dari data list atau ditambahkan di sini
+    description: "NCT Dream akan gelar konser NCT DREAM TOUR THE DREAM SHOW 4 pada 27&28 September 2025 di Jakarta International Stadium.",
+    mapImage: peta, // Ganti dengan path gambar peta
+    livePhotos: [ // Minimal 4 foto
+      Langsung1, Langsung2, Langsung3, Langsung4 // Ganti dengan path gambar live photos
+    ],
+    venueInfo: "Jakarta International Stadium adalah sebuah stadion sepak bola yang berlokasi di Kelurahan Papanggo, Kecamatan Tanjung Priok, Jakarta Utara. Stadion ini merupakan stadion sepak bola pertama di Indonesia yang memiliki fasilitas atap buka-tutup modern dan canggih.",
+    artistInfo: {
+      name: "NCT Dream",
+      image: Artist1 // Ganti dengan path gambar artis
+    },
+    breadcrumb: [ // Breadcrumb untuk navigasi
+        { name: "Konser", path: "/konser" }, // Sesuaikan path dengan routing Anda
+        { name: "Detail", path: "" } // Path kosong menandakan halaman saat ini
+    ]
+  },
+  // ... detail konser lainnya
+];
+
+export const getKonserDetailById = (id) => {
+  return allKonserDetails.find(konser => konser.id == id);
+};
+
+export const getKonserUntukPembayaran = (id) => {
+  if (id == 1) { 
+    return {
+      id: 1,
+      posterImage: Konser2, // Ganti dengan path gambar
+      title: "NCT DREAM TOUR THE DREAM SHOW 4 : DREAM THE FUTURE 2025",
+      location: "Jakarta Internasional Stadium",
+      dateTime: { date: "27 dan 28 September 2025", time: "13:00 - 15:00 WIB" },
+      ticketCategories: [
+        { id: "vip", name: "VIP", price: 2800000, status: "Tersedia", currency: "Rp." },
+        { id: "gold", name: "GOLD", price: 2200000, status: "Tiket Habis", currency: "Rp." },
+        { id: "silver", name: "SILVER", price: 1800000, status: "Tiket Habis", currency: "Rp." },
+        { id: "bronze", name: "BRONZE", price: 1200000, status: "Tiket Habis", currency: "Rp." },
+      ]
+    };
+  }
+  return null;
+};

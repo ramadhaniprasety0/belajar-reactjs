@@ -1578,8 +1578,6 @@ header .container .btn-explore:hover {
   background-color: #ffffff;
   opacity: 1;
 }
-
-/* CSS PAGE FILMS POPULER CINEMA */
 .homepage-musics .box-konser-musics {
   border-radius: 17px;
   background: #808ad5;
@@ -1657,12 +1655,12 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .btn-lihat-semua {
-  background-color: #2e388a; /* Sesuaikan warna biru sesuai gambar */
-  color: #fff; /* Teks putih */
+  background-color: #2e388a;
+  color: #fff;
   border: none;
   padding: 6px 16px;
   font-size: 0.95rem;
-  border-radius: 999px; /* Full rounded */
+  border-radius: 999px;
   font-weight: 500;
   box-shadow: none;
   transition: background-color 0.3s ease;
@@ -1691,11 +1689,30 @@ header .container .btn-explore:hover {
   background: #808ad5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.music-popular-wrapper {
-  border-radius: 16px;
+/* Untuk scroll horizontal */
+.horizontal-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 15px; /* Ruang untuk scrollbar */
+  /* Pastikan tidak ada width 100% yang memaksa item wrap */
 }
 
+.horizontal-scroll-content {
+  display: inline-flex; /* Item berjajar */
+  gap: 16px; /* Jarak antar kartu, sesuaikan dengan p-2 di JSX atau hapus p-2 */
+}
+
+.music-popular-item-scroll {
+  display: inline-block;
+  width: 280px; /* ATUR LEBAR KARTU DI SINI agar tidak terlalu lebar */
+  /* Atau gunakan max-width jika ingin lebih fleksibel tapi ada batas */
+  /* max-width: 280px; */
+  height: auto; /* Biarkan tinggi menyesuaikan konten */
+  vertical-align: top;
+  white-space: normal; /* Normal white-space untuk konten di dalam kartu */
+}
+
+/* Gaya untuk kartu musik populer */
 .music-popular-card {
   background-color: #4b3f6b;
   border-radius: 16px;
@@ -1703,6 +1720,7 @@ header .container .btn-explore:hover {
   color: white;
   display: flex;
   flex-direction: column;
+  height: 100%; /* Membuat kartu mengisi tinggi .music-popular-item-scroll jika item-scroll punya height */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
@@ -1712,33 +1730,41 @@ header .container .btn-explore:hover {
 }
 
 .music-popular-image {
-  width: 100%;
-  height: 266px;
-  border-radius: 10px;
+  width: 281px;
+  height: 266px; 
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   object-fit: cover;
 }
 
 .music-popular-info {
   background-color: #2e388a;
-  padding: 12px;
+  padding: 12px 15px; /* Padding yang konsisten */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 130px;
+  flex-grow: 1; /* Agar info mengisi sisa ruang kartu */
+  min-height: 120px; /* Tinggi minimum untuk blok info, sesuaikan */
 }
 
 .music-popular-title {
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 4px 0; /* Margin bawah */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Jika judul terlalu panjang */
 }
 
 .music-popular-artist {
-  font-size: 16px;
+  font-size: 0.875rem; /* 14px */
   color: #d1cfe3;
-  font-weight: bold;
+  /* font-weight: bold; Dihilangkan agar tidak terlalu dominan */
   font-style: italic;
-  margin: 4px 0 12px;
+  margin: 0 0 10px 0; /* Margin bawah */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .music-popular-controls {
@@ -1752,7 +1778,7 @@ header .container .btn-explore:hover {
 .music-popular-controls .icon-group-left {
   display: flex;
   gap: 15px;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   color: white;
 }
 
@@ -1766,8 +1792,8 @@ header .container .btn-explore:hover {
 }
 
 .music-popular-controls .play-button {
-  width: 24px;
-  height: 24px;
+  width: 28px; /* Sedikit lebih besar */
+  height: 28px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: transparent;
@@ -1775,21 +1801,43 @@ header .container .btn-explore:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .music-popular-controls .play-button i {
   color: white;
-  font-size: 14px;
-  margin-left: 2px;
+  font-size: 0.875rem; /* 14px */
+  margin-left: 2px; /* Untuk centering play icon */
+  transition: color 0.3s ease;
 }
 
 .music-popular-controls .play-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   border-color: #ff5b5b;
 }
 
 .music-popular-controls .play-button:hover i {
   color: #ff5b5b;
+}
+
+/* Scrollbar styling (opsional) */
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Warna thumb scrollbar */
+  border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+.horizontal-scroll-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 rgba(0,0,0,0.05);
 }
 
 /* Section: Berita */
@@ -3117,5 +3165,659 @@ header .container .btn-explore:hover {
     padding: 10px 20px;
     width: auto; /* Di mobile, biarkan tombol tidak full width jika tidak perlu */
     max-width: 250px; /* Batasi lebar maksimum tombol di mobile */
+  }
+}
+.detail-konser-page {
+  background-color: #EBF0FF;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  font-family: "nunito";
+}
+
+.detail-konser-main-container {
+  padding-top: 50px;
+}
+
+.konser-breadcrumb {
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+}
+.konser-breadcrumb .breadcrumb-item a.breadcrumb-link {
+  color: #5E5873;
+  text-decoration: none;
+}
+.konser-breadcrumb .breadcrumb-item a.breadcrumb-link:hover {
+  color: #7367F0;
+}
+.konser-breadcrumb .breadcrumb-item.active.breadcrumb-current {
+  color: #A8A8B3;
+}
+
+.konser-detail-poster {
+  border-radius: 8px;
+  width: 343px;
+  height: 484px;
+  object-fit: cover;
+  border: 1px solid #EAEAEA;
+}
+
+.konser-main-info-text {
+  color: #5E5873;
+  width: 100%; 
+  max-width: 390px;
+  height: auto;
+}
+
+
+.konser-detail-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #3D3D6C;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.price-rating-container {
+  margin-bottom: 15px !important;
+  padding: 10px 0;
+  border-bottom: none; /* Eksplisit dihilangkan */
+  border-top: none;    /* Eksplisit dihilangkan */
+}
+
+.price-info .price-label {
+  font-size: 0.8rem;
+  color: #6E6B7B;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.price-info .price-amount {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3D3D6C;
+  display: block;
+}
+
+.separator-line {
+  width: 1px;
+  background-color: #000000; /* Warna garis pemisah */
+  align-self: stretch; /* Membuat garis setinggi container flex */
+  margin-left: 20px;  /* Jarak dari harga */
+  margin-right: 20px; 
+}
+
+.rating-info .stars-display {
+  margin-bottom: 4px;
+}
+.rating-info .star-icon {
+  color: #000000;
+  font-size: 1.1rem;
+  margin-right: 1px;
+}
+
+.rating-info .rating-details-text {
+  font-size: 0.8rem;
+  color: #6E6B7B;
+  display: block;
+  line-height: 1.3;
+}
+
+.konser-rating {
+  margin-bottom: 0 !important;
+}
+
+.konser-description-main {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #6E6B7B;
+  margin-top: 15px;
+}
+
+.konser-sidebar .info-box {
+  background-color: #7881C4;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.konser-sidebar .info-box h6 {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.konser-sidebar .info-box p {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+.konser-sidebar .info-box p:last-child {
+  margin-bottom: 0;
+}
+
+.konser-sidebar .location-icon {
+  font-size: 1.2rem;
+  margin-top: 1px;
+  color: black;
+  flex-shrink: 0;
+}
+.konser-sidebar .location-venue-name {
+  font-weight: 600 !important;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+.konser-sidebar .location-address {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.btn-beli-tiket {
+  background-color: #4A4E9B !important;
+  border-color: #4A4E9B !important;
+  color: white !important;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.btn-beli-tiket:hover {
+  background-color: #3A3D7A !important;
+  border-color: #3A3D7A !important;
+}
+
+.detail-section {
+  margin-top: 40px;
+  padding-top: 25px;
+  /* border-top: 1px solid #EBEBEB; Dihilangkan */
+  border-top: none; /* Eksplisit dihilangkan */
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4A4E9B;
+  margin-bottom: 20px;
+}
+
+.map-image-container {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+}
+.map-image {
+  display: block;
+}
+
+.detail-konser-page .live-photo-wrapper {
+  width: 225px; /* Atur lebar wrapper foto */
+  height: 150px; /* Atur tinggi wrapper foto (sama dengan lebar untuk bentuk persegi) */
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+}
+.detail-konser-page .live-photo-item {
+  width: 100%; /* Gambar mengisi penuh wrapper */
+  height: 100%; /* Gambar mengisi penuh wrapper */
+  object-fit: cover; /* Gambar akan menutupi area, mungkin ter-crop */
+  display: block;
+}
+
+.artist-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.artist-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: none;
+}
+
+.detail-konser-page .detail-section.artist-section {
+  /* Gaya spesifik untuk seksi artis jika perlu, selain .detail-section */
+  /* Misalnya, jika ingin padding bawah yang berbeda */
+  padding-bottom: 30px; 
+}
+
+.detail-konser-page .section-heading { /* Ini sudah ada, pastikan gayanya konsisten */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4A4E9B;
+  margin-bottom: 20px;
+}
+
+.detail-konser-page .artist-info-container {
+  display: flex;       /* Mengubah menjadi flex column untuk menata gambar dan teks di bawahnya */
+  flex-direction: column; /* Teks berada di bawah gambar */
+  align-items: flex-start; /* Rata kiri untuk semua item di dalamnya */
+}
+
+.detail-konser-page .artist-image {
+  width: 80px;        /* Ukuran gambar artis sedikit lebih besar */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* Memastikan bulat */
+  margin-bottom: 10px; /* Jarak dari gambar ke teks "Artis" */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Opsional: shadow tipis jika diinginkan */
+}
+
+/* Kelas baru untuk label "Artis" */
+.detail-konser-page .artist-label {
+  font-size: 0.8rem;    /* Ukuran font kecil */
+  color: #6E6B7B;      /* Warna abu-abu keunguan */
+  margin-bottom: 2px;   /* Jarak ke nama artis */
+}
+
+.detail-konser-page .artist-info-container .artist-name {
+  font-weight: 600;     /* Nama artis tebal */
+  font-size: 1.1rem;    /* Ukuran font nama artis */
+  color: #3D3D6C;      /* Warna teks nama artis (ungu tua) */
+  /* margin-left: 0; Dihapus karena sekarang di bawah gambar */
+}
+
+.artist-info-container .artist-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #5E5873;
+}
+
+.detail-konser-error {
+  padding: 50px 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+.detail-konser-error p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #5E5873;
+}
+.detail-konser-error a {
+  color: #7367F0;
+}
+
+
+@media (max-width: 991.98px) {
+  .konser-detail-poster {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .konser-main-info-text {
+    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-right: 1.5rem;
+    width: auto !important;
+  }
+  .konser-sidebar {
+    margin-top: 0;
+    padding-left: 1.5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-konser-main-container {
+    padding: 20px 20px;
+  }
+  .konser-detail-poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 343px;
+    height: auto;
+  }
+  .konser-detail-title {
+    font-size: 2rem;
+  }
+  .konser-main-info-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .section-heading {
+    font-size: 1.2rem;
+  }
+  .live-photo-item {
+    height: 110px;
+  }
+  .konser-sidebar {
+    margin-top: 30px;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+/* src/pages/StylePembayaran.css */
+
+.halaman-pembayaran {
+  background-color: #dcddff; /* Latar utama halaman */
+  padding-top: 80px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  font-family: "nunito";
+}
+
+.info-konser-poster {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.info-konser-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.info-konser-col .info-display-box {
+  background-color: #7881C4; /* Warna latar belakang kotak (light lavender, sesuaikan) */
+  border-radius: 10px;       /* Sudut membulat untuk kotak */
+  padding: 12px 18px; 
+}
+
+/* Spesifik untuk kotak lokasi jika perlu styling flex */
+.info-konser-col .location-box-content {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* Warna teks default di dalam kotak lokasi */
+}
+
+.info-konser-col .info-box-icon { /* Untuk ikon seperti pin lokasi */
+  font-size: 1.2rem;  /* Ukuran ikon */
+  color: #000000;    /* Warna ikon ungu tua */
+  margin-right: 10px; /* Jarak ikon ke teks */
+  line-height: 1;     /* Untuk alignment vertikal yang lebih baik */
+}
+
+.info-konser-col .info-box-text { /* Untuk teks di samping ikon, mis. nama stadium */
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Spesifik untuk kotak tanggal dan waktu */
+.info-konser-col .datetime-box-content span {
+    display: block; /* Agar date dan time di baris terpisah */
+}
+
+.info-konser-col .info-box-date {
+  font-size: 0.95rem; /* Ukuran teks tanggal */
+  font-weight: 500;
+  color: #ffffff;     /* Warna teks tanggal */
+  margin-bottom: 3px; /* Jarak antara tanggal dan waktu */
+}
+
+.info-konser-col .info-box-time {
+  font-size: 0.8rem;  /* Ukuran teks waktu lebih kecil */
+  color: #ffffff;    /* Warna teks waktu lebih redup */
+}
+
+/* --- Styling Form Pembayaran --- */
+.form-pembayaran-card {
+  background-color: #7881C4; /* Warna ungu tua dari background gambar */
+  padding: 25px 30px; /* Sesuaikan padding */
+  border-radius: 15px; /* Rounded corners untuk card */
+  color: #000000; /* Warna teks default terang untuk kontras */
+}
+
+.form-card-label {
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+  color: #000000; /* Warna label lebih terang */
+}
+/* Wrapper untuk input dan ikon yang tertanam */
+.form-pembayaran-card .input-with-icon-wrapper {
+  position: relative; /* Diperlukan agar ikon bisa diposisikan absolut relatif terhadap wrapper ini */
+  display: flex; /* Membantu alignment jika ada elemen lain, meski ikon akan absolut */
+  align-items: center;
+}
+
+/* Ikon yang tertanam di dalam input field */
+.form-pembayaran-card .input-embedded-icon {
+  position: absolute;
+  left: 12px; /* Jarak ikon dari tepi kiri wrapper/input. Sesuaikan. */
+  top: 50%;
+  transform: translateY(-50%); /* Memusatkan ikon secara vertikal */
+  color: #6C63A2; /* Warna ikon, sesuaikan dengan warna ikon di InputGroup.Text Anda */
+  z-index: 3; /* Pastikan ikon di atas background input jika ada tumpang tindih */
+  font-size: 0.9rem; /* Sesuaikan ukuran ikon jika perlu */
+}
+
+/* Form.Control yang memiliki ikon tertanam */
+.form-pembayaran-card .form-control.input-with-embedded-icon {
+  padding-left: 38px;
+}
+
+/* Pastikan style dasar untuk .form-control di dalam .form-pembayaran-card sudah ada: */
+.form-pembayaran-card .form-control {
+  background-color: #E8E6F2;
+  border: 1px solid #D0C9F0;
+  border-radius: 30px;
+  color: #333;
+  padding: 0.6rem 0.75rem; /* Padding dasar, padding-left akan di-override oleh kelas di atas */
+  font-size: 0.95rem;
+  width: 100%; /* Pastikan input mengisi wrapper */
+  box-sizing: border-box; /* Penting untuk kalkulasi padding dan border */
+}
+
+.form-pembayaran-card .form-control::placeholder {
+  color: #8A8A9E;
+}
+
+.form-pembayaran-card .form-control:focus {
+  background-color: #E8E6F2; 
+  border-color: #D0C9F0;   
+  box-shadow: none;
+  outline: none;
+}
+
+.form-pembayaran-card .input-group-text {
+  background-color: #E8E6F2;
+  border: 1px solid #D0C9F0;
+  color: #6C63A2;
+  padding: 0.6rem 0.75rem;
+}
+
+/* Judul Seksi Form seperti "Pilih area Anda" */
+.form-pembayaran-card .form-section-title {
+  color: #000000; /* Putih atau sangat terang */
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+/* --- Styling Ticket Option (Dimodifikasi Sesuai Gambar) --- */
+.ticket-option {
+  background-color: #DCDDFF; /* Warna dasar tiket option dari gambar */
+  border-radius: 30px;       /* Lebih membulat seperti di gambar */
+  padding: 18px 22px;        /* Sesuaikan padding jika perlu */
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  color: #4A4E9B; /* Warna teks default gelap untuk kontras dengan background terang */
+}
+
+.ticket-option:hover:not(.disabled) {
+  background-color: #CFD1F7; /* Warna hover sedikit lebih gelap/berbeda */
+  /* box-shadow: 0 2px 5px rgba(75, 65, 140, 0.15); */ /* Shadow halus opsional saat hover */
+}
+
+.ticket-option.selected {
+  background-color: #DCDDFF; /* Warna tetap sama atau sedikit berbeda untuk terpilih */
+  border-color: #4A4E9B;     /* Border ungu tua untuk item terpilih */
+  box-shadow: 0 0 10px rgba(75, 65, 140, 0.2); /* Shadow untuk item terpilih */
+}
+
+.ticket-option.disabled {
+  background-color: #E8E9F8; /* Warna disable lebih pucat */
+  color: #A0A2C0;      /* Warna teks disable lebih pucat */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.ticket-icon-wrapper {
+  font-size: 1.9rem; /* Ukuran ikon tiket */
+  margin-right: 18px; /* Jarak ikon ke info tiket */
+  color: #5C53A0;    /* Warna ikon ungu lebih gelap */
+}
+.ticket-option.disabled .ticket-icon-wrapper {
+  color: #A0A2C0; /* Warna ikon disable */
+}
+
+.ticket-info {
+  flex-grow: 1; /* Agar info tiket mengisi ruang yang tersedia */
+}
+
+.ticket-name {
+  display: block;
+  font-size: 1.05rem; /* Sedikit lebih besar */
+  font-weight: 600; /* Lebih tebal */
+  color: #3D3D6C;   /* Warna nama tiket ungu sangat tua */
+  margin-bottom: 3px; /* Jarak ke harga */
+}
+
+.ticket-price {
+  display: block;
+  font-size: 0.9rem;
+  color: #6E6B7B;   /* Warna harga lebih abu-abu/redup */
+}
+.ticket-option.disabled .ticket-name,
+.ticket-option.disabled .ticket-price {
+  color: #A0A2C0; /* Warna teks disable */
+}
+
+.ticket-action {
+  margin-left: auto; /* Mendorong ke kanan */
+  display: flex;
+  flex-direction: column; /* Susun label "Jumlah" di atas kontroler */
+  align-items: center;   /* Pusatkan item di dalam .ticket-action */
+}
+
+.quantity-label {
+  font-size: 0.7rem; /* Ukuran font "Jumlah" kecil */
+  color: #6E6B7B;   /* Warna label "Jumlah" */
+  margin-bottom: 5px; /* Jarak label ke kontroler */
+  line-height: 1;
+  text-align: center;
+}
+
+.quantity-controls { /* Pembungkus untuk tombol -, angka, dan + */
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls .quantity-btn { 
+  color: #000000; /* Warna hitam untuk - dan + */
+  background-color: transparent;
+  border: none; /* Memastikan tidak ada border, termasuk border-bottom */
+  padding: 0.1rem 0.4rem; 
+  font-size: 1.6rem;      
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 600; /* Menebalkan simbol - dan +, sebelumnya 300 */
+  text-decoration: none !important; /* Menghilangkan garis bawah dari Button variant="link" */
+}
+
+.quantity-controls .quantity-btn:hover:not(:disabled) {
+  color: #333333; 
+  text-decoration: none !important; /* Menghilangkan garis bawah juga saat hover */
+}
+
+.quantity-controls .quantity-display { 
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;       
+  background-color: #2F3881;
+  border-radius: 15px;  
+  padding: 4px 17px;    
+  min-width: 20px;      
+  text-align: center;
+  margin: 0 6px;        
+}
+
+.ticket-option.disabled .quantity-controls .quantity-btn,
+.ticket-option.disabled .quantity-controls .quantity-display {
+  opacity: 0.5;
+  pointer-events: none; 
+}
+
+.ticket-status-badge.sold-out {
+  background-color: #2F3881; 
+  color: white;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* --- Styling Summary Section --- */
+.summary-section {
+  color: #000000; /* Warna teks terang */
+  font-size: 0.9rem;
+}
+.summary-section .summary-item,
+.summary-section .summary-total {
+  padding: 5px 0;
+}
+.summary-section .summary-total {
+  font-size: 1.1rem;
+  color: #000000; /* Total lebih menonjol */
+}
+.summary-section hr {
+  border-top: 1px solid #6E63A9; /* Warna garis pemisah jika dipakai */
+}
+
+/* --- Styling Payment Actions --- */
+.payment-actions .btn-batal {
+  background-color: #B8BAFF; /* Warna tombol batal (lavender) */
+  color: #000000;
+  border: 1px solid #8A82D1;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+}
+.payment-actions .btn-batal:hover {
+  background-color: #7A70B8;
+  border-color: #7A70B8;
+}
+
+.payment-actions .btn-pembayaran {
+  background-color: #2F3881; /* Warna tombol pembayaran utama */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+}
+.payment-actions .btn-pembayaran:hover {
+  background-color: #5A528A;
+}
+
+/* Responsif */
+@media (max-width: 767.98px) {
+  .form-pembayaran-card {
+    padding: 20px;
+  }
+  .info-konser-title {
+    font-size: 1.5rem;
+  }
+  .payment-actions {
+    flex-direction: column;
+  }
+  .payment-actions .btn {
+    width: 100%;
   }
 }
