@@ -20,6 +20,7 @@ import KonserMusicsPage from "./pages/KonserMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
 import DetailKonserPage from "./pages/DetailKonserPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
+import ReviewFilmsPage from "./pages/ReviewFilmsPage";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/bayar/:id" element={<FormBayarPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
+        <Route path="/reviewfilms/:id" element={<ReviewFilmsPage/>} />
       </Route>
 
       <Route path="/users" element={<MainLayoutAfter />}>

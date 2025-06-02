@@ -672,6 +672,31 @@ export const BioskopFIlms = [
   // }
 ];
 
+export const ReviewFilms = [
+  {
+    id: 1,
+    title: "The Nun II",
+    poster: Poster1,
+    text: "Ulasan Penonton",
+    genre: ["Horror", "Mystery", "Thriller", "Fantasy"],
+    heroimage: Hero1,  
+    description: {
+      plot: "“Horror menurun, cerita masih cukup solid.”",
+      story: "Saya merasa alur film ini mulai terasa basi. Meskipun Conjuring Universe tampaknya sedang membangun sesuatu yang besar, saya merasa elemen horornya kini mulai kehilangan daya tarik. Paparan yang lebih jelas terhadap karakter Nun justru mengurangi kengerian yang sebelumnya terasa lebih menakutkan. Saya rasa, setelah film ini dan film ketiga nanti, waralaba ini mungkin akan memperkenalkan makhluk mengerikan baru untuk ditambahkan ke dalam perpustakaan horor mereka.",
+      cinematography: "Saya merasa desain dan penampilan karakter Nun yang merayap di aula gelap dan remang-remang mulai kehilangan daya tariknya. Peningkatan paparan terhadap makhluk ini, menurut saya, justru mengurangi elemen ketakutannya. Saya lebih suka ketika Nun hanya muncul dalam bentuk siluet atau wajah pucat, karena itu terasa jauh lebih menakutkan. Meskipun film ini masih berusaha mempertahankan nuansa horor, saya merasa sinematografinya tidak seefektif yang saya harapkan dalam menciptakan ketegangan.",
+      performance: "Hubungan antara karakter Ed dan Lorraine cukup penting dalam film ini, terutama dalam momen ketika Ed hadir untuk melakukan pengusiran setan terhadap Frenchy. Menurut saya, itu adalah momen krusial yang memperkuat hubungan mereka dan memperdalam alur cerita secara keseluruhan. Selain itu, pandangan Irene terhadap Frenchy di akhir film membuat saya yakin bahwa kita akan melihat kelanjutan ceritanya dalam The Nun 3, yang jelas menunjukkan bahwa para pemeran ini akan tetap memiliki peran penting dalam alur cerita yang lebih besar.",
+      other: "Saya mengapresiasi usaha film ini dalam membangun cerita yang cukup solid, terutama dalam pengusiran setan terhadap Frenchy. Kreativitas dalam memasukkan elemen-elemen keagamaan, seperti relik yang dijadikan senjata melawan iblis, juga menjadi nilai tambah. Saat pertama kali Annabelle dirilis, saya sangat takut dengan konsep boneka menyeramkan itu. Tapi pada tahun 2023, film ini terasa lebih seperti versi baru dari Chucky yang sudah menjadi bagian dari waralaba besar, sehingga kesan horornya agak berkurang. Secara keseluruhan, meskipun saya masih menikmati beberapa elemen dari film ini, saya merasa sebagian bagian mulai kehilangan daya tarik yang dulu membuatnya begitu menegangkan."
+    },
+    reviews: 
+      {
+        username: "Alyssa",
+        date: "01-Januari-2023"
+      }
+    
+  }
+];
+
+
 
 
 

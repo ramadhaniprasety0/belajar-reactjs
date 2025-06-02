@@ -23,9 +23,9 @@
 /* NAVBAR */
 .navbar {
   background-color: #8e97fd;
-  color: var(--navbar-color); 
+  color: var(--navbar-color);
   position: sticky;
-  top: 0; 
+  top: 0;
   padding: 15px 0 15px 0;
   width: 100%;
   transition: all 0.3s ease;
@@ -35,7 +35,7 @@
 .navbar.color-active {
   position: fixed;
   background-color: #8e97fd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.color-active .nav-link a:hover {
@@ -44,7 +44,7 @@
 
 .navbar.color-active .nav-link .active {
   border: 2px solid #1c1a28;
-  color: #1c1a28; 
+  color: #1c1a28;
 }
 
 .navbar .nav-link a {
@@ -120,7 +120,7 @@
   margin-top: 10px !important; /* Jarak dari navbar */
   border-radius: 12px; /* Sudut lebih tumpul */
   border: none; /* Hapus border */
-  background-color: #8E97FD; /* Warna ungu muda (sesuai gambar) */
+  background-color: #8e97fd; /* Warna ungu muda (sesuai gambar) */
   box-shadow: none; /* Hapus bayangan */
   min-width: 160px; /* Lebar minimum */
   padding: 10px 0; /* Padding atas-bawah */
@@ -129,22 +129,22 @@
 
 /* --- GAYA BARU UNTUK ITEM DROPDOWN --- */
 .navbar .profile-dropdown-container .dropdown-item {
-  color: rgb(0, 0, 0); 
-  padding: 10px 20px; 
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
   text-decoration: none;
   display: block;
-  background-color: transparent; 
+  background-color: transparent;
   border: none;
-  font-style: italic; 
-  font-size: 1.1rem; 
-  font-weight: 500; 
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 .navbar .profile-dropdown-container .dropdown-item:hover,
 .navbar .profile-dropdown-container .dropdown-item:focus {
-  background-color: #a0a8f0; 
-  color: white; 
+  background-color: #a0a8f0;
+  color: white;
 }
 /* NAVBAR */
 
@@ -375,7 +375,7 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-container {
-  background-color: #9599F6;
+  background-color: #9599f6;
   border-radius: 12px;
   color: #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -411,7 +411,7 @@ header .container .btn-explore:hover {
 .edit-profile-wrapper .ubah-button {
   font-size: 0.85em;
   border-radius: 8px;
-  background-color: #DCDDFF;
+  background-color: #dcddff;
   border: 1px solid #000000; /* --- Border Hitam --- */
   color: #555;
 }
@@ -443,7 +443,7 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-form .default-input:focus {
-  border-color: #000000; 
+  border-color: #000000;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
@@ -462,14 +462,14 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-form .custom-select-v3:focus {
-  border-color: #000000; 
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1); 
+  border-color: #000000;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 /* GAYA TOMBOL GANTI */
 .edit-profile-wrapper .ganti-button.v4 {
-  background-color: #DCDDFF;
-  border: 1px solid #000000; 
+  background-color: #dcddff;
+  border: 1px solid #000000;
   color: #333;
   border-radius: 4px;
   font-weight: 600;
@@ -494,7 +494,7 @@ header .container .btn-explore:hover {
 
 .edit-profile-wrapper .simpan-button.v3 {
   background-color: #ffff;
-  border: 1px solid #ffff; 
+  border: 1px solid #ffff;
   color: #8e97fd;
   font-weight: 700;
   padding: 10px 50px;
@@ -642,7 +642,7 @@ header .container .btn-explore:hover {
   margin-bottom: 20px;
   position: relative;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Gambar dalam kartu */
@@ -652,7 +652,7 @@ header .container .btn-explore:hover {
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Judul & subjudul kartu */
@@ -692,7 +692,7 @@ header .container .btn-explore:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #9599F6;
+  background-color: #9599f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,7 +703,7 @@ header .container .btn-explore:hover {
 .homepage .card-hits .icon:hover {
   font-size: 20px;
   background-color: #ffff;
-  color: #9599F6;
+  color: #9599f6;
   transition: all 0.3s ease;
 }
 
@@ -853,7 +853,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -865,7 +865,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage .review-header {
@@ -880,7 +880,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage .review-poster.album {
@@ -899,7 +899,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage .review-year, .homepage .review-director {
+.homepage .review-year,
+.homepage .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -921,13 +922,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage .avatar-green { background-color: #a5d6a7; }
-.homepage .avatar-yellow { background-color: #fff59d; }
-.homepage .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage .avatar-pink { background-color: #f48fb1; }
+.homepage .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage .reviewer-name {
   font-weight: 500;
@@ -958,16 +967,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage .review-footer {
@@ -1190,7 +1199,7 @@ header .container .btn-explore:hover {
 
 .homepage-films .news-card .news-caption {
   padding: 16px;
- background-color: #9599f6;
+  background-color: #9599f6;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -1342,7 +1351,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1354,7 +1363,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage-films .review-header {
@@ -1369,7 +1378,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage-films .review-poster.album {
@@ -1388,7 +1397,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage-films .review-year, .homepage-films .review-director {
+.homepage-films .review-year,
+.homepage-films .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -1410,13 +1420,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage-films .avatar-green { background-color: #a5d6a7; }
-.homepage-films .avatar-yellow { background-color: #fff59d; }
-.homepage-films .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage-films .avatar-pink { background-color: #f48fb1; }
+.homepage-films .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage-films .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage-films .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage-films .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage-films .reviewer-name {
   font-weight: 500;
@@ -1447,16 +1465,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage-films .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage-films .review-footer {
@@ -1850,7 +1868,7 @@ header .container .btn-explore:hover {
 
 .homepage-musics .news-card .news-caption {
   padding: 16px;
- background-color: #9599f6;
+  background-color: #9599f6;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -1904,7 +1922,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1916,7 +1934,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage-musics .review-header {
@@ -1931,7 +1949,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage-musics .review-poster.album {
@@ -1950,7 +1968,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage-musics .review-year, .homepage-musics .review-director {
+.homepage-musics .review-year,
+.homepage-musics .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -1972,13 +1991,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage-musics .avatar-green { background-color: #a5d6a7; }
-.homepage-musics .avatar-yellow { background-color: #fff59d; }
-.homepage-musics .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage-musics .avatar-pink { background-color: #f48fb1; }
+.homepage-musics .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage-musics .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage-musics .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage-musics .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage-musics .reviewer-name {
   font-weight: 500;
@@ -2009,16 +2036,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage-musics .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage-musics .review-footer {
@@ -2710,7 +2737,11 @@ header .container .btn-explore:hover {
   align-items: center;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators button {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -2718,7 +2749,11 @@ header .container .btn-explore:hover {
   opacity: 0.6;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -2951,7 +2986,11 @@ header .container .btn-explore:hover {
   opacity: 0.6;
 }
 
-.konser-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+.konser-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -2991,7 +3030,7 @@ header .container .btn-explore:hover {
 }
 
 .konser-musics-page .konser-item-card.new-layout {
-  background-color: #7E83DF;
+  background-color: #7e83df;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -3022,10 +3061,10 @@ header .container .btn-explore:hover {
   display: flex;
   flex-direction: column;
 }
-.konser-musics-page .konser-detail-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.konser-musics-page .konser-detail-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .konser-musics-page .konser-row-1,
@@ -3037,13 +3076,13 @@ header .container .btn-explore:hover {
 }
 
 .konser-musics-page .konser-row-2 {
-    align-items: center;
+  align-items: center;
 }
 
 .konser-musics-page .konser-item-title {
   font-size: 30px;
   font-weight: 700;
-  color: #FFECCC;
+  color: #ffeccc;
   margin-right: 10px;
   line-height: 1.3;
   flex-grow: 1;
@@ -3051,8 +3090,8 @@ header .container .btn-explore:hover {
 
 .konser-musics-page .badge-tiket-habis,
 .konser-musics-page .badge-tiket-gratis {
-  background-color: #DCDDFF;
-  color: #2F3881;
+  background-color: #dcddff;
+  color: #2f3881;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 18px;
@@ -3063,7 +3102,7 @@ header .container .btn-explore:hover {
 
 .konser-musics-page .konser-item-date-location {
   font-size: 16px;
-  color: #E0E0FF;
+  color: #e0e0ff;
   margin-bottom: 0;
   line-height: 1.3;
 }
@@ -3071,16 +3110,16 @@ header .container .btn-explore:hover {
 .konser-musics-page .konser-item-price {
   font-size: 16px;
   font-weight: 600;
-  color: #2E388A;
+  color: #2e388a;
   margin-bottom: 0;
   text-align: right;
   flex-shrink: 0;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 .konser-musics-page .konser-item-description {
   font-size: 18px;
-  color: #F0F0FF;
+  color: #f0f0ff;
   line-height: 1.4;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -3094,49 +3133,48 @@ header .container .btn-explore:hover {
 
 /* --- PERUBAHAN PADA BAGIAN TOMBOL --- */
 .konser-musics-page .konser-button-section {
-  flex: 0 0 180px; 
+  flex: 0 0 180px;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  padding: 15px; 
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.konser-musics-page .btn-amankan-tiket { 
-  background-color: #4A4E9B !important;
-  border-color: #4A4E9B !important;
+.konser-musics-page .btn-amankan-tiket {
+  background-color: #4a4e9b !important;
+  border-color: #4a4e9b !important;
   color: white !important;
-  border-radius: 25px; 
+  border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
   white-space: nowrap;
   padding: 10px 25px;
   width: auto;
-  height: auto; 
+  height: auto;
   transition: background-color 0.2s ease;
 }
 
 .konser-musics-page .btn-amankan-tiket:hover {
-  background-color: #3A3D7A !important;
-  border-color: #3A3D7A !important;
+  background-color: #3a3d7a !important;
+  border-color: #3a3d7a !important;
 }
 
-@media (max-width: 991.98px) { 
-    .konser-musics-page .konser-image-section {
-        flex: 0 0 140px; 
-    }
-    .konser-musics-page .konser-button-section {
-        flex: 0 0 150px; 
-        padding: 10px;
-    }
-     .konser-musics-page .btn-amankan-tiket {
-        font-size: 0.8rem;
-        padding: 8px 20px; /* Sesuaikan padding di tablet */
-     }
-     .konser-musics-page .konser-item-title {
-        font-size: 1rem;
-     }
+@media (max-width: 991.98px) {
+  .konser-musics-page .konser-image-section {
+    flex: 0 0 140px;
+  }
+  .konser-musics-page .konser-button-section {
+    flex: 0 0 150px;
+    padding: 10px;
+  }
+  .konser-musics-page .btn-amankan-tiket {
+    font-size: 0.8rem;
+    padding: 8px 20px; /* Sesuaikan padding di tablet */
+  }
+  .konser-musics-page .konser-item-title {
+    font-size: 1rem;
+  }
 }
-
 
 @media (max-width: 767.98px) {
   .konser-musics-page .konser-item-card.new-layout {
@@ -3145,7 +3183,7 @@ header .container .btn-explore:hover {
   }
   .konser-musics-page .konser-image-section {
     width: 100%;
-    height: 180px; 
+    height: 180px;
     flex-basis: auto;
   }
   .konser-musics-page .konser-details-section {
@@ -3157,16 +3195,17 @@ header .container .btn-explore:hover {
   .konser-musics-page .konser-button-section {
     width: 100%;
     flex-basis: auto;
-    padding: 10px 15px 15px 15px; 
+    padding: 10px 15px 15px 15px;
     justify-content: center; /* Pastikan tombol di tengah kolomnya */
   }
   .konser-musics-page .btn-amankan-tiket {
-    height: auto; 
+    height: auto;
     padding: 10px 20px;
     width: auto; /* Di mobile, biarkan tombol tidak full width jika tidak perlu */
     max-width: 250px; /* Batasi lebar maksimum tombol di mobile */
   }
 }
+
 .detail-konser-page {
   background-color: #EBF0FF;
   padding-top: 25px;
@@ -3810,4 +3849,199 @@ header .container .btn-explore:hover {
   .payment-actions .btn {
     width: 100%;
   }
+=======
+
+/* reviewfilms  */
+.reviewfilms {
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  display: flex;
+  justify-content: center; /* Posisikan konten di tengah secara horizontal */
+  flex-direction: column; /* Konten diatur vertikal */
+  align-items: center; /* Pastikan konten di tengah */
+}
+
+.poster-section-review {
+  position: relative; /* Menyiapkan kontainer gambar untuk overlay */
+  width: 100%;
+  max-width: 1300px; /* Batas lebar maksimal */
+  margin-bottom: 50px; /* Jarak bawah dari gambar */
+  margin-top: 30px;
+}
+
+.film-poster {
+  width: 100%; /* Gambar mengisi 100% lebar kontainer */
+  height: auto;
+  max-height: 400px; /* Menjaga gambar tidak melebihi batas tinggi */
+  object-fit: cover; /* Menutupi seluruh area gambar tanpa merusak rasio */
+  border-radius: 10px; /* Sudut membulat pada gambar */
+}
+
+.title-review {
+  position: absolute;
+  margin-left: -900px;
+  margin-top: -700px;
+}
+
+.title-review p {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  font-weight: bold;
+  color: #9176b7;
+  font-style: italic;
+}
+
+.title-review h2 {
+  font-size: 2rem; /* Ukuran font untuk teks */
+  font-weight: normal;
+  margin: 0; /* Menghapus margin default h2 */
+  color: #fff;
+  margin-top: -15px;
+}
+
+/* Tombol dropdown */
+.btn-review {
+  background-color: #5562fc; /* Warna latar belakang tombol */
+  color: white; /* Teks tombol berwarna putih */
+  border: 1px solid #444994;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Sudut membulat pada tombol */
+  text-align: center;
+  display: inline-block;
+  width: 150px; /* Lebar tombol */
+}
+
+/* Efek hover pada tombol */
+.btn-review:hover {
+  background-color: rgb(66, 77, 199); /* Warna latar belakang saat hover */
+}
+
+/* Menu dropdown */
+.dropdown-menu-review-film {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute;
+  top: 100%; /* Menempatkan dropdown tepat di bawah tombol */
+  left: 0;
+  right: 0;
+  background-color: #efebfc; /* Latar belakang menu dropdown */
+  border-radius: 15px; /* Sudut membulat pada dropdown */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan di bawah dropdown */
+  margin-top: 5px; /* Memberikan sedikit jarak antara tombol dan dropdown */
+  z-index: 1000; /* Pastikan dropdown berada di atas konten lainnya */
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Menampilkan dropdown saat dropdownOpen true */
+.dropdown-menu-review-film {
+  display: block; /* Menampilkan dropdown saat tombol diklik */
+}
+
+/* Style untuk item dalam dropdown */
+.dropdown-menu-review-film li {
+  padding: 7px;
+  color: black; /* Warna teks item */
+  cursor: pointer;
+  border-bottom: 2px solid black; /* Garis pemisah antar item */
+  text-decoration: none;
+}
+
+/* Menghapus garis bawah pada item terakhir */
+.dropdown-menu-review-film li:last-child {
+  border-bottom: none;
+}
+
+/* Styling untuk Icon Bocoran */
+.icon-bocoran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 20px; /* Sudut membulat */
+  background-color: #a9b0fe; /* Warna latar belakang saat belum dipilih */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animasi untuk perubahan latar belakang */
+  width: 150px;
+  height: 35px;
+}
+
+.icon-bocoran:hover {
+  background-color: #d8d6fc; /* Warna latar belakang saat di-hover */
+}
+
+.icon-bocoran i {
+  transition: color 0.3s ease; /* Animasi perubahan warna icon */
+}
+
+/* Styling teks */
+.icon-bocoran span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: color 0.3s ease; /* Animasi perubahan warna teks */
+}
+
+.h3-review-film {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn-plus-ulasan {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: black;
+  margin-top: -7px;
+}
+.buttons {
+  gap: 10px;
+  margin-left: 465px;
+}
+
+.reviewer-film {
+  background-color: #8e97fd;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.reviewer-film h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.reviewer-film h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reviewer-film-isi {
+  margin-top: -20px;
+}
+
+.reviewer-film-users {
+  font-size: 15px;
+  gap: 30px;
+  color: #3d3956;
+  margin-top: -30px;
+}
+
+.like-dislike {
+  margin-top: -40px;
+  margin-left: 10px;
+}
+.like-dislike p {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #332a2a;
+
 }
