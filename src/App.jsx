@@ -25,6 +25,7 @@ import DetailKonserPage from "./pages/DetailKonserPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 import TicketMusicPage from "./pages/TicketMusicPage";
 import TicketFilmPage from "./pages/TicketFilmPage";
+import ReviewFilmsPage from "./pages/ReviewFilmsPage";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/tiket-musik" element={<TicketMusicPage />} />
         <Route path="/tiket-film" element={<TicketFilmPage />} />
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
+        <Route path="/reviewfilms/:id" element={<ReviewFilmsPage/>} />
       </Route>
 
       <Route path="/users" element={<MainLayoutAfter />}>
