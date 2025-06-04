@@ -14,7 +14,7 @@ const PopularComponentFilm = () => {
               </div>
               <div className='card-film-caption'>
                 <p className='heading'>{films.title}</p>
-                <p className="small">Klik untuk melihat detail lengkap</p>
+                <p className="small">{films.desc}</p>
               </div>
             </div>
           </Link>
