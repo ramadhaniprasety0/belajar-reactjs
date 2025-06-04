@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Image, Form, Button, InputGroup } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link
 
-const FormPembayaranComponent = ({ konser }) => {
+const FormPembayaranMusicComponent = ({ konser }) => {
   const [selectedTicket, setSelectedTicket] = useState(null);
   const [ticketQuantity, setTicketQuantity] = useState(1);
 
@@ -41,6 +42,10 @@ const FormPembayaranComponent = ({ konser }) => {
     }).format(value);
   };
 
+  // Tentukan link secara dinamis
+  const cancelLink = konser.id ? `/konser/${konser.id}` : '#';
+  const confirmPaymentLink = konser.id ? `/konfirm-bayar-konser/${konser.id}` : '#';
+
   return (
     <Row className="pembayaran-konser-wrapper">
       <Col md={5} lg={4} className="info-konser-col mb-4 mb-md-0">
@@ -56,8 +61,6 @@ const FormPembayaranComponent = ({ konser }) => {
         <h5 className="info-section-label">Lokasi</h5>
         <div className="info-display-box location-box-content mb-3">
           <i className="bi bi-geo-alt-fill info-box-icon"></i>
-          {/* Asumsi konser.location adalah string nama tempat, atau sesuaikan dengan struktur data Anda */}
-          {/* Misalnya: konser.locationInfo.venueName */}
           <span className="info-box-text">{konser.location?.venueName || konser.location || "Informasi Lokasi"}</span>
         </div>
 
@@ -196,12 +199,22 @@ const FormPembayaranComponent = ({ konser }) => {
             )}
 
           <div className="payment-actions mt-5 d-flex justify-content-end">
-            {" "}
-            {/* d-flex justify-content-end untuk align kanan */}
-            <Button variant="outline-secondary" className="btn-batal me-2">
+            {/* Tombol Batal dengan Link */}
+            <Button 
+              as={Link} 
+              to={cancelLink} 
+              variant="outline-secondary" 
+              className="btn-batal me-2"
+            >
               Batal
             </Button>
-            <Button variant="primary" className="btn-pembayaran">
+            {/* Tombol Pembayaran dengan Link */}
+            <Button 
+              as={Link} 
+              to={confirmPaymentLink} 
+              variant="primary" 
+              className="btn-pembayaran"
+            >
               Pembayaran
             </Button>
           </div>
@@ -211,4 +224,4 @@ const FormPembayaranComponent = ({ konser }) => {
   );
 };
 
-export default FormPembayaranComponent;
+export default FormPembayaranMusicComponent;

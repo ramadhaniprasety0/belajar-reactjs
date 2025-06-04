@@ -1704,9 +1704,7 @@ header .container .btn-explore:hover {
 
 .music-popular-item-scroll {
   display: inline-block;
-  width: 280px; /* ATUR LEBAR KARTU DI SINI agar tidak terlalu lebar */
-  /* Atau gunakan max-width jika ingin lebih fleksibel tapi ada batas */
-  /* max-width: 280px; */
+  width: 280px; 
   height: auto; /* Biarkan tinggi menyesuaikan konten */
   vertical-align: top;
   white-space: normal; /* Normal white-space untuk konten di dalam kartu */
@@ -2758,105 +2756,46 @@ header .container .btn-explore:hover {
   color: #ffffff;
 }
 
-/* === POPULAR MUSIC CARD === */
-.popular-musics-page .music-popular-wrapper {
-  border-radius: 16px;
+
+.popular-musics-page .box-populer-musics .horizontal-scroll-wrapper {
+  overflow-x: visible; 
+  white-space: normal;  
+  padding-bottom: 0;   
 }
 
-.popular-musics-page .music-popular-card {
-  background-color: #4b3f6b;
-  border-radius: 16px;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+.popular-musics-page .box-populer-musics .horizontal-scroll-content {
+  display: flex;    
+  flex-wrap: wrap;  
+  gap: 16px;        
+  justify-content: flex-start; 
 }
 
-.popular-musics-page .music-popular-card:hover {
-  transform: scale(1.03);
+.popular-musics-page .box-populer-musics .music-popular-item-scroll {
+  flex-grow: 0;
+  flex-shrink: 0; 
+  flex-basis: calc(25% - 12px); 
+  width: calc(25% - 12px); 
+  height: auto;
+  margin-right: 0; 
+  margin-bottom: 16px; 
 }
 
-.popular-musics-page .music-popular-image {
-  width: 100%;
-  height: 266px;
-  border-radius: 10px;
-  object-fit: cover;
+.popular-musics-page .box-populer-musics .music-popular-card {
+  height: 100%;
 }
 
-.popular-musics-page .music-popular-info {
-  background-color: #2e388a;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 130px;
+@media (max-width: 992px) { 
+  .popular-musics-page .box-populer-musics .music-popular-item-scroll {
+    flex-basis: calc(50% - 8px);
+    width: calc(50% - 8px);
+  }
 }
 
-.popular-musics-page .music-popular-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.popular-musics-page .music-popular-artist {
-  font-size: 16px;
-  color: #d1cfe3;
-  font-weight: bold;
-  font-style: italic;
-  margin: 4px 0 12px;
-}
-
-.popular-musics-page .music-popular-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-  border-top: 1px solid #1c1a28;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left {
-  display: flex;
-  gap: 15px;
-  font-size: 16px;
-  color: white;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left i {
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left i:hover {
-  color: #ff5b5b;
-}
-
-.popular-musics-page .music-popular-controls .play-button {
-  width: 24px;
-  height: 24px;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.popular-musics-page .music-popular-controls .play-button i {
-  color: white;
-  font-size: 14px;
-  margin-left: 2px;
-}
-
-.popular-musics-page .music-popular-controls .play-button:hover {
-  border-color: #ff5b5b;
-}
-
-.popular-musics-page .music-popular-controls .play-button:hover i {
-  color: #ff5b5b;
+@media (max-width: 576px) {
+  .popular-musics-page .box-populer-musics .music-popular-item-scroll {
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
 
 /* CSS TERBARU SAMPAI BAWAH */
@@ -3559,6 +3498,13 @@ header .container .btn-explore:hover {
   color: #000000;
 }
 
+.form-pembayaran-card-2 {
+  background-color: #8E97FD;
+  padding: 25px 30px;
+  border-radius: 15px;
+  color: #000000;
+}
+
 .form-card-label {
   font-size: 16px;
   margin-bottom: 0.3rem;
@@ -3810,4 +3756,791 @@ header .container .btn-explore:hover {
   .payment-actions .btn {
     width: 100%;
   }
+}
+
+
+.payment-page {
+  background-color: #EBF0FF; /* Warna latar utama halaman dari gambar */
+  padding-top: 90px; /* Jarak dari navbar */
+  padding-bottom: 40px;
+}
+
+.payment-confirmation-page .payment-content-container {
+  max-width: 800px; /* Batasi lebar konten utama */
+  margin-top: 30px; /* Jarak dari atas jika navbar fixed */
+}
+
+.payment-label {
+  font-size: 24px;
+  color: #2F2B84; /* Warna abu-abu untuk label */
+  margin-bottom: 0.25rem;
+}
+
+.payment-music-title {
+  font-size: 40px; /* Ukuran disesuaikan dengan gambar */
+  font-weight: 600;
+  color: #000000; /* Warna ungu tua */
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.payment-amount {
+  font-size: 2.8rem; /* Ukuran sangat besar */
+  font-weight: 700;
+  color: #000000; /* Warna ungu primer (sesuaikan dengan gambar) */
+  margin-bottom: 1.5rem;
+}
+
+.payment-code-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.payment-code-value {
+  font-size: 56px; /* Ukuran besar */
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-right: 10px; /* Jarak ke tombol copy */
+}
+
+.copy-code-btn {
+  font-size: 1.5rem; /* Ukuran ikon copy */
+  color: #6A1B9A; /* Warna ikon ungu */
+  padding: 0; /* Hapus padding default button link */
+}
+.copy-code-btn:hover {
+  color: #4A148C;
+}
+
+
+.payment-va-name {
+  font-size: 0.9rem;
+  color: #5E5873;
+}
+
+.upload-prompt-heading {
+  font-size: 56px;
+  font-weight: 600;
+  color: #3D3D6C;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-pilih-file {
+  background-color: #B8BAFF; /* Warna ungu muda (sesuaikan) */
+  color: #000000; /* Warna teks ungu tua */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.btn-pilih-file:hover {
+  background-color: #B39DDB;
+  color: #4A148C;
+}
+.btn-pilih-file .bi-upload {
+  font-size: 1.1em; /* Ukuran ikon relatif terhadap font tombol */
+}
+
+.selected-file-name {
+    font-size: 0.85rem;
+    color: #5E5873;
+}
+
+.instructions-box {
+  background-color: #7881C4; /* Warna background ungu tua (sesuaikan) */
+  color: #000000; /* Teks putih */
+  padding: 25px 30px;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.instructions-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.instructions-list {
+  padding-left: 20px; /* Padding untuk nomor list */
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.instructions-list li {
+  margin-bottom: 8px;
+}
+.instructions-list li strong {
+    font-weight: 600; /* Atau 700 jika ingin lebih tebal */
+}
+
+
+.btn-cek-pembayaran {
+  background-color: #5562FC; /* Warna ungu tombol (sesuaikan) */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+.btn-cek-pembayaran:hover {
+  background-color: #4527A0;
+}
+
+.ticket-page-wrapper {
+  background-color: #dcddff;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  font-family: "nunito";
+}
+
+.ticket-card {
+    background-color: #7881C4; 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    padding: 30px;
+    position: relative; 
+    overflow: hidden; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.ticket-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -15px; 
+    bottom: 0;
+    width: 30px; 
+    background-color: #DCDDFF;
+    background-image: radial-gradient(circle at 15px 15px, transparent 15px, #7881C4 15.5px);
+    background-size: 40px 40px; 
+    background-repeat: repeat-y; 
+    z-index: 1;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;
+}
+
+.ticket-card .row {
+    padding-right: 30px; 
+}
+
+@media (max-width: 767.98px) {
+    .ticket-card::after {
+        display: none; 
+    }
+    .ticket-card {
+        border-radius: 20px;
+    }
+    .ticket-card .row {
+        padding-right: 0; 
+    }
+}
+
+.ticket-event-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1C1A28;
+}
+
+.ticket-order-code {
+  font-size: 0.9rem;
+  color: #5b5b5b;
+}
+
+.ticket-logo {
+  height: 77px;
+  width: 89px;
+}
+
+.ticket-label {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin-bottom: 0.3rem;
+}
+
+.ticket-info {
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.ticket-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-logo-custom {
+  height: 77px; /* Tinggi spesifik */
+  width: auto;  
+}
+
+/* Ukuran kolom */
+.ticket-left {
+  width: 320px;
+}
+.ticket-center {
+  width: 340px;
+}
+.ticket-right {
+  width: 240px;
+}
+
+.ticket-boxed-info {
+  background-color: #e6ddff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.ticket-label-info {
+  font-size: 25px;
+  color: #5F70C6;
+  margin-bottom: 0.25rem;
+}
+
+.ticket-value-info {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.vertical-divider {
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .vertical-divider {
+    display: none !important;
+  }
+
+  .ticket-seat-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .ticket-label-info {
+    font-size: 16px;
+  }
+
+  .ticket-value-info {
+    font-size: 16px;
+  }
+
+  .ticket-location-name {
+  font-size: 15px;
+}
+
+.ticket-location-address {
+  font-size: 12px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .vertical-divider {
+    display: none !important;
+  }
+
+  .ticket-seat-item {
+    margin-bottom: 0.5rem;
+  }
+  .location-icon {
+    font-size: 10px;
+}
+}
+
+/* Styling untuk divider antar kolom utama tiket */
+.ticket-main-row {
+    position: relative; /* Diperlukan untuk pseudo-element */
+}
+
+/* Divider setelah kolom kiri */
+.ticket-col-left {
+    position: relative;
+}
+
+.ticket-col-left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px; /* Jarak dari kolom */
+    height: 100%; /* Sepanjang tinggi kolom */
+    width: 2px; /* Lebar divider */
+    border-right: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+.ticket-col-middle {
+    position: relative;
+}
+
+.ticket-col-middle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    border-right: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 767.98px) { /* Untuk perangkat di bawah ukuran md (tablet/mobile) */
+    .ticket-col-left::after,
+    .ticket-col-middle::after {
+        display: none; /* Sembunyikan divider vertikal di mobile karena layout menjadi vertikal */
+    }
+    .ticket-col-left,
+    .ticket-col-middle {
+        margin-bottom: 20px;
+    }
+}
+
+.ticket-box-main .ticket-col-left::after {
+    right: -25px; 
+}
+.ticket-box-main .ticket-col-middle::after {
+    right: -25px; 
+}
+
+.ticket-seat-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ticket-divider {
+  width: 1px;
+  background-color: #ccc;
+  align-self: stretch;
+}
+
+.location-display-wrapper {
+    display: flex; /* Menggunakan Flexbox untuk menata ikon dan teks */
+    align-items: flex-start;
+}
+
+.location-icon {
+    font-size: 30px; /* Ukuran ikon, sesuaikan jika perlu */
+    color: #000000; /* Warna ikon, sesuaikan dengan desain Anda */
+    margin-right: 15px; /* Jarak antara ikon dan teks */
+    flex-shrink: 0; 
+}
+
+.ticket-location-name {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.ticket-location-address {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-download-ticket {
+  background-color: #a78bfa !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-download-ticket:hover {
+  background-color: #7c3aed !important;
+}
+
+/* === CSS Revisi untuk Modal Pilih Kursi === */
+
+.seat-map-modal .modal-dialog {
+  /* Lebar visual konten (506px) + (2 * padding horizontal modal-body, misal 10px kiri & 10px kanan) */
+  max-width: 526px; /* Hitungan: 506px (konten visual) + 2*10px (padding H body) = 526px. */
+                     /* Jika padding H body adalah 0, maka max-width = 506px */
+  margin: 1.75rem auto;
+}
+
+.seat-map-modal .modal-content {
+  background-color: #D4D8F7;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  overflow: hidden; /* Penting agar konten yang 'terpotong' tidak membuat scroll di level ini */
+}
+
+.seat-map-modal-header {
+  border-bottom: none;
+  padding: 0.75rem 1rem;
+  position: relative; /* Untuk z-index tombol close jika diperlukan */
+  z-index: 10; /* Pastikan header di atas konten body yang mungkin 'meluber' sementara */
+}
+
+.seat-map-modal-header .btn-close {
+  filter: grayscale(1) brightness(0.4);
+  opacity: 0.7;
+}
+.seat-map-modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+.seat-map-modal-body {
+  padding: 15px 10px 25px 10px; /* Padding horizontal 10px kiri-kanan */
+                                 /* Padding vertikal sesuai kebutuhan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* SANGAT PENTING: Menyembunyikan bagian grid yang meluber */
+}
+
+.screen-indicator {
+  width: 70%;
+  max-width: 320px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.screen-arc {
+  height: 25px;
+  border: 2px solid #A0A0C0;
+  border-top-left-radius: 120px 40px;
+  border-top-right-radius: 120px 40px;
+  border-bottom: none;
+  margin: 0 auto;
+  background-color: #F0F0F8;
+  box-shadow: 0 -4px 8px -3px rgba(0,0,0,0.15) inset;
+}
+
+.screen-text {
+  font-size: 0.7rem;
+  color: #606080;
+  letter-spacing: 3px;
+  margin-top: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.seat-map-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 534px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 7px; 
+}
+
+.row-label {
+  width: 22px;
+  text-align: center;
+  font-size: 0.7rem; 
+  color: #4A4E9B;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.seats-in-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px; 
+}
+
+.seat {
+  width: 28px;
+  height: 26px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 1px solid #A8A9E0;
+  padding: 0 !important; 
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
+  color: #4A4E9B;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.seat > span {
+  display: inline;
+  font-size: 12px; 
+  line-height: 1;  
+}
+
+.seat:hover:not(.seat-taken):not(.selected):not(:disabled) {
+  background-color: #E8E9FF;
+  border-color: #7A73A9;
+  transform: translateY(-1px);
+}
+
+.seat.seat-taken {
+  background-color: #7A73A9;
+  border-color: #6A609A;
+  cursor: not-allowed;
+}
+.seat.seat-taken > span {
+  color: #DCDDFF;
+  font-weight: bold;
+}
+
+.seat.selected {
+  background-color: #4A4E9B;
+  border-color: #3D3D6C;
+  transform: scale(1.05);
+}
+.seat.selected > span {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* Kelas .seat-gap bisa dihapus jika Anda sudah menghapus logika render lorong dari JSX */
+.seat-gap {
+  width: 28px;
+  height: 26px;
+  visibility: hidden;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: #4A4E9B;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.seat-example {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #A8A9E0;
+}
+.seat-example.available { 
+  background-color: #FFFFFF; 
+}
+.seat-example.selected { 
+  background-color: #4A4E9B; 
+  border-color: #3D3D6C;
+}
+.seat-example.taken { 
+  background-color: #7A73A9; 
+  border-color: #6A609A;
+}
+
+.seat-map-modal-footer {
+  border-top: 1px solid #B0B8E0;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+}
+.seat-map-modal-footer .btn-modal-batal {
+  background-color: #A0A8D0;
+  color: #3D3D6C;
+  border-color: #A0A8D0;
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+.seat-map-modal-footer .btn-modal-batal:hover {
+  background-color: #9098C0;
+  border-color: #9098C0;
+}
+.seat-map-modal-footer .btn-modal-konfirmasi {
+  background-color: #4A4E9B;
+  border-color: #4A4E9B;
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+.seat-map-modal-footer .btn-modal-konfirmasi:hover {
+  background-color: #3D3D6C;
+  border-color: #3D3D6C;
+}
+
+.info-film-col .film-meta-info {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.info-film-col .info-film-type-subtitle {
+  display: block; 
+  font-size: 0.9rem;        
+  color: #6A63A2;          
+  margin-bottom: 6px;    
+  font-weight: 500;         
+}
+
+.info-film-col .info-film-cinema-tag {
+  display: inline-block;    
+  background-color: #3B325F; 
+  color: #FFFFFF;        
+  font-size: 0.75rem;       
+  font-weight: 500;
+  padding: 5px 16px;       
+  border-radius: 20px;    
+  line-height: 1.1;        
+  text-transform: uppercase; 
+}
+
+
+/* Kolom Kiri - Stub Tiket */
+.ticket-stub-col {
+  padding: 0 10px; /* Padding kiri-kanan untuk kolom stub */
+  display: flex; /* Untuk memusatkan .ticket-stub-content jika kolomnya lebih tinggi */
+  align-items: center;
+}
+
+.ticket-stub-content {
+  background-color: #EDEAFB; /* Warna background stub lebih terang / putih keunguan */
+  border-radius: 12px;
+  padding: 20px 22px;
+  text-align: left;
+  color: #3D325F; /* Warna teks default di stub */
+  width: 100%; 
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.ticket-count-info {
+  font-size: 1.1rem; /* Ukuran "1 Ticket" */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ticket-seat-detail {
+  font-size: 1rem; /* Ukuran info kursi "B14" */
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.ticket-price-detail {
+  font-size: 0.95rem; /* Ukuran harga */
+  font-weight: 500;
+  color: #5C53A0; /* Warna harga sedikit berbeda */
+}
+
+/* Kolom Tengah - Info Detail */
+.ticket-info-col {
+  padding: 0 10px; /* Padding kiri-kanan untuk kolom tengah */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribusi dua box info jika tingginya fix */
+  gap: 15px; /* Jarak antar .ticket-info-box jika ada lebih dari satu dan parent tidak justify-content-between */
+}
+
+.ticket-info-box {
+  background-color: #EDEAFB; /* Warna background box info */
+  border-radius: 10px;
+  padding: 15px 18px;
+  color: #3D325F;
+  /* margin-bottom: 15px; -- Dihapus, gunakan gap pada parent .ticket-info-col */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%; /* Memastikan box mengambil lebar penuh kolomnya */
+}
+.ticket-info-box:last-child {
+  margin-bottom: 0;
+}
+
+.datetime-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Pusatkan secara vertikal jika tinggi berbeda */
+}
+
+.datetime-left {
+  text-align: left;
+}
+.datetime-right {
+  text-align: right;
+}
+
+.event-day {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: #6E6B7B; /* Warna hari lebih redup */
+}
+
+.event-date {
+  font-size: 1rem; /* Ukuran tanggal */
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #3D325F;
+}
+
+.event-time {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4A4E9B; /* Warna waktu */
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon-custom {
+  font-size: 1.6rem; 
+  color: #5C53A0; 
+  margin-right: 12px;
+  flex-shrink: 0; /* Agar ikon tidak mengecil */
+}
+
+.location-text-custom .venue-name-custom {
+  font-size: 0.9rem; /* Ukuran nama venue */
+  font-weight: 600;
+  color: #3D325F;
+  margin-bottom: 2px;
+}
+
+.location-text-custom .venue-detail-custom {
+  font-size: 0.8rem;
+  color: #6E6B7B; 
+  margin-bottom: 0;
+  line-height: 1.3; /* Jika alamat panjang */
+}
+
+/* Garis Pemisah Vertikal */
+.ticket-divider-line {
+  width: 2px; 
+  min-height: 150px; /* Tinggi minimal garis, atau sesuaikan agar pas */
+  height: 100%; /* Coba 100% dari parent Col jika Col nya stretch */
+  background-image: linear-gradient(to bottom, #B0AACF 5px, transparent 5px, transparent 10px); 
+  background-size: 100% 15px; /* Ukuran pattern dash */
+  align-self: stretch; /* Agar mengisi tinggi Col jika Col di-stretch */
+  margin: 0 5px; /* Jarak garis dari kolom lain */
+}
+
+.ticket-qr-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+}
+
+.ticket-qr-image {
+  max-width: 140px; /* Ukuran QR Code, sesuaikan dengan gambar Anda */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: white; /* Penting jika QR code punya area transparan */
+  padding: 10px; /* Padding di dalam background putih QR */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }

@@ -2,17 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import KomponenFormPembayaran from '../components/FormPembayaranComponent';
-import { getKonserUntukPembayaran } from '../data/index';
+import KomponenFormPembayaran from '../components/FormPembayaranFilmComponent';
+import { getFilmUntukPembayaran } from '../data/index';
 
 const FormBayarPage = () => {
   const { id } = useParams(); 
-  const [konser, setKonser] = useState(null);
+  const [film, setFilm] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const dataKonser = getKonserUntukPembayaran(id);
-    setKonser(dataKonser);
+    const dataFilm = getFilmUntukPembayaran(id);
+    setFilm(dataFilm);
     setLoading(false);
   }, [id]);
 
@@ -23,7 +23,7 @@ const FormBayarPage = () => {
   return (
     <div className="halaman-pembayaran">
       <Container className="my-4">
-        <KomponenFormPembayaran konser={konser} />
+        <KomponenFormPembayaran film={film} />
       </Container>
     </div>
   );

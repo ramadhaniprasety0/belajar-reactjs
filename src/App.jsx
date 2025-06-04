@@ -7,10 +7,13 @@ import HomePageAfter from "./pages/HomePageAfter";
 import LoginPage from "./pages/LoginPage";
 import RegisPage from "./pages/RegisterPage";
 import FilmsPage from "./pages/FilmsPage";
-import FormBayarPage from "./pages/FormBayarPage";
+import FormBayarMusicPage from "./pages/FormBayarPage";
+import FormBayarFilmPage from "./pages/FormBayarFilmPage";
 import FilmsPageAfter from "./pages/FilmsPageAfter";
 import FaqPage from "./pages/FaqPage";
 import SyaratKetenPage from "./pages/SyaratKetenPage";
+import PaymentMusicPage from "./pages/PaymentMusicPage";
+import PaymentFilmPage from "./pages/PaymentFilmPage";
 import MusicsPage from "./pages/MusicsPage";
 import ProfilePage from "./pages/ProfilePage";
 import MusicsPageAfter from "./pages/MusicsPageAfter";
@@ -20,6 +23,8 @@ import KonserMusicsPage from "./pages/KonserMusicsPage";
 import DetailFilmsPage from "./pages/DetailFilmsPage";
 import DetailKonserPage from "./pages/DetailKonserPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
+import TicketMusicPage from "./pages/TicketMusicPage";
+import TicketFilmPage from "./pages/TicketFilmPage";
 
 function App() {
   return (
@@ -37,8 +42,13 @@ function App() {
         <Route path="/populer" element={<PopulerMusicsPage />} />
         <Route path="/konser" element={<KonserMusicsPage />} />
         <Route path="/konser/:id" element={<DetailKonserPage />} />
-        <Route path="/bayar/:id" element={<FormBayarPage />} />
+        <Route path="/bayar-konser/:id" element={<FormBayarMusicPage />} />
+        <Route path="/bayar-film/:id" element={<FormBayarFilmPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/konfirm-bayar-konser/:id" element={<PaymentMusicPage />} />
+        <Route path="/konfirm-bayar-film/:id" element={<PaymentFilmPage />} />
+        <Route path="/tiket-musik" element={<TicketMusicPage />} />
+        <Route path="/tiket-film" element={<TicketFilmPage />} />
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
       </Route>
 

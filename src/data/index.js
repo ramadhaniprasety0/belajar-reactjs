@@ -21,6 +21,7 @@ import Pemeran2 from "../assets/img/pemeran/the_nun2.png";
 import Pemeran3 from "../assets/img/pemeran/the_nun3.png";
 import Hero1 from "../assets/img/hero films/the_nun.png";
 import Poster1 from "../assets/img/poster films/the_nun.png";
+import Poster2 from "../assets/img/poster films/bukit_duri.png";
 
 // Carousel News
 import FilmsNew1 from "../assets/img/thumnail/films/wakanda.jpg";
@@ -1126,4 +1127,97 @@ export const getKonserUntukPembayaran = (id) => {
     };
   }
   return null;
+};
+
+export const getFilmUntukPembayaran = (id) => {
+  if (id == 1) { 
+    return {
+      id: 1,
+      posterImage: Poster2, 
+      title: "Pengepungan di Bukit Duri",
+      ticketCategories: [
+        { id: "vip", name: "VIP", price: 2800000, status: "Tersedia", currency: "Rp." },
+        { id: "gold", name: "GOLD", price: 2200000, status: "Tiket Habis", currency: "Rp." },
+        { id: "silver", name: "SILVER", price: 1800000, status: "Tiket Habis", currency: "Rp." },
+        { id: "bronze", name: "BRONZE", price: 1200000, status: "Tiket Habis", currency: "Rp." },
+      ]
+    };
+  }
+  return null;
+};
+
+export const paymentMusic = {
+  id: 'payment001',
+  musicTitle: "NCT DREAM TOUR THE DREAM SHOW 4 : DREAM THE FUTURE 2025",
+  totalAmount: 2800000,
+  currency: "RP",
+  paymentCode: "FM0012025",
+  virtualAccountName: "FindFun Jaya",
+  paymentInstructionsTitle: "Cara Melakukan Pembayaran",
+  paymentInstructions: [
+    { id: 1, text: "Masukan PIN ATM anda lalu pilih menu ", boldText: "transaksi lainnya" },
+    { id: 2, text: "Pilih menu transfer ke ", boldText: "Virtual akun" },
+    { id: 3, text: "Masukkan kode pembayaran Virtual akun ", boldText: "(a.n FindFun Jaya)" },
+    { id: 4, text: "Cek nominal transfer apakah sudah sesuai dengan total pembayaran pada website" },
+    { id: 5, text: "Jika sudah transfer, simpan bukti / struk transfer untuk di upload bukti pembayaran ke website FindFun" }
+  ],
+  uploadPrompt: "Sudah Selesai bayar? Upload bukti disini",
+};
+
+export const paymentFilm = {
+  id: 'payment001',
+  filmTitle: "Pengepungan di Bukit Duri",
+  totalAmount: 40000,
+  currency: "RP",
+  paymentCode: "FF0012025",
+  virtualAccountName: "FindFun Jaya",
+  paymentInstructionsTitle: "Cara Melakukan Pembayaran",
+  paymentInstructions: [
+    { id: 1, text: "Masukan PIN ATM anda lalu pilih menu ", boldText: "transaksi lainnya" },
+    { id: 2, text: "Pilih menu transfer ke ", boldText: "Virtual akun" },
+    { id: 3, text: "Masukkan kode pembayaran Virtual akun ", boldText: "(a.n FindFun Jaya)" },
+    { id: 4, text: "Cek nominal transfer apakah sudah sesuai dengan total pembayaran pada website" },
+    { id: 5, text: "Jika sudah transfer, simpan bukti / struk transfer untuk di upload bukti pembayaran ke website FindFun" }
+  ],
+  uploadPrompt: "Sudah Selesai bayar? Upload bukti disini",
+};
+
+// src/data/ticketData.js
+
+export const dummyTicketData = {
+  id: 1, // Menambahkan properti ID
+  eventName: "NCT DREAM TOUR THE DREAM SHOW 4 : DREAM THE FUTURE 2025",
+  orderCode: "FMJ98765432",
+  userName: "Shafira",
+  seatNumber: "01",
+  section: "B",
+  rowNumber: "50",
+  locationName: "Jakarta Internasional Stadium",
+  locationAddress: "Papanggo, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta",
+  dateEvent: "27 dan 28 September 2025",
+  timeEvent: "14:00 - 23:00 WIB",
+  qrCodeImage: "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=FMJ98765432-Shafira-NCTDREAM", // URL QR code placeholder
+  downloadTicketLink: "#" // Link placeholder untuk unduh tiket
+};
+
+export const sampleTicketData = {
+  id: "FLM001", // ID untuk keperluan link atau key
+  eventName: "Pengepungan di Bukit Duri",
+  orderCode: "TRK00982347",
+  
+  // Untuk Kolom Kiri (Stub Tiket)
+  ticketCountInfo: "1 Ticket", // Bisa juga dibuat dinamis: `${kuantitas} Ticket`
+  seatInfo: "B14",             // Gabungan dari section/row dan nomor kursi
+  priceInfo: "Rp 40.000", 
+  eventDay: "Senin",
+  eventDate: "5 MEI 2025",
+  eventTime: "11.00 - 12.30 WIB",
+  venueName: "CGV",               // Nama utama venue (misal, nama bioskop)
+  venueDetail: "Mall AEON Jakarta", // Detail alamat atau lokasi
+
+  // Untuk Kolom Kanan
+  qrCodeImage: "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TRK00982347", // URL Gambar QR Code
+
+  // Untuk Tombol Unduh
+  downloadTicketLink: "#", 
 };
