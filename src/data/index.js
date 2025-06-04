@@ -79,6 +79,9 @@ import Music3 from "../assets/img/musics/music2.png";
 import Music4 from "../assets/img/musics/music1.png";
 import Music5 from "../assets/img/musics/music5.png";
 
+// musics review
+import nct from "../assets/img/musics/musicsnctyellow.jpeg";
+
 // Films Bioskop
 import jumbo from "../assets/img/filmbioskop/jumbo.png";
 import mendadakdangdut from "../assets/img/filmbioskop/mendadakdangdut.png";
@@ -698,6 +701,23 @@ export const ReviewFilms = [
     
   }
 ];
+export const ReviewMusics = [
+  {
+    id: 1,
+    title: "Hot Sauce",
+    image: nct,
+    text: "Ulasan Pendengar",
+    genre: ["K-Pop", "Dance", "Pop"],
+    description: {
+      plot: "Kehangatan Emosionalnya dapet banget",
+      comment: "Lagu ini menampilkan sisi lembut dan emosional dari NCT DREAM. Dengan melodi yang menenangkan dan vokal yang hangat, lagu ini menghadirkan perasaan tenang namun penuh kerinduan, seperti pelukan hangat di tengah malam. Liriknya menggambarkan keinginan untuk menjadi tempat bersandar bagi seseorang yang dicintai. Lagu ini menunjukkan kematangan vokal para member dan cocok dinikmati saat momen reflektif atau ingin merasakan kenyamanan emosional."
+    },
+    reviews: {
+      username: "Shafira",
+      date: "10-Februari-2023"
+    }
+  },
+]
 
 export const DetailTiketFilms = [
   {
@@ -749,6 +769,8 @@ export const showtimes = [
   '19:00 WIB',
   '21:00 WIB',
 ];
+
+
 
 
 

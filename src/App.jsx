@@ -20,6 +20,7 @@ import DetailFilmsPage from "./pages/DetailFilmsPage";
 import TicketFilmsPage from "./pages/TicketFilmsPage";
 import ReviewFilmsPage from "./pages/ReviewFilmsPage";
 import DetailTiketFilmsPage from "./pages/DetailTiketFilmsPage";
+import ReviewMusicsPage from "./pages/ReviewMusicsPage";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/syaratketen" element={<SyaratKetenPage />} />
         <Route path="/reviewfilms/:id" element={<ReviewFilmsPage/>} />
         <Route path="/detailtiketfilms/:id" element={<DetailTiketFilmsPage/>} />  
+        <Route path="/reviewmusics/:id" element={<ReviewMusicsPage/>} />  
       </Route>
 
       <Route path="/users" element={<MainLayoutAfter />}>

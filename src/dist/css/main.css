@@ -3596,3 +3596,172 @@ header .container .btn-explore:hover {
 .trailer-container .img-trailerfilms {
   border-radius: 30px;
 }
+
+/* reviewmusics  */
+.reviewmusics {
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  display: flex;
+  justify-content: center; /* Posisikan konten di tengah secara horizontal */
+  flex-direction: column; /* Konten diatur vertikal */
+  align-items: center; /* Pastikan konten di tengah */
+}
+
+.poster-section-review{
+  position: relative; /* Menyiapkan kontainer gambar untuk overlay */
+  width: 100%;
+  max-width: 1300px; /* Batas lebar maksimal */
+  margin-bottom: 50px; /* Jarak bawah dari gambar */
+  margin-top: 30px;
+}
+
+.musics-poster {
+  width: 100%; /* Gambar mengisi 100% lebar kontainer */
+  height: auto;
+  max-height: 400px; /* Menjaga gambar tidak melebihi batas tinggi */
+  object-fit: cover; /* Menutupi seluruh area gambar tanpa merusak rasio */
+  border-radius: 10px; /* Sudut membulat pada gambar */
+}
+
+.title-review-music {
+  position: absolute;
+  margin-left: -900px;
+  margin-top: -200px;
+}
+
+.title-review-music p {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  font-weight: bold;
+  color: #2e388a;
+  font-style: italic;
+}
+
+.title-review-music h2 {
+  font-size: 2rem; /* Ukuran font untuk teks */
+  font-weight: normal;
+  margin: 0; /* Menghapus margin default h2 */
+  color: #fff;
+  margin-top: -15px;
+}
+
+/* Tombol dropdown */
+.btn-review-musics {
+  background-color: #2e388a; /* Warna latar belakang tombol */
+  color: white; /* Teks tombol berwarna putih */
+  border: 1px solid #444994;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Sudut membulat pada tombol */
+  text-align: center;
+  display: inline-block;
+  width: 150px; /* Lebar tombol */
+}
+
+/* Efek hover pada tombol */
+.btn-review-musics:hover {
+  background-color: rgb(60, 74, 177); /* Warna latar belakang saat hover */
+}
+
+/* Menu dropdown */
+.dropdown-menu-review-music {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute;
+  top: 100%; /* Menempatkan dropdown tepat di bawah tombol */
+  left: 0;
+  right: 0;
+  background-color: #efebfc; /* Latar belakang menu dropdown */
+  border-radius: 15px; /* Sudut membulat pada dropdown */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan di bawah dropdown */
+  margin-top: 5px; /* Memberikan sedikit jarak antara tombol dan dropdown */
+  z-index: 1000; /* Pastikan dropdown berada di atas konten lainnya */
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Menampilkan dropdown saat dropdownOpen true */
+.dropdown-menu-review-music {
+  display: block; /* Menampilkan dropdown saat tombol diklik */
+}
+
+/* Style untuk item dalam dropdown */
+.dropdown-menu-review-music li {
+  padding: 7px;
+  color: black; /* Warna teks item */
+  cursor: pointer;
+  border-bottom: 2px solid black; /* Garis pemisah antar item */
+  text-decoration: none;
+}
+
+/* Menghapus garis bawah pada item terakhir */
+.dropdown-menu-review-music li:last-child {
+  border-bottom: none;
+}
+
+.h3-review-music{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn-plus-ulasan {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: black;
+  margin-top: -7px;
+}
+.buttons-music {
+  gap: 10px;
+  margin-left: 650px;
+}
+
+.reviewer-music {
+  background-color: #808ad5;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.reviewer-music h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #2e388a;
+}
+.reviewer-music h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reviewer-music-isi {
+  margin-top: -20px;
+}
+.reviewer-music-isi p {
+  color: white;
+  font-size: 18px;
+}
+
+.reviewer-music-users {
+  font-size: 15px;
+  gap: 30px;
+  color: #3d3956;
+  margin-top: -30px;
+}
+
+.like-dislike {
+  margin-top: -40px;
+  margin-left: 10px;
+}
+.like-dislike p {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #332a2a;
+}
