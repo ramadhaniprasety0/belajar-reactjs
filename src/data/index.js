@@ -23,6 +23,20 @@ import Hero1 from "../assets/img/hero films/the_nun.png";
 import Poster1 from "../assets/img/poster films/the_nun.png";
 import Poster2 from "../assets/img/poster films/bukit_duri.png";
 
+// Pemeran Pengepungan bukit duri 
+import PemeranPengepungan1 from "../assets/img/pemeran/pemeranpengepungan1.jpg";
+import PemeranPengepungan2 from "../assets/img/pemeran/pemeranpengepungan2.jpg"; 
+import PemeranPengepungan3 from "../assets/img/pemeran/pemeranpengepungan3.jpg";
+import PemeranPengepungan4 from "../assets/img/pemeran/pemeranpengepungan4.jpg";
+import PemeranPengepungan5 from "../assets/img/pemeran/pemeranpengepungan5.jpg";
+import PemeranPengepungan6 from "../assets/img/pemeran/pemeranpengepungan6.jpg";
+
+// TRAILER FILMS 
+import Trailer1 from "../assets/img/trailer/pengepungan1.jpg";
+import Trailer2 from "../assets/img/trailer/pengepungan2.jpg";
+import Trailer3 from "../assets/img/trailer/pengepungan3.jpg";
+import Trailer4 from "../assets/img/trailer/pengepungan4.jpg";
+
 // Carousel News
 import FilmsNew1 from "../assets/img/thumnail/films/wakanda.jpg";
 import FilmsNew2 from "../assets/img/thumnail/films/breakingbad.jpg";
@@ -697,7 +711,56 @@ export const ReviewFilms = [
   }
 ];
 
+export const DetailTiketFilms = [
+  {
+    id: 1,
+    image: pengepungan,
+    title: "Pengepungan di Bukit Duri",
+    description: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar. Film produksi Amazon MGM Studios serta Come and See Pictures ini dibintangi oleh Morgan Oey, Omara Esteghlal, dan Hana Malasan. Pengepungan di Bukit Duri tayang perdana di bioskop pada tanggal 17 April 2025.",
+    price: "Rp 40.000",
+    rating: 4,
+    ulasan: 10,
+    cast: [
+      { name: "Morgan Oey", role: "Pemeran", image: PemeranPengepungan1},
+      { name: "Omara E.", role: "Pemeran", image: PemeranPengepungan2 },
+      { name: "Fatih Unru", role: "Pemeran", image: PemeranPengepungan3 },
+      { name: "Endy Arfian", role: "Pemeran", image: PemeranPengepungan4 },
+      { name: "Hana Malasan", role: "Pemeran", image: PemeranPengepungan5 },
+      { name: "Satine Zaneta", role: "Pemeran", image: PemeranPengepungan6 },
+    ],
+    trailer: [
+      {image: Trailer1, LinkTrailer : "https://www.youtube.com/watch?v=OBbE4wK47ts&pp=ygUhdHJhaWxlciBwZW5nZXB1bmdhbiBkaSBidWtpdCBkdXJp"},
+      {image: Trailer2, LinkTrailer : "https://www.youtube.com/watch?v=OBbE4wK47ts&pp=ygUhdHJhaWxlciBwZW5nZXB1bmdhbiBkaSBidWtpdCBkdXJp"},
+      {image: Trailer3, LinkTrailer : "https://www.youtube.com/watch?v=OBbE4wK47ts&pp=ygUhdHJhaWxlciBwZW5nZXB1bmdhbiBkaSBidWtpdCBkdXJp"},
+      {image: Trailer4, LinkTrailer : "https://www.youtube.com/watch?v=OBbE4wK47ts&pp=ygUhdHJhaWxlciBwZW5nZXB1bmdhbiBkaSBidWtpdCBkdXJp"}
+    ]
+  }
+];
 
+
+export const bioskopData = [
+  {
+    name: 'CGV',
+    locations: ['CGV AEON Mall', 'CGV Grand Indonesia', 'CGV Cinemas', 'CGV fX Sudirman', 'CGV Cinemas Pacific'],
+  },
+  {
+    name: 'XXI',
+    locations: ['XXI Taman Anggrek', 'XXI Grand Indonesia'],
+  },
+  {
+    name: 'Cinepolis',
+    locations: ['Cinepolis Lippo Mall', 'Cinepolis Mall of Indonesia'],
+  },
+];
+
+export const showtimes = [
+  '11:00 WIB',
+  '13:00 WIB',
+  '15:00 WIB',
+  '17:00 WIB',
+  '19:00 WIB',
+  '21:00 WIB',
+];
 
 
 

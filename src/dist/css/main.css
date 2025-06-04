@@ -4778,3 +4778,250 @@ header .container .btn-explore:hover {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+  
+/* CSS PAGE DETAIL TIKET FILMS */
+.detail-tiket-films p {
+  font-size: 12px;
+  margin-left: 112px;
+}
+
+.detail-tiket-films .column1-detailtiketfilms {
+  margin-left: 111px;
+  margin-top: 20px;
+}
+
+.detail-tiket-films .column1-detailtiketfilms .p-detail {
+  margin-top: 20px;
+  margin-left: 3px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  width: 45px;
+}
+.detail-tiket-films .column1-detailtiketfilms .p-description {
+  margin-top: 20px;
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.detail-tiket-films .column2-detailtiketfilms img {
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.detail-tiket-films .column1-detailtiketfilms .rating-price .price h6 {
+  font-size: 24px;
+  margin-top: 23px;
+  font-weight: bold;
+  margin-left: 1px;
+  border-right: 2px solid black;
+  width: 130px;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menyusun elemen secara vertikal di tengah */
+  align-items: flex-start; /* Menyusun elemen ke kiri secara horizontal */
+}
+.detail-tiket-films .column1-detailtiketfilms .rating-price .rating {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.detail-tiket-films .column1-detailtiketfilms .rating-price .rating h6 {
+  font-size: 15px;
+  color: #342e58;
+}
+
+.filled-star {
+  color: #342e58;
+}
+
+.empty-star {
+  color: rgb(184, 178, 217);
+}
+
+.detail-tiket-films .column3-detailtiketfilms {
+  background-color: #8e97fd;
+  border-radius: 20px;
+  margin-top: 55px;
+  margin-left: -120px;
+  padding: 20px;
+  width: 450px;
+  overflow: hidden;
+  height: 380px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-tiket-films .column3-detailtiketfilms h6 {
+  color: #322f46;
+}
+
+.bioskop-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.bioskop-button {
+  padding: 6px 20px;
+  background-color: transparent;
+  border: 1px solid #433c6c;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bioskop-button.active {
+  background-color: #433c6c; /* Change color when active */
+  color: white;
+}
+
+.bioskop-button:hover {
+  background-color: #433c6c; /* Light hover effect */
+  color: white;
+}
+
+.lokasi-dropdown {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.lokasi-dropdown .select-location {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.date-time {
+  gap: 8px;
+  width: 100%;
+}
+.date-picker,
+.time-picker {
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.date-picker .DatePicker {
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.time-picker .TimePicker {
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.selected-info {
+  margin-top: 20px;
+}
+
+.selected-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+}
+
+.button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.buy-ticket-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.buy-ticket-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #5562fc; /* Blue background */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.buy-ticket-btn:hover {
+  background-color: #3b59c5; /* Darker blue on hover */
+}
+
+.detail-tiket-films .trailer-crew {
+  margin-top: 100px;
+}
+
+.crew-container {
+  display: flex;
+  margin-left: 114px;
+  margin-top: 20px;
+  gap: 10px;
+}
+.trailer-crew h6 {
+  margin-left: 114px;
+  font-size: 24px;
+  color: #342e58;
+  font-weight: semibold;
+}
+
+.crew-container .card-kru {
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+.crew-container .img-krufilms {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.crew-container h5 {
+  font-size: 18px;
+  color: #1d194d;
+  font-weight: bold;
+  text-align: center;
+}
+.crew-container p {
+  font-size: 16px;
+  color: #1d194d;
+  text-align: center;
+  width: 155px;
+  margin-left: -15px;
+}
+
+.crew-container .card-body-detailtiketfilms {
+  background-color: #8e97fd;
+  border-radius: 0px 0px 5px 5px;
+  height: 80px;
+}
+
+.trailer-container {
+  display: flex;
+  margin-left: 114px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+
+.trailer-container .card-trailer {
+  border-radius: 30px;
+}
+.trailer-container .img-trailerfilms {
+  border-radius: 30px;
+}
