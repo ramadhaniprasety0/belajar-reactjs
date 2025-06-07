@@ -18,19 +18,14 @@
   --color-text: #231942;
   --navbar-color: #ffffff;
   --navbar-color-text: #000000;
-  --primary-color-dashboard: #8E97FD;
-  --secondary-color-dashboard: rgba(142, 151, 253, 69%);
-  --btn-slider-color-dashboard: #1F265E;
-  --text-slider-dashboard : #1F265E;
-  --text-content-dashboard-dashboard : #000000;
 }
 
 /* NAVBAR */
 .navbar {
   background-color: #8e97fd;
-  color: var(--navbar-color); 
+  color: var(--navbar-color);
   position: sticky;
-  top: 0; 
+  top: 0;
   padding: 15px 0 15px 0;
   width: 100%;
   transition: all 0.3s ease;
@@ -40,21 +35,25 @@
 .navbar.color-active {
   position: fixed;
   background-color: #8e97fd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.color-active .nav-link a:hover {
   color: #ffff;
 }
 
-
+.navbar.color-active .nav-link .active {
+  border: 2px solid #1c1a28;
+  color: #1c1a28;
+}
 
 .navbar .nav-link a {
-  color: var(--navbar-color, white); 
+  color: var(--navbar-color, white); /* Default ke putih jika var tidak ada */
+  border-radius: 0.5rem;
   padding: 5px 10px 5px 10px;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* Transisi hover */
 }
 
 .navbar .nav-link a:hover {
@@ -63,7 +62,7 @@
 
 .navbar .nav-link .active {
   color: var(--primary-color, #251551); /* Default ke #251551 */
-  border-bottom: 2px solid #251551;
+  border: 2px solid #251551;
 }
 
 .navbar .nav-link .active:hover {
@@ -121,7 +120,7 @@
   margin-top: 10px !important; /* Jarak dari navbar */
   border-radius: 12px; /* Sudut lebih tumpul */
   border: none; /* Hapus border */
-  background-color: #8E97FD; /* Warna ungu muda (sesuai gambar) */
+  background-color: #8e97fd; /* Warna ungu muda (sesuai gambar) */
   box-shadow: none; /* Hapus bayangan */
   min-width: 160px; /* Lebar minimum */
   padding: 10px 0; /* Padding atas-bawah */
@@ -130,22 +129,22 @@
 
 /* --- GAYA BARU UNTUK ITEM DROPDOWN --- */
 .navbar .profile-dropdown-container .dropdown-item {
-  color: rgb(0, 0, 0); 
-  padding: 10px 20px; 
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
   text-decoration: none;
   display: block;
-  background-color: transparent; 
+  background-color: transparent;
   border: none;
-  font-style: italic; 
-  font-size: 1.1rem; 
-  font-weight: 500; 
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 .navbar .profile-dropdown-container .dropdown-item:hover,
 .navbar .profile-dropdown-container .dropdown-item:focus {
-  background-color: #a0a8f0; 
-  color: white; 
+  background-color: #a0a8f0;
+  color: white;
 }
 /* NAVBAR */
 
@@ -239,7 +238,7 @@ header .container .btn-explore:hover {
 
 .login-left {
   width: 100%;
-  background-image: url("/src/img/login/bg-login.png");
+  background-image: url("/src/assets/img/login/bg-login.png"); /* Ganti dengan path asli */
   background-size: cover;
   background-position: center;
 }
@@ -376,7 +375,7 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-container {
-  background-color: #9599F6;
+  background-color: #9599f6;
   border-radius: 12px;
   color: #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -412,7 +411,7 @@ header .container .btn-explore:hover {
 .edit-profile-wrapper .ubah-button {
   font-size: 0.85em;
   border-radius: 8px;
-  background-color: #DCDDFF;
+  background-color: #dcddff;
   border: 1px solid #000000; /* --- Border Hitam --- */
   color: #555;
 }
@@ -444,7 +443,7 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-form .default-input:focus {
-  border-color: #000000; 
+  border-color: #000000;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
@@ -463,14 +462,14 @@ header .container .btn-explore:hover {
 }
 
 .edit-profile-wrapper .profile-form .custom-select-v3:focus {
-  border-color: #000000; 
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1); 
+  border-color: #000000;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 /* GAYA TOMBOL GANTI */
 .edit-profile-wrapper .ganti-button.v4 {
-  background-color: #DCDDFF;
-  border: 1px solid #000000; 
+  background-color: #dcddff;
+  border: 1px solid #000000;
   color: #333;
   border-radius: 4px;
   font-weight: 600;
@@ -495,7 +494,7 @@ header .container .btn-explore:hover {
 
 .edit-profile-wrapper .simpan-button.v3 {
   background-color: #ffff;
-  border: 1px solid #ffff; 
+  border: 1px solid #ffff;
   color: #8e97fd;
   font-weight: 700;
   padding: 10px 50px;
@@ -563,7 +562,6 @@ header .container .btn-explore:hover {
   font-weight: 400;
   font-size: 20px;
   font-style: italic;
-  text-align: center;
   width: 110px;
   transition: all 0.3s ease;
 }
@@ -618,7 +616,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage .judul-hits {
-  
+  margin: 30px 0 20px 10px;
   font-size: 40px;
   font-weight: bold;
   color: #251551;
@@ -644,7 +642,7 @@ header .container .btn-explore:hover {
   margin-bottom: 20px;
   position: relative;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Gambar dalam kartu */
@@ -654,7 +652,7 @@ header .container .btn-explore:hover {
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Judul & subjudul kartu */
@@ -683,19 +681,8 @@ header .container .btn-explore:hover {
 
 /* Icon tombol play (jika ada) */
 .homepage .card-hits .link-icon {
-  background-color: var(--primary-color-dashboard);
-  padding: 2px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  font-size: 20px;
   text-decoration: none;
   color: #ffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .homepage .card-hits .icon {
@@ -705,7 +692,7 @@ header .container .btn-explore:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #9599F6;
+  background-color: #9599f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -716,7 +703,7 @@ header .container .btn-explore:hover {
 .homepage .card-hits .icon:hover {
   font-size: 20px;
   background-color: #ffff;
-  color: #9599F6;
+  color: #9599f6;
   transition: all 0.3s ease;
 }
 
@@ -810,13 +797,6 @@ header .container .btn-explore:hover {
   color: #251551;
 }
 
-.homepage .news-card{
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  
-}
-
 .homepage .news-card .img-brand {
   width: 372px;
   height: 287px;
@@ -825,7 +805,6 @@ header .container .btn-explore:hover {
 }
 
 .homepage .news-card .news-caption {
-  width: 100%;
   padding: 16px;
   background-color: #9599f6;
   border-top-right-radius: 17px;
@@ -874,7 +853,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -886,7 +865,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage .review-header {
@@ -901,7 +880,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage .review-poster.album {
@@ -920,7 +899,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage .review-year, .homepage .review-director {
+.homepage .review-year,
+.homepage .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -942,13 +922,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage .avatar-green { background-color: #a5d6a7; }
-.homepage .avatar-yellow { background-color: #fff59d; }
-.homepage .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage .avatar-pink { background-color: #f48fb1; }
+.homepage .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage .reviewer-name {
   font-weight: 500;
@@ -979,16 +967,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage .review-footer {
@@ -1202,13 +1190,6 @@ header .container .btn-explore:hover {
   filter: blur(40px);
 }
 
-.homepage-films .news-card{
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  
-}
-
 .homepage-films .news-card .img-brand {
   width: 372px;
   height: 287px;
@@ -1217,7 +1198,6 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .news-card .news-caption {
-  width: 100%;
   padding: 16px;
   background-color: #9599f6;
   border-top-right-radius: 17px;
@@ -1322,7 +1302,7 @@ header .container .btn-explore:hover {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-bottom: 0.8rem;
   border: 1px solid white;
   display: inline-block;
@@ -1371,7 +1351,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1383,7 +1363,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage-films .review-header {
@@ -1398,7 +1378,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage-films .review-poster.album {
@@ -1417,7 +1397,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage-films .review-year, .homepage-films .review-director {
+.homepage-films .review-year,
+.homepage-films .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -1439,13 +1420,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage-films .avatar-green { background-color: #a5d6a7; }
-.homepage-films .avatar-yellow { background-color: #fff59d; }
-.homepage-films .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage-films .avatar-pink { background-color: #f48fb1; }
+.homepage-films .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage-films .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage-films .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage-films .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage-films .reviewer-name {
   font-weight: 500;
@@ -1476,16 +1465,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage-films .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage-films .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage-films .review-footer {
@@ -1607,8 +1596,6 @@ header .container .btn-explore:hover {
   background-color: #ffffff;
   opacity: 1;
 }
-
-/* CSS PAGE FILMS POPULER CINEMA */
 .homepage-musics .box-konser-musics {
   border-radius: 17px;
   background: #808ad5;
@@ -1686,12 +1673,12 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .btn-lihat-semua {
-  background-color: #2e388a; /* Sesuaikan warna biru sesuai gambar */
-  color: #fff; /* Teks putih */
+  background-color: #2e388a;
+  color: #fff;
   border: none;
   padding: 6px 16px;
   font-size: 0.95rem;
-  border-radius: 999px; /* Full rounded */
+  border-radius: 999px;
   font-weight: 500;
   box-shadow: none;
   transition: background-color 0.3s ease;
@@ -1720,11 +1707,28 @@ header .container .btn-explore:hover {
   background: #808ad5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.music-popular-wrapper {
-  border-radius: 16px;
+/* Untuk scroll horizontal */
+.horizontal-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 15px; /* Ruang untuk scrollbar */
+  /* Pastikan tidak ada width 100% yang memaksa item wrap */
 }
 
+.horizontal-scroll-content {
+  display: inline-flex; /* Item berjajar */
+  gap: 16px; /* Jarak antar kartu, sesuaikan dengan p-2 di JSX atau hapus p-2 */
+}
+
+.music-popular-item-scroll {
+  display: inline-block;
+  width: 280px; 
+  height: auto; /* Biarkan tinggi menyesuaikan konten */
+  vertical-align: top;
+  white-space: normal; /* Normal white-space untuk konten di dalam kartu */
+}
+
+/* Gaya untuk kartu musik populer */
 .music-popular-card {
   background-color: #4b3f6b;
   border-radius: 16px;
@@ -1732,6 +1736,7 @@ header .container .btn-explore:hover {
   color: white;
   display: flex;
   flex-direction: column;
+  height: 100%; /* Membuat kartu mengisi tinggi .music-popular-item-scroll jika item-scroll punya height */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
@@ -1741,33 +1746,41 @@ header .container .btn-explore:hover {
 }
 
 .music-popular-image {
-  width: 100%;
-  height: 266px;
-  border-radius: 10px;
+  width: 281px;
+  height: 266px; 
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   object-fit: cover;
 }
 
 .music-popular-info {
   background-color: #2e388a;
-  padding: 12px;
+  padding: 12px 15px; /* Padding yang konsisten */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 130px;
+  flex-grow: 1; /* Agar info mengisi sisa ruang kartu */
+  min-height: 120px; /* Tinggi minimum untuk blok info, sesuaikan */
 }
 
 .music-popular-title {
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 4px 0; /* Margin bawah */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Jika judul terlalu panjang */
 }
 
 .music-popular-artist {
-  font-size: 16px;
+  font-size: 0.875rem; /* 14px */
   color: #d1cfe3;
-  font-weight: bold;
+  /* font-weight: bold; Dihilangkan agar tidak terlalu dominan */
   font-style: italic;
-  margin: 4px 0 12px;
+  margin: 0 0 10px 0; /* Margin bawah */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .music-popular-controls {
@@ -1781,7 +1794,7 @@ header .container .btn-explore:hover {
 .music-popular-controls .icon-group-left {
   display: flex;
   gap: 15px;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   color: white;
 }
 
@@ -1795,8 +1808,8 @@ header .container .btn-explore:hover {
 }
 
 .music-popular-controls .play-button {
-  width: 24px;
-  height: 24px;
+  width: 28px; /* Sedikit lebih besar */
+  height: 28px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: transparent;
@@ -1804,21 +1817,43 @@ header .container .btn-explore:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .music-popular-controls .play-button i {
   color: white;
-  font-size: 14px;
-  margin-left: 2px;
+  font-size: 0.875rem; /* 14px */
+  margin-left: 2px; /* Untuk centering play icon */
+  transition: color 0.3s ease;
 }
 
 .music-popular-controls .play-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   border-color: #ff5b5b;
 }
 
 .music-popular-controls .play-button:hover i {
   color: #ff5b5b;
+}
+
+/* Scrollbar styling (opsional) */
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Warna thumb scrollbar */
+  border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+.horizontal-scroll-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 rgba(0,0,0,0.05);
 }
 
 /* Section: Berita */
@@ -1831,7 +1866,7 @@ header .container .btn-explore:hover {
 
 .homepage-musics .news-card .news-caption {
   padding: 16px;
- background-color: #9599f6;
+  background-color: #9599f6;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -1885,7 +1920,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-card {
-  background-color: #8E97FD; /* Light purple background */
+  background-color: #8e97fd; /* Light purple background */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1897,7 +1932,7 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .homepage-musics .review-header {
@@ -1912,7 +1947,7 @@ header .container .btn-explore:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage-musics .review-poster.album {
@@ -1931,7 +1966,8 @@ header .container .btn-explore:hover {
   color: #333;
 }
 
-.homepage-musics .review-year, .homepage-musics .review-director {
+.homepage-musics .review-year,
+.homepage-musics .review-director {
   font-size: 14px;
   color: #555;
   margin: 2px 0;
@@ -1953,13 +1989,21 @@ header .container .btn-explore:hover {
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homepage-musics .avatar-green { background-color: #a5d6a7; }
-.homepage-musics .avatar-yellow { background-color: #fff59d; }
-.homepage-musics .avatar-lightgreen { background-color: #c5e1a5; }
-.homepage-musics .avatar-pink { background-color: #f48fb1; }
+.homepage-musics .avatar-green {
+  background-color: #a5d6a7;
+}
+.homepage-musics .avatar-yellow {
+  background-color: #fff59d;
+}
+.homepage-musics .avatar-lightgreen {
+  background-color: #c5e1a5;
+}
+.homepage-musics .avatar-pink {
+  background-color: #f48fb1;
+}
 
 .homepage-musics .reviewer-name {
   font-weight: 500;
@@ -1990,16 +2034,16 @@ header .container .btn-explore:hover {
 }
 
 .homepage-musics .review-text .review-see-more {
-  color: #555; 
+  color: #555;
   text-decoration: underline;
-  font-weight: 500; 
-  display: inline; 
+  font-weight: 500;
+  display: inline;
   transition: color 0.2s ease;
 }
 
 .homepage-musics .review-text .review-see-more:hover {
-  color: #333; 
-  text-decoration: underline; 
+  color: #333;
+  text-decoration: underline;
 }
 
 .homepage-musics .review-footer {
@@ -2444,8 +2488,6 @@ header .container .btn-explore:hover {
   justify-content: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
   width: 100%;
 }
 
@@ -2693,7 +2735,11 @@ header .container .btn-explore:hover {
   align-items: center;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators button {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -2701,7 +2747,11 @@ header .container .btn-explore:hover {
   opacity: 0.6;
 }
 
-.popular-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+.popular-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -2741,107 +2791,49 @@ header .container .btn-explore:hover {
   color: #ffffff;
 }
 
-/* === POPULAR MUSIC CARD === */
-.popular-musics-page .music-popular-wrapper {
-  border-radius: 16px;
+
+.popular-musics-page .box-populer-musics .horizontal-scroll-wrapper {
+  overflow-x: visible; 
+  white-space: normal;  
+  padding-bottom: 0;   
 }
 
-.popular-musics-page .music-popular-card {
-  background-color: #4b3f6b;
-  border-radius: 16px;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+.popular-musics-page .box-populer-musics .horizontal-scroll-content {
+  display: flex;    
+  flex-wrap: wrap;  
+  gap: 16px;        
+  justify-content: flex-start; 
 }
 
-.popular-musics-page .music-popular-card:hover {
-  transform: scale(1.03);
+.popular-musics-page .box-populer-musics .music-popular-item-scroll {
+  flex-grow: 0;
+  flex-shrink: 0; 
+  flex-basis: calc(25% - 12px); 
+  width: calc(25% - 12px); 
+  height: auto;
+  margin-right: 0; 
+  margin-bottom: 16px; 
 }
 
-.popular-musics-page .music-popular-image {
-  width: 100%;
-  height: 266px;
-  border-radius: 10px;
-  object-fit: cover;
+.popular-musics-page .box-populer-musics .music-popular-card {
+  height: 100%;
 }
 
-.popular-musics-page .music-popular-info {
-  background-color: #2e388a;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 130px;
+@media (max-width: 992px) { 
+  .popular-musics-page .box-populer-musics .music-popular-item-scroll {
+    flex-basis: calc(50% - 8px);
+    width: calc(50% - 8px);
+  }
 }
 
-.popular-musics-page .music-popular-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+@media (max-width: 576px) {
+  .popular-musics-page .box-populer-musics .music-popular-item-scroll {
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
 
-.popular-musics-page .music-popular-artist {
-  font-size: 16px;
-  color: #d1cfe3;
-  font-weight: bold;
-  font-style: italic;
-  margin: 4px 0 12px;
-}
-
-.popular-musics-page .music-popular-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-  border-top: 1px solid #1c1a28;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left {
-  display: flex;
-  gap: 15px;
-  font-size: 16px;
-  color: white;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left i {
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.popular-musics-page .music-popular-controls .icon-group-left i:hover {
-  color: #ff5b5b;
-}
-
-.popular-musics-page .music-popular-controls .play-button {
-  width: 24px;
-  height: 24px;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.popular-musics-page .music-popular-controls .play-button i {
-  color: white;
-  font-size: 14px;
-  margin-left: 2px;
-}
-
-.popular-musics-page .music-popular-controls .play-button:hover {
-  border-color: #ff5b5b;
-}
-
-.popular-musics-page .music-popular-controls .play-button:hover i {
-  color: #ff5b5b;
-}
-
+/* CSS TERBARU SAMPAI BAWAH */
 .konser-musics-page {
   padding-top: 80px;
   background-color: #dcddff;
@@ -2933,7 +2925,11 @@ header .container .btn-explore:hover {
   opacity: 0.6;
 }
 
-.konser-musics-page .box-carousel-musics .carousel .carousel-indicators .active {
+.konser-musics-page
+  .box-carousel-musics
+  .carousel
+  .carousel-indicators
+  .active {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -2973,7 +2969,7 @@ header .container .btn-explore:hover {
 }
 
 .konser-musics-page .konser-item-card.new-layout {
-  background-color: #7E83DF;
+  background-color: #7e83df;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -3004,12 +3000,11 @@ header .container .btn-explore:hover {
   display: flex;
   flex-direction: column;
 }
-.konser-musics-page .konser-detail-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.konser-musics-page .konser-detail-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-
 
 .konser-musics-page .konser-row-1,
 .konser-musics-page .konser-row-2 {
@@ -3018,15 +3013,15 @@ header .container .btn-explore:hover {
   align-items: flex-start;
   margin-bottom: 8px;
 }
-.konser-musics-page .konser-row-2 {
-    align-items: center;
-}
 
+.konser-musics-page .konser-row-2 {
+  align-items: center;
+}
 
 .konser-musics-page .konser-item-title {
   font-size: 30px;
   font-weight: 700;
-  color: #FFECCC;
+  color: #ffeccc;
   margin-right: 10px;
   line-height: 1.3;
   flex-grow: 1;
@@ -3034,8 +3029,8 @@ header .container .btn-explore:hover {
 
 .konser-musics-page .badge-tiket-habis,
 .konser-musics-page .badge-tiket-gratis {
-  background-color: #DCDDFF;
-  color: #2F3881;
+  background-color: #dcddff;
+  color: #2f3881;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 18px;
@@ -3046,7 +3041,7 @@ header .container .btn-explore:hover {
 
 .konser-musics-page .konser-item-date-location {
   font-size: 16px;
-  color: #E0E0FF;
+  color: #e0e0ff;
   margin-bottom: 0;
   line-height: 1.3;
 }
@@ -3054,16 +3049,16 @@ header .container .btn-explore:hover {
 .konser-musics-page .konser-item-price {
   font-size: 16px;
   font-weight: 600;
-  color: #2E388A;
+  color: #2e388a;
   margin-bottom: 0;
   text-align: right;
   flex-shrink: 0;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 .konser-musics-page .konser-item-description {
   font-size: 18px;
-  color: #F0F0FF;
+  color: #f0f0ff;
   line-height: 1.4;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -3077,30 +3072,402 @@ header .container .btn-explore:hover {
 
 /* --- PERUBAHAN PADA BAGIAN TOMBOL --- */
 .konser-musics-page .konser-button-section {
-  flex: 0 0 180px; 
+  flex: 0 0 180px;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  padding: 15px; 
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.konser-musics-page .btn-amankan-tiket { 
-  background-color: #4A4E9B !important;
-  border-color: #4A4E9B !important;
+.konser-musics-page .btn-amankan-tiket {
+  background-color: #4a4e9b !important;
+  border-color: #4a4e9b !important;
   color: white !important;
-  border-radius: 25px; 
+  border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
   white-space: nowrap;
   padding: 10px 25px;
   width: auto;
-  height: auto; 
+  height: auto;
   transition: background-color 0.2s ease;
 }
 
 .konser-musics-page .btn-amankan-tiket:hover {
+  background-color: #3a3d7a !important;
+  border-color: #3a3d7a !important;
+}
+
+@media (max-width: 991.98px) {
+  .konser-musics-page .konser-image-section {
+    flex: 0 0 140px;
+  }
+  .konser-musics-page .konser-button-section {
+    flex: 0 0 150px;
+    padding: 10px;
+  }
+  .konser-musics-page .btn-amankan-tiket {
+    font-size: 0.8rem;
+    padding: 8px 20px; /* Sesuaikan padding di tablet */
+  }
+  .konser-musics-page .konser-item-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .konser-musics-page .konser-item-card.new-layout {
+    flex-direction: column;
+    height: auto;
+  }
+  .konser-musics-page .konser-image-section {
+    width: 100%;
+    height: 180px;
+    flex-basis: auto;
+  }
+  .konser-musics-page .konser-details-section {
+    padding: 15px;
+  }
+  .konser-musics-page .konser-item-description {
+    -webkit-line-clamp: 3;
+  }
+  .konser-musics-page .konser-button-section {
+    width: 100%;
+    flex-basis: auto;
+    padding: 10px 15px 15px 15px;
+    justify-content: center; /* Pastikan tombol di tengah kolomnya */
+  }
+  .konser-musics-page .btn-amankan-tiket {
+    height: auto;
+    padding: 10px 20px;
+    width: auto; /* Di mobile, biarkan tombol tidak full width jika tidak perlu */
+    max-width: 250px; /* Batasi lebar maksimum tombol di mobile */
+  }
+}
+
+.detail-konser-page {
+  background-color: #EBF0FF;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  font-family: "nunito";
+}
+
+.detail-konser-main-container {
+  padding-top: 50px;
+}
+
+.konser-breadcrumb {
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+}
+.konser-breadcrumb .breadcrumb-item a.breadcrumb-link {
+  color: #5E5873;
+  text-decoration: none;
+}
+.konser-breadcrumb .breadcrumb-item a.breadcrumb-link:hover {
+  color: #7367F0;
+}
+.konser-breadcrumb .breadcrumb-item.active.breadcrumb-current {
+  color: #A8A8B3;
+}
+
+.konser-detail-poster {
+  border-radius: 8px;
+  width: 343px;
+  height: 484px;
+  object-fit: cover;
+  border: 1px solid #EAEAEA;
+}
+
+.konser-main-info-text {
+  color: #5E5873;
+  width: 100%; 
+  max-width: 390px;
+  height: auto;
+}
+
+
+.konser-detail-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #3D3D6C;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.price-rating-container {
+  margin-bottom: 15px !important;
+  padding: 10px 0;
+  border-bottom: none; 
+  border-top: none;    
+}
+
+.price-info .price-label {
+  font-size: 0.8rem;
+  color: #6E6B7B;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.price-info .price-amount {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3D3D6C;
+  display: block;
+}
+
+.separator-line {
+  width: 1px;
+  background-color: #000000; 
+  align-self: stretch;
+  margin-left: 20px;  
+  margin-right: 20px; 
+}
+
+.rating-info .stars-display {
+  margin-bottom: 4px;
+}
+.rating-info .star-icon {
+  color: #000000;
+  font-size: 1.1rem;
+  margin-right: 1px;
+}
+
+.rating-info .rating-details-text {
+  font-size: 0.8rem;
+  color: #6E6B7B;
+  display: block;
+  line-height: 1.3;
+}
+
+.konser-rating {
+  margin-bottom: 0 !important;
+}
+
+.konser-description-main {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #6E6B7B;
+  margin-top: 15px;
+}
+
+.konser-sidebar .info-box {
+  background-color: #7881C4;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.konser-sidebar .info-box h6 {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.konser-sidebar .info-box p {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+.konser-sidebar .info-box p:last-child {
+  margin-bottom: 0;
+}
+
+.konser-sidebar .location-icon {
+  font-size: 1.2rem;
+  margin-top: 1px;
+  color: black;
+  flex-shrink: 0;
+}
+.konser-sidebar .location-venue-name {
+  font-weight: 600 !important;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+.konser-sidebar .location-address {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.btn-beli-tiket {
+  background-color: #4A4E9B !important;
+  border-color: #4A4E9B !important;
+  color: white !important;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.btn-beli-tiket:hover {
   background-color: #3A3D7A !important;
   border-color: #3A3D7A !important;
+}
+
+.detail-section {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: none; 
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4A4E9B;
+  margin-bottom: 20px;
+}
+
+.map-image-container {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+}
+.map-image {
+  display: block;
+}
+
+.detail-konser-page .live-photo-wrapper {
+  width: 225px;
+  height: 150px; 
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+}
+.detail-konser-page .live-photo-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.artist-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: none;
+}
+
+.detail-konser-page .detail-section.artist-section {
+  padding-bottom: 30px; 
+}
+
+.detail-konser-page .section-heading { 
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4A4E9B;
+  margin-bottom: 20px;
+}
+
+.detail-konser-page .artist-info-container {
+  display: flex;       
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.detail-konser-page .artist-image {
+  width: 80px;        
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; 
+  margin-bottom: 10px; 
+}
+
+.detail-konser-page .artist-label {
+  font-size: 0.8rem;   
+  color: #6E6B7B;      
+  margin-bottom: 2px;  
+}
+
+.detail-konser-page .artist-info-container .artist-name {
+  font-weight: 600;    
+  font-size: 1.1rem; 
+  color: #3D3D6C;  
+}
+
+.artist-info-container .artist-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #5E5873;
+}
+
+.detail-konser-error {
+  padding: 50px 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+.detail-konser-error p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #5E5873;
+}
+.detail-konser-error a {
+  color: #7367F0;
+}
+
+
+@media (max-width: 991.98px) {
+  .konser-detail-poster {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .konser-main-info-text {
+    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-right: 1.5rem;
+    width: auto !important;
+  }
+  .konser-sidebar {
+    margin-top: 0;
+    padding-left: 1.5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-konser-main-container {
+    padding: 20px 20px;
+  }
+  .konser-detail-poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 343px;
+    height: auto;
+  }
+  .konser-detail-title {
+    font-size: 2rem;
+  }
+  .konser-main-info-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .section-heading {
+    font-size: 1.2rem;
+  }
+  .live-photo-item {
+    height: 110px;
+  }
+  .konser-sidebar {
+    margin-top: 30px;
+    padding-left: 0;
+    width: 100%;
+  }
 }
 
 .halaman-pembayaran {
@@ -3109,6 +3476,1138 @@ header .container .btn-explore:hover {
   padding-bottom: 50px;
   min-height: 100vh;
   font-family: "nunito";
+}
+
+.info-konser-poster {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.info-konser-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.info-konser-col .info-display-box {
+  background-color: #7881C4;
+  border-radius: 10px;      
+  padding: 12px 18px; 
+}
+
+.info-konser-col .location-box-content {
+  display: flex;
+  align-items: center;
+  color: #ffffff; 
+}
+.info-konser-col .info-box-icon {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.info-konser-col .info-box-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.info-konser-col .datetime-box-content span {
+  display: block;
+}
+
+.info-konser-col .info-box-date {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.info-konser-col .info-box-time {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.form-pembayaran-card {
+  background-color: #7881C4;
+  padding: 25px 30px;
+  border-radius: 15px;
+  color: #000000;
+}
+
+.form-pembayaran-card-2 {
+  background-color: #8E97FD;
+  padding: 25px 30px;
+  border-radius: 15px;
+  color: #000000;
+}
+
+.form-card-label {
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+  color: #000000;
+}
+
+.form-pembayaran-card .input-with-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-pembayaran-card .input-embedded-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6C63A2;
+  z-index: 3;
+  font-size: 0.9rem;
+}
+
+.form-pembayaran-card .form-control.input-with-embedded-icon {
+  padding-left: 38px;
+}
+
+.form-pembayaran-card .form-control {
+  background-color: #E8E6F2;
+  border: 1px solid #D0C9F0;
+  border-radius: 30px;
+  color: #333;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-pembayaran-card .form-control::placeholder {
+  color: #8A8A9E;
+}
+
+.form-pembayaran-card .form-control:focus {
+  background-color: #E8E6F2;
+  border-color: #D0C9F0;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-pembayaran-card .input-group-text {
+  background-color: #E8E6F2;
+  border: 1px solid #D0C9F0;
+  color: #6C63A2;
+  padding: 0.6rem 0.75rem;
+}
+
+.form-pembayaran-card .form-section-title {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.ticket-option {
+  background-color: #DCDDFF;
+  border-radius: 30px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  color: #4A4E9B;
+}
+
+.ticket-option:hover:not(.disabled) {
+  background-color: #CFD1F7;
+}
+
+.ticket-option.selected {
+  background-color: #DCDDFF;
+  border-color: #4A4E9B;
+  box-shadow: 0 0 10px rgba(75, 65, 140, 0.2);
+}
+
+.ticket-option.disabled {
+  background-color: #E8E9F8;
+  color: #A0A2C0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.ticket-icon-wrapper {
+  font-size: 1.9rem;
+  margin-right: 18px;
+  color: #5C53A0;
+}
+
+.ticket-option.disabled .ticket-icon-wrapper {
+  color: #A0A2C0;
+}
+
+.ticket-info {
+  flex-grow: 1;
+}
+
+.ticket-name {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #3D3D6C;
+  margin-bottom: 3px;
+}
+
+.ticket-price {
+  display: block;
+  font-size: 0.9rem;
+  color: #6E6B7B;
+}
+
+.ticket-option.disabled .ticket-name,
+.ticket-option.disabled .ticket-price {
+  color: #A0A2C0;
+}
+
+.ticket-action {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantity-label {
+  font-size: 0.7rem;
+  color: #6E6B7B;
+  margin-bottom: 5px;
+  line-height: 1;
+  text-align: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls .quantity-btn {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.quantity-controls .quantity-btn:hover:not(:disabled) {
+  color: #333333;
+  text-decoration: none !important;
+}
+
+.quantity-controls .quantity-display {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #2F3881;
+  border-radius: 15px;
+  padding: 4px 17px;
+  min-width: 20px;
+  text-align: center;
+  margin: 0 6px;
+}
+
+.ticket-option.disabled .quantity-controls .quantity-btn,
+.ticket-option.disabled .quantity-controls .quantity-display {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.ticket-status-badge.sold-out {
+  background-color: #2F3881;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.summary-section {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.summary-section .summary-item,
+.summary-section .summary-total {
+  padding: 5px 0;
+}
+
+.summary-section .summary-total {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.summary-section hr {
+  border-top: 1px solid #6E63A9;
+}
+
+.payment-actions .btn-batal {
+  background-color: #B8BAFF;
+  color: #000000;
+  border: 1px solid #8A82D1;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+}
+
+.payment-actions .btn-batal:hover {
+  background-color: #7A70B8;
+  border-color: #7A70B8;
+}
+
+.payment-actions .btn-pembayaran {
+  background-color: #2F3881;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+}
+
+.payment-actions .btn-pembayaran:hover {
+  background-color: #5A528A;
+}
+
+@media (max-width: 767.98px) {
+  .form-pembayaran-card {
+    padding: 20px;
+  }
+
+  .info-konser-title {
+    font-size: 1.5rem;
+  }
+
+  .payment-actions {
+    flex-direction: column;
+  }
+
+  .payment-actions .btn {
+    width: 100%;
+  }
+}
+
+
+/* reviewfilms  */
+.reviewfilms {
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  display: flex;
+  justify-content: center; /* Posisikan konten di tengah secara horizontal */
+  flex-direction: column; /* Konten diatur vertikal */
+  align-items: center; /* Pastikan konten di tengah */
+}
+
+.poster-section-review {
+  position: relative; /* Menyiapkan kontainer gambar untuk overlay */
+  width: 100%;
+  max-width: 1300px; /* Batas lebar maksimal */
+  margin-bottom: 50px; /* Jarak bawah dari gambar */
+  margin-top: 30px;
+}
+
+.film-poster {
+  width: 100%; /* Gambar mengisi 100% lebar kontainer */
+  height: auto;
+  max-height: 400px; /* Menjaga gambar tidak melebihi batas tinggi */
+  object-fit: cover; /* Menutupi seluruh area gambar tanpa merusak rasio */
+  border-radius: 10px; /* Sudut membulat pada gambar */
+}
+
+.title-review {
+  position: absolute;
+  margin-left: -900px;
+  margin-top: -700px;
+}
+
+.title-review p {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  font-weight: bold;
+  color: #9176b7;
+  font-style: italic;
+}
+
+.title-review h2 {
+  font-size: 2rem; /* Ukuran font untuk teks */
+  font-weight: normal;
+  margin: 0; /* Menghapus margin default h2 */
+  color: #fff;
+  margin-top: -15px;
+}
+
+/* Tombol dropdown */
+.btn-review {
+  background-color: #5562fc; /* Warna latar belakang tombol */
+  color: white; /* Teks tombol berwarna putih */
+  border: 1px solid #444994;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Sudut membulat pada tombol */
+  text-align: center;
+  display: inline-block;
+  width: 150px; /* Lebar tombol */
+}
+
+/* Efek hover pada tombol */
+.btn-review:hover {
+  background-color: rgb(66, 77, 199); /* Warna latar belakang saat hover */
+}
+
+/* Menu dropdown */
+.dropdown-menu-review-film {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute;
+  top: 100%; /* Menempatkan dropdown tepat di bawah tombol */
+  left: 0;
+  right: 0;
+  background-color: #efebfc; /* Latar belakang menu dropdown */
+  border-radius: 15px; /* Sudut membulat pada dropdown */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan di bawah dropdown */
+  margin-top: 5px; /* Memberikan sedikit jarak antara tombol dan dropdown */
+  z-index: 1000; /* Pastikan dropdown berada di atas konten lainnya */
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Menampilkan dropdown saat dropdownOpen true */
+.dropdown-menu-review-film {
+  display: block; /* Menampilkan dropdown saat tombol diklik */
+}
+
+/* Style untuk item dalam dropdown */
+.dropdown-menu-review-film li {
+  padding: 7px;
+  color: black; /* Warna teks item */
+  cursor: pointer;
+  border-bottom: 2px solid black; /* Garis pemisah antar item */
+  text-decoration: none;
+}
+
+/* Menghapus garis bawah pada item terakhir */
+.dropdown-menu-review-film li:last-child {
+  border-bottom: none;
+}
+
+/* Styling untuk Icon Bocoran */
+.icon-bocoran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 20px; /* Sudut membulat */
+  background-color: #a9b0fe; /* Warna latar belakang saat belum dipilih */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animasi untuk perubahan latar belakang */
+  width: 150px;
+  height: 35px;
+}
+
+.icon-bocoran:hover {
+  background-color: #d8d6fc; /* Warna latar belakang saat di-hover */
+}
+
+.icon-bocoran i {
+  transition: color 0.3s ease; /* Animasi perubahan warna icon */
+}
+
+/* Styling teks */
+.icon-bocoran span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: color 0.3s ease; /* Animasi perubahan warna teks */
+}
+
+.h3-review-film {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn-plus-ulasan {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: black;
+  margin-top: -7px;
+}
+.buttons {
+  gap: 10px;
+  margin-left: 465px;
+}
+
+.reviewer-film {
+  background-color: #8e97fd;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.reviewer-film h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.reviewer-film h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reviewer-film-isi {
+  margin-top: -20px;
+}
+
+.reviewer-film-users {
+  font-size: 15px;
+  gap: 30px;
+  color: #3d3956;
+  margin-top: -30px;
+}
+
+.like-dislike {
+  margin-top: -40px;
+  margin-left: 10px;
+}
+.like-dislike p {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #332a2a;
+
+}
+
+
+.payment-page {
+  background-color: #EBF0FF; /* Warna latar utama halaman dari gambar */
+  padding-top: 90px; /* Jarak dari navbar */
+  padding-bottom: 40px;
+}
+
+.payment-confirmation-page .payment-content-container {
+  max-width: 800px; /* Batasi lebar konten utama */
+  margin-top: 30px; /* Jarak dari atas jika navbar fixed */
+}
+
+.payment-label {
+  font-size: 24px;
+  color: #2F2B84; /* Warna abu-abu untuk label */
+  margin-bottom: 0.25rem;
+}
+
+.payment-music-title {
+  font-size: 40px; /* Ukuran disesuaikan dengan gambar */
+  font-weight: 600;
+  color: #000000; /* Warna ungu tua */
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.payment-amount {
+  font-size: 2.8rem; /* Ukuran sangat besar */
+  font-weight: 700;
+  color: #000000; /* Warna ungu primer (sesuaikan dengan gambar) */
+  margin-bottom: 1.5rem;
+}
+
+.payment-code-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.payment-code-value {
+  font-size: 56px; /* Ukuran besar */
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-right: 10px; /* Jarak ke tombol copy */
+}
+
+.copy-code-btn {
+  font-size: 1.5rem; /* Ukuran ikon copy */
+  color: #6A1B9A; /* Warna ikon ungu */
+  padding: 0; /* Hapus padding default button link */
+}
+.copy-code-btn:hover {
+  color: #4A148C;
+}
+
+
+.payment-va-name {
+  font-size: 0.9rem;
+  color: #5E5873;
+}
+
+.upload-prompt-heading {
+  font-size: 56px;
+  font-weight: 600;
+  color: #3D3D6C;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-pilih-file {
+  background-color: #B8BAFF; /* Warna ungu muda (sesuaikan) */
+  color: #000000; /* Warna teks ungu tua */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.btn-pilih-file:hover {
+  background-color: #B39DDB;
+  color: #4A148C;
+}
+.btn-pilih-file .bi-upload {
+  font-size: 1.1em; /* Ukuran ikon relatif terhadap font tombol */
+}
+
+.selected-file-name {
+    font-size: 0.85rem;
+    color: #5E5873;
+}
+
+.instructions-box {
+  background-color: #7881C4; /* Warna background ungu tua (sesuaikan) */
+  color: #000000; /* Teks putih */
+  padding: 25px 30px;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.instructions-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.instructions-list {
+  padding-left: 20px; /* Padding untuk nomor list */
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.instructions-list li {
+  margin-bottom: 8px;
+}
+.instructions-list li strong {
+    font-weight: 600; /* Atau 700 jika ingin lebih tebal */
+}
+
+
+.btn-cek-pembayaran {
+  background-color: #5562FC; /* Warna ungu tombol (sesuaikan) */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+.btn-cek-pembayaran:hover {
+  background-color: #4527A0;
+}
+
+.ticket-page-wrapper {
+  background-color: #dcddff;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  font-family: "nunito";
+}
+
+.ticket-card {
+    background-color: #7881C4; 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    padding: 30px;
+    position: relative; 
+    overflow: hidden; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.ticket-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -15px; 
+    bottom: 0;
+    width: 30px; 
+    background-color: #DCDDFF;
+    background-image: radial-gradient(circle at 15px 15px, transparent 15px, #7881C4 15.5px);
+    background-size: 40px 40px; 
+    background-repeat: repeat-y; 
+    z-index: 1;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;
+}
+
+.ticket-card .row {
+    padding-right: 30px; 
+}
+
+@media (max-width: 767.98px) {
+    .ticket-card::after {
+        display: none; 
+    }
+    .ticket-card {
+        border-radius: 20px;
+    }
+    .ticket-card .row {
+        padding-right: 0; 
+    }
+}
+
+.ticket-event-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1C1A28;
+}
+
+.ticket-order-code {
+  font-size: 0.9rem;
+  color: #5b5b5b;
+}
+
+.ticket-logo {
+  height: 77px;
+  width: 89px;
+}
+
+.ticket-label {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin-bottom: 0.3rem;
+}
+
+.ticket-info {
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.ticket-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-logo-custom {
+  height: 77px; /* Tinggi spesifik */
+  width: auto;  
+}
+
+/* Ukuran kolom */
+.ticket-left {
+  width: 320px;
+}
+.ticket-center {
+  width: 340px;
+}
+.ticket-right {
+  width: 240px;
+}
+
+.ticket-boxed-info {
+  background-color: #e6ddff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.ticket-label-info {
+  font-size: 25px;
+  color: #5F70C6;
+  margin-bottom: 0.25rem;
+}
+
+.ticket-value-info {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.vertical-divider {
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .vertical-divider {
+    display: none !important;
+  }
+
+  .ticket-seat-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .ticket-label-info {
+    font-size: 16px;
+  }
+
+  .ticket-value-info {
+    font-size: 16px;
+  }
+
+  .ticket-location-name {
+  font-size: 15px;
+}
+
+.ticket-location-address {
+  font-size: 12px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .vertical-divider {
+    display: none !important;
+  }
+
+  .ticket-seat-item {
+    margin-bottom: 0.5rem;
+  }
+  .location-icon {
+    font-size: 10px;
+}
+}
+
+/* Styling untuk divider antar kolom utama tiket */
+.ticket-main-row {
+    position: relative; /* Diperlukan untuk pseudo-element */
+}
+
+/* Divider setelah kolom kiri */
+.ticket-col-left {
+    position: relative;
+}
+
+.ticket-col-left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px; /* Jarak dari kolom */
+    height: 100%; /* Sepanjang tinggi kolom */
+    width: 2px; /* Lebar divider */
+    border-right: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+.ticket-col-middle {
+    position: relative;
+}
+
+.ticket-col-middle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    border-right: 2px dashed rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 767.98px) { /* Untuk perangkat di bawah ukuran md (tablet/mobile) */
+    .ticket-col-left::after,
+    .ticket-col-middle::after {
+        display: none; /* Sembunyikan divider vertikal di mobile karena layout menjadi vertikal */
+    }
+    .ticket-col-left,
+    .ticket-col-middle {
+        margin-bottom: 20px;
+    }
+}
+
+.ticket-box-main .ticket-col-left::after {
+    right: -25px; 
+}
+.ticket-box-main .ticket-col-middle::after {
+    right: -25px; 
+}
+
+.ticket-seat-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ticket-divider {
+  width: 1px;
+  background-color: #ccc;
+  align-self: stretch;
+}
+
+.location-display-wrapper {
+    display: flex; /* Menggunakan Flexbox untuk menata ikon dan teks */
+    align-items: flex-start;
+}
+
+.location-icon {
+    font-size: 30px; /* Ukuran ikon, sesuaikan jika perlu */
+    color: #000000; /* Warna ikon, sesuaikan dengan desain Anda */
+    margin-right: 15px; /* Jarak antara ikon dan teks */
+    flex-shrink: 0; 
+}
+
+.ticket-location-name {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.ticket-location-address {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-download-ticket {
+  background-color: #a78bfa !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-download-ticket:hover {
+  background-color: #7c3aed !important;
+}
+
+/* === CSS Revisi untuk Modal Pilih Kursi === */
+
+.seat-map-modal .modal-dialog {
+  /* Lebar visual konten (506px) + (2 * padding horizontal modal-body, misal 10px kiri & 10px kanan) */
+  max-width: 526px; /* Hitungan: 506px (konten visual) + 2*10px (padding H body) = 526px. */
+                     /* Jika padding H body adalah 0, maka max-width = 506px */
+  margin: 1.75rem auto;
+}
+
+.seat-map-modal .modal-content {
+  background-color: #D4D8F7;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  overflow: hidden; /* Penting agar konten yang 'terpotong' tidak membuat scroll di level ini */
+}
+
+.seat-map-modal-header {
+  border-bottom: none;
+  padding: 0.75rem 1rem;
+  position: relative; /* Untuk z-index tombol close jika diperlukan */
+  z-index: 10; /* Pastikan header di atas konten body yang mungkin 'meluber' sementara */
+}
+
+.seat-map-modal-header .btn-close {
+  filter: grayscale(1) brightness(0.4);
+  opacity: 0.7;
+}
+.seat-map-modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+.seat-map-modal-body {
+  padding: 15px 10px 25px 10px; /* Padding horizontal 10px kiri-kanan */
+                                 /* Padding vertikal sesuai kebutuhan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* SANGAT PENTING: Menyembunyikan bagian grid yang meluber */
+}
+
+.screen-indicator {
+  width: 70%;
+  max-width: 320px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.screen-arc {
+  height: 25px;
+  border: 2px solid #A0A0C0;
+  border-top-left-radius: 120px 40px;
+  border-top-right-radius: 120px 40px;
+  border-bottom: none;
+  margin: 0 auto;
+  background-color: #F0F0F8;
+  box-shadow: 0 -4px 8px -3px rgba(0,0,0,0.15) inset;
+}
+
+.screen-text {
+  font-size: 0.7rem;
+  color: #606080;
+  letter-spacing: 3px;
+  margin-top: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.seat-map-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 534px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 7px; 
+}
+
+.row-label {
+  width: 22px;
+  text-align: center;
+  font-size: 0.7rem; 
+  color: #4A4E9B;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.seats-in-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px; 
+}
+
+.seat {
+  width: 28px;
+  height: 26px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 1px solid #A8A9E0;
+  padding: 0 !important; 
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
+  color: #4A4E9B;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.seat > span {
+  display: inline;
+  font-size: 12px; 
+  line-height: 1;  
+}
+
+.seat:hover:not(.seat-taken):not(.selected):not(:disabled) {
+  background-color: #E8E9FF;
+  border-color: #7A73A9;
+  transform: translateY(-1px);
+}
+
+.seat.seat-taken {
+  background-color: #7A73A9;
+  border-color: #6A609A;
+  cursor: not-allowed;
+}
+.seat.seat-taken > span {
+  color: #DCDDFF;
+  font-weight: bold;
+}
+
+.seat.selected {
+  background-color: #4A4E9B;
+  border-color: #3D3D6C;
+  transform: scale(1.05);
+}
+.seat.selected > span {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* Kelas .seat-gap bisa dihapus jika Anda sudah menghapus logika render lorong dari JSX */
+.seat-gap {
+  width: 28px;
+  height: 26px;
+  visibility: hidden;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: #4A4E9B;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.seat-example {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #A8A9E0;
+}
+.seat-example.available { 
+  background-color: #FFFFFF; 
+}
+.seat-example.selected { 
+  background-color: #4A4E9B; 
+  border-color: #3D3D6C;
+}
+.seat-example.taken { 
+  background-color: #7A73A9; 
+  border-color: #6A609A;
+}
+
+.seat-map-modal-footer {
+  border-top: 1px solid #B0B8E0;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+}
+.seat-map-modal-footer .btn-modal-batal {
+  background-color: #A0A8D0;
+  color: #3D3D6C;
+  border-color: #A0A8D0;
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+.seat-map-modal-footer .btn-modal-batal:hover {
+  background-color: #9098C0;
+  border-color: #9098C0;
+}
+.seat-map-modal-footer .btn-modal-konfirmasi {
+  background-color: #4A4E9B;
+  border-color: #4A4E9B;
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+.seat-map-modal-footer .btn-modal-konfirmasi:hover {
+  background-color: #3D3D6C;
+  border-color: #3D3D6C;
 }
 
 .info-film-col .film-meta-info {
@@ -3136,281 +4635,563 @@ header .container .btn-explore:hover {
   text-transform: uppercase; 
 }
 
-@media (max-width: 991.98px) { 
-    .konser-musics-page .konser-image-section {
-        flex: 0 0 140px; 
-    }
-    .konser-musics-page .konser-button-section {
-        flex: 0 0 150px; 
-        padding: 10px;
-    }
-     .konser-musics-page .btn-amankan-tiket {
-        font-size: 0.8rem;
-        padding: 8px 20px; /* Sesuaikan padding di tablet */
-     }
-     .konser-musics-page .konser-item-title {
-        font-size: 1rem;
-     }
+
+/* Kolom Kiri - Stub Tiket */
+.ticket-stub-col {
+  padding: 0 10px; /* Padding kiri-kanan untuk kolom stub */
+  display: flex; /* Untuk memusatkan .ticket-stub-content jika kolomnya lebih tinggi */
+  align-items: center;
 }
 
-
-@media (max-width: 767.98px) {
-  .konser-musics-page .konser-item-card.new-layout {
-    flex-direction: column;
-    height: auto;
-  }
-  .konser-musics-page .konser-image-section {
-    width: 100%;
-    height: 180px; 
-    flex-basis: auto;
-  }
-  .konser-musics-page .konser-details-section {
-    padding: 15px;
-  }
-  .konser-musics-page .konser-item-description {
-    -webkit-line-clamp: 3;
-  }
-  .konser-musics-page .konser-button-section {
-    width: 100%;
-    flex-basis: auto;
-    padding: 10px 15px 15px 15px; 
-    justify-content: center; /* Pastikan tombol di tengah kolomnya */
-  }
-  .konser-musics-page .btn-amankan-tiket {
-    height: auto; 
-    padding: 10px 20px;
-    width: auto; /* Di mobile, biarkan tombol tidak full width jika tidak perlu */
-    max-width: 250px; /* Batasi lebar maksimum tombol di mobile */
-  }
+.ticket-stub-content {
+  background-color: #EDEAFB; /* Warna background stub lebih terang / putih keunguan */
+  border-radius: 12px;
+  padding: 20px 22px;
+  text-align: left;
+  color: #3D325F; /* Warna teks default di stub */
+  width: 100%; 
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
 
-/* CSS DASHBOARD */
-/* Sidebar Styling */
-.bg-slider{
-  background-color: var(--primary-color-dashboard);
-  color: var(--text-slider);
-}
-
-.slider-active{
-  background-color: var(--btn-slider-color-dashboard);
-  border-radius: 5px;
-}
-
-.btn-slider{
-  background-color: var(--secondary-color-dashboard);
-  box-shadow: 10px 10px 10px rgba(31, 38, 94, 0.1), -10px -10px 10px rgba(31, 38, 94, 0.1);
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-slider:hover{
-  background-color: var(--btn-slider-color-dashboard);
-}
-
-.sidebar-link {
-  transition: all 0.3s;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-.sidebar-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.sidebar-link.active {
-  background-color: #0d6efd;
-}
-
-/* Dashboard Content */
-.btn-add{
-  background-color: var(--primary-color-dashboard);
-  box-shadow: 10px 10px 10px rgba(31, 38, 94, 0.1), -10px -10px 10px rgba(31, 38, 94, 0.1);
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-bell{
-  background-color: var(--btn-slider-color-dashboard);
-  box-shadow: 10px 10px 10px rgba(31, 38, 94, 0.1), -10px -10px 10px rgba(31, 38, 94, 0.1);
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-bell:hover{
-  background-color: var(--primary-color-dashboard);
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-
-/* Header Styling */
-
-.bg-header{
-  background-image: none;
-  background-color: var(--secondary-color-dashboard);
-  color: var(--text-slider);
-}
-
-/* Table Styling Enhancement */
-
-
-.table th {
-  background-color: #f8f9fa;
+.ticket-count-info {
+  font-size: 1.1rem; /* Ukuran "1 Ticket" */
   font-weight: 600;
-}
-
-.film-table img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* Form Styling Enhancement */
-.form-addfilms {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-
-.form-addfilms table {
-  width: 100%;
-}
-
-.form-addfilms input, .form-addfilms textarea {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
   margin-bottom: 10px;
 }
 
-.form-addfilms label {
+.ticket-seat-detail {
+  font-size: 1rem; /* Ukuran info kursi "B14" */
   font-weight: 500;
-  margin-bottom: 5px;
-  display: inline-block;
+  margin-bottom: 6px;
 }
 
-.form-addfilms button {
-  margin-top: 15px;
+.ticket-price-detail {
+  font-size: 0.95rem; /* Ukuran harga */
+  font-weight: 500;
+  color: #5C53A0; /* Warna harga sedikit berbeda */
 }
 
-/* Card Styling */
-.stat-card {
-  transition: transform 0.3s;
+/* Kolom Tengah - Info Detail */
+.ticket-info-col {
+  padding: 0 10px; /* Padding kiri-kanan untuk kolom tengah */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribusi dua box info jika tingginya fix */
+  gap: 15px; /* Jarak antar .ticket-info-box jika ada lebih dari satu dan parent tidak justify-content-between */
 }
 
-.stat-card:hover {
-  transform: translateY(-5px);
+.ticket-info-box {
+  background-color: #EDEAFB; /* Warna background box info */
+  border-radius: 10px;
+  padding: 15px 18px;
+  color: #3D325F;
+  /* margin-bottom: 15px; -- Dihapus, gunakan gap pada parent .ticket-info-col */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%; /* Memastikan box mengambil lebar penuh kolomnya */
+}
+.ticket-info-box:last-child {
+  margin-bottom: 0;
 }
 
-.card-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.datetime-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Pusatkan secara vertikal jika tinggi berbeda */
+}
+
+.datetime-left {
+  text-align: left;
+}
+.datetime-right {
+  text-align: right;
+}
+
+.event-day {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: #6E6B7B; /* Warna hari lebih redup */
+}
+
+.event-date {
+  font-size: 1rem; /* Ukuran tanggal */
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #3D325F;
+}
+
+.event-time {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4A4E9B; /* Warna waktu */
+}
+
+.location-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 15px;
 }
 
-/* caraousel dashboard */
-.card-carousel-dashboard .carousel {
+.location-icon-custom {
+  font-size: 1.6rem; 
+  color: #5C53A0; 
+  margin-right: 12px;
+  flex-shrink: 0; /* Agar ikon tidak mengecil */
+}
+
+.location-text-custom .venue-name-custom {
+  font-size: 0.9rem; /* Ukuran nama venue */
+  font-weight: 600;
+  color: #3D325F;
+  margin-bottom: 2px;
+}
+
+.location-text-custom .venue-detail-custom {
+  font-size: 0.8rem;
+  color: #6E6B7B; 
+  margin-bottom: 0;
+  line-height: 1.3; /* Jika alamat panjang */
+}
+
+/* Garis Pemisah Vertikal */
+.ticket-divider-line {
+  width: 2px; 
+  min-height: 150px; /* Tinggi minimal garis, atau sesuaikan agar pas */
+  height: 100%; /* Coba 100% dari parent Col jika Col nya stretch */
+  background-image: linear-gradient(to bottom, #B0AACF 5px, transparent 5px, transparent 10px); 
+  background-size: 100% 15px; /* Ukuran pattern dash */
+  align-self: stretch; /* Agar mengisi tinggi Col jika Col di-stretch */
+  margin: 0 5px; /* Jarak garis dari kolom lain */
+}
+
+.ticket-qr-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+}
+
+.ticket-qr-image {
+  max-width: 140px; /* Ukuran QR Code, sesuaikan dengan gambar Anda */
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 10;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  object-fit: contain;
+  background-color: white; /* Penting jika QR code punya area transparan */
+  padding: 10px; /* Padding di dalam background putih QR */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  
+/* CSS PAGE DETAIL TIKET FILMS */
+.detail-tiket-films p {
+  font-size: 12px;
+  margin-left: 112px;
 }
 
-.card-carousel-dashboard .carousel-item {
-  transition: transform 0.3s ease-in-out;
+.detail-tiket-films .column1-detailtiketfilms {
+  margin-left: 111px;
+  margin-top: 20px;
 }
 
-
-
-.card-carousel-dashboard .caraousel-img-dashboard{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px rgba(31, 38, 94, 0.1), -10px -10px 10px rgba(31, 38, 94, 0.1);
+.detail-tiket-films .column1-detailtiketfilms .p-detail {
+  margin-top: 20px;
+  margin-left: 3px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  width: 45px;
+}
+.detail-tiket-films .column1-detailtiketfilms .p-description {
+  margin-top: 20px;
+  margin-left: 3px;
+  font-size: 16px;
 }
 
-.card-carousel-dashboard .carousel-caption {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 0, 0, 0) 47%
-  );
-  border-radius: 15px;
-  padding: 48px;
-}
-
-.card-carousel-dashboard.carousel-caption img {
-  width: 350px;
-  height: 180px;
-}
-
-.card-carousel-dashboard .carousel-caption .btn-seemore {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #8e97fd;
+.detail-tiket-films .column2-detailtiketfilms img {
   border-radius: 30px;
-  padding: 4px 20px 4px 20px;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
-  width: 110px;
-  transition: all 0.3s ease;
-  text-align: center;
-  font-size: small;
+  margin-top: 20px;
 }
 
-.card-carousel-dashboard .carousel .carousel-indicators {
-  display: flex;
-  justify-content: center;
+.detail-tiket-films .column1-detailtiketfilms .rating-price .price h6 {
+  font-size: 24px;
+  margin-top: 23px;
+  font-weight: bold;
+  margin-left: 1px;
+  border-right: 2px solid black;
+  width: 130px;
   align-items: center;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menyusun elemen secara vertikal di tengah */
+  align-items: flex-start; /* Menyusun elemen ke kiri secara horizontal */
+}
+.detail-tiket-films .column1-detailtiketfilms .rating-price .rating {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.detail-tiket-films .column1-detailtiketfilms .rating-price .rating h6 {
+  font-size: 15px;
+  color: #342e58;
 }
 
-.card-carousel-dashboard .carousel .carousel-indicators button {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  opacity: 0.6;
+.filled-star {
+  color: #342e58;
 }
 
-.card-carousel-dashboard .carousel .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  opacity: 1;
+.empty-star {
+  color: rgb(184, 178, 217);
 }
 
+.detail-tiket-films .column3-detailtiketfilms {
+  background-color: #8e97fd;
+  border-radius: 20px;
+  margin-top: 55px;
+  margin-left: -120px;
+  padding: 20px;
+  width: 450px;
+  overflow: hidden;
+  height: 380px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .sidebar {
-    width: 70px !important;
-  }
-  
-  .sidebar .sidebar-title,
-  .sidebar .nav-text {
-    display: none;
-  }
-  
-  .main-content {
-    margin-left: 70px;
-  }
+.detail-tiket-films .column3-detailtiketfilms h6 {
+  color: #322f46;
+}
+
+.bioskop-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.bioskop-button {
+  padding: 6px 20px;
+  background-color: transparent;
+  border: 1px solid #433c6c;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bioskop-button.active {
+  background-color: #433c6c; /* Change color when active */
+  color: white;
+}
+
+.bioskop-button:hover {
+  background-color: #433c6c; /* Light hover effect */
+  color: white;
+}
+
+.lokasi-dropdown {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.lokasi-dropdown .select-location {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.date-time {
+  gap: 8px;
+  width: 100%;
+}
+.date-picker,
+.time-picker {
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.date-picker .DatePicker {
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.time-picker .TimePicker {
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+  cursor: pointer;
+}
+
+.selected-info {
+  margin-top: 20px;
+}
+
+.selected-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #dcddff;
+}
+
+.button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.buy-ticket-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.buy-ticket-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #5562fc; /* Blue background */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.buy-ticket-btn:hover {
+  background-color: #3b59c5; /* Darker blue on hover */
+}
+
+.detail-tiket-films .trailer-crew {
+  margin-top: 100px;
+}
+
+.crew-container {
+  display: flex;
+  margin-left: 114px;
+  margin-top: 20px;
+  gap: 10px;
+}
+.trailer-crew h6 {
+  margin-left: 114px;
+  font-size: 24px;
+  color: #342e58;
+  font-weight: semibold;
+}
+
+.crew-container .card-kru {
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+.crew-container .img-krufilms {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.crew-container h5 {
+  font-size: 18px;
+  color: #1d194d;
+  font-weight: bold;
+  text-align: center;
+}
+.crew-container p {
+  font-size: 16px;
+  color: #1d194d;
+  text-align: center;
+  width: 155px;
+  margin-left: -15px;
+}
+
+.crew-container .card-body-detailtiketfilms {
+  background-color: #8e97fd;
+  border-radius: 0px 0px 5px 5px;
+  height: 80px;
+}
+
+.trailer-container {
+  display: flex;
+  margin-left: 114px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+
+.trailer-container .card-trailer {
+  border-radius: 30px;
+}
+.trailer-container .img-trailerfilms {
+  border-radius: 30px;
+}
+
+/* reviewmusics  */
+.reviewmusics {
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  display: flex;
+  justify-content: center; /* Posisikan konten di tengah secara horizontal */
+  flex-direction: column; /* Konten diatur vertikal */
+  align-items: center; /* Pastikan konten di tengah */
+}
+
+.poster-section-review{
+  position: relative; /* Menyiapkan kontainer gambar untuk overlay */
+  width: 100%;
+  max-width: 1300px; /* Batas lebar maksimal */
+  margin-bottom: 50px; /* Jarak bawah dari gambar */
+  margin-top: 30px;
+}
+
+.musics-poster {
+  width: 100%; /* Gambar mengisi 100% lebar kontainer */
+  height: auto;
+  max-height: 400px; /* Menjaga gambar tidak melebihi batas tinggi */
+  object-fit: cover; /* Menutupi seluruh area gambar tanpa merusak rasio */
+  border-radius: 10px; /* Sudut membulat pada gambar */
+}
+
+.title-review-music {
+  position: absolute;
+  margin-left: -900px;
+  margin-top: -200px;
+}
+
+.title-review-music p {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  font-weight: bold;
+  color: #2e388a;
+  font-style: italic;
+}
+
+.title-review-music h2 {
+  font-size: 2rem; /* Ukuran font untuk teks */
+  font-weight: normal;
+  margin: 0; /* Menghapus margin default h2 */
+  color: #fff;
+  margin-top: -15px;
+}
+
+/* Tombol dropdown */
+.btn-review-musics {
+  background-color: #2e388a; /* Warna latar belakang tombol */
+  color: white; /* Teks tombol berwarna putih */
+  border: 1px solid #444994;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Sudut membulat pada tombol */
+  text-align: center;
+  display: inline-block;
+  width: 150px; /* Lebar tombol */
+}
+
+/* Efek hover pada tombol */
+.btn-review-musics:hover {
+  background-color: rgb(60, 74, 177); /* Warna latar belakang saat hover */
+}
+
+/* Menu dropdown */
+.dropdown-menu-review-music {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute;
+  top: 100%; /* Menempatkan dropdown tepat di bawah tombol */
+  left: 0;
+  right: 0;
+  background-color: #efebfc; /* Latar belakang menu dropdown */
+  border-radius: 15px; /* Sudut membulat pada dropdown */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan di bawah dropdown */
+  margin-top: 5px; /* Memberikan sedikit jarak antara tombol dan dropdown */
+  z-index: 1000; /* Pastikan dropdown berada di atas konten lainnya */
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Menampilkan dropdown saat dropdownOpen true */
+.dropdown-menu-review-music {
+  display: block; /* Menampilkan dropdown saat tombol diklik */
+}
+
+/* Style untuk item dalam dropdown */
+.dropdown-menu-review-music li {
+  padding: 7px;
+  color: black; /* Warna teks item */
+  cursor: pointer;
+  border-bottom: 2px solid black; /* Garis pemisah antar item */
+  text-decoration: none;
+}
+
+/* Menghapus garis bawah pada item terakhir */
+.dropdown-menu-review-music li:last-child {
+  border-bottom: none;
+}
+
+.h3-review-music{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn-plus-ulasan {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: black;
+  margin-top: -7px;
+}
+.buttons-music {
+  gap: 10px;
+  margin-left: 650px;
+}
+
+.reviewer-music {
+  background-color: #808ad5;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.reviewer-music h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #2e388a;
+}
+.reviewer-music h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reviewer-music-isi {
+  margin-top: -20px;
+}
+.reviewer-music-isi p {
+  color: white;
+  font-size: 18px;
+}
+
+.reviewer-music-users {
+  font-size: 15px;
+  gap: 30px;
+  color: #3d3956;
+  margin-top: -30px;
+}
+
+.like-dislike {
+  margin-top: -40px;
+  margin-left: 10px;
+}
+.like-dislike p {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #332a2a;
 }
