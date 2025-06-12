@@ -696,6 +696,7 @@ export const ReviewFilms = [
     title: "The Nun II",
     poster: Poster1,
     text: "Ulasan Penonton",
+    ratrildur: "R • 2022 • 1h 50m •",
     genre: ["Horror", "Mystery", "Thriller", "Fantasy"],
     heroimage: Hero1,  
     description: {
@@ -716,8 +717,10 @@ export const ReviewFilms = [
 export const ReviewMusics = [
   {
     id: 1,
-    title: "Hot Sauce",
+    album: "Hot Sauce",
+    title: "Dive Into You",
     image: nct,
+    albumText: "Album Hot Sauce - 2021",
     text: "Ulasan Pendengar",
     genre: ["K-Pop", "Dance", "Pop"],
     description: {
@@ -781,8 +784,6 @@ export const showtimes = [
   '19:00 WIB',
   '21:00 WIB',
 ];
-
-
 
 
 

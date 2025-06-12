@@ -1,10 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Row, Col, Modal, Form, Button } from "react-bootstrap";
 
 const ReviewMusicsComponent = ({ review }) => {
   const [bintangDropdownOpen, setBintangDropdownOpen] = useState(false);
   const [urutkanDropdownOpen, setUrutkanDropdownOpen] = useState(false);
   const [rating, setRating] = useState(review.rating); // Rating state initialized with default value
   const totalStars = 5;
+  const [ratingplusUlasan, setRatingplusUlasan] = useState(
+    review.ratingplusUlasan
+  ); // Rating state initialized with default value
+  const totalStarsplusUlasan = 5;
 
   // New state for like and dislike count and color change
   const [likeCount, setLikeCount] = useState(100);
@@ -12,12 +17,21 @@ const ReviewMusicsComponent = ({ review }) => {
   const [likeClicked, setLikeClicked] = useState(false);
   const [dislikeClicked, setDislikeClicked] = useState(false);
 
+  // Modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   // Referensi untuk tombol dropdown dan menu dropdown
   const bintangDropdownRef = useRef(null);
   const urutkanDropdownRef = useRef(null);
 
   const handleRating = (newRating) => {
     setRating(newRating); // Update the rating state when a star is clicked
+  };
+
+  const handleRatingplusUlasan = (newRatingplusUlasan) => {
+    setRatingplusUlasan(newRatingplusUlasan); // Update the rating state when a star is clicked
   };
 
   // Fungsi untuk toggle dropdown Bintang
@@ -88,11 +102,11 @@ const ReviewMusicsComponent = ({ review }) => {
         <img
           className="rounded-5 musics-poster"
           src={review.image}
-          alt={review.title}
+          alt={review.album}
         />
       </div>
       <div className="title-review-music">
-        <p>{review.title}</p>
+        <p>{review.album}</p>
         <h2>{review.text}</h2>
       </div>
       <div className="d-flex mb-4">
@@ -136,7 +150,11 @@ const ReviewMusicsComponent = ({ review }) => {
 
           {/* Tombol + Ulasan */}
           <div className="btn-ulasan">
-            <button className="btn-plus-ulasan" type="button">
+            <button
+              className="btn-plus-ulasan"
+              type="button"
+              onClick={handleShow}
+            >
               + Ulasan
             </button>
           </div>
@@ -144,7 +162,7 @@ const ReviewMusicsComponent = ({ review }) => {
       </div>
       <div className="reviewer-music mb-5">
         {/* Star Rating System */}
-        <div className="stars p-3">
+        <div className="stars-ulasan-musics p-3">
           <span>
             {rating}/{totalStars}
           </span>
@@ -206,6 +224,87 @@ const ReviewMusicsComponent = ({ review }) => {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose} size="lg" className="mt-5">
+        <div className="main-modals-musics p-3 rounded-2">
+          <Row className="modals-header">
+            <Col className="col-2">
+              <img
+                className="rounded-4 "
+                src={review.image}
+                alt={review.title}
+                height={"150px"}
+              />
+            </Col>
+            <Col className="modals-title-albumtext-genre col-4">
+              <h5 className="title-text-musics fw-bold">{review.title}</h5>
+              <h6 className="album-text-musics">{review.albumText}</h6>
+              <div className="genre-tags-musics">
+                {review.genre.map((genre, index) => (
+                  <span key={index} className="genre-badge-musics">
+                    {genre}
+                  </span>
+                ))}
+              </div>
+            </Col>
+            <Col>
+              <div className="stars-plus-ulasan-musics p-3 col-6">
+                <h6 className="bintang-plus-ulasan-musics">Bintang</h6>
+                <h6 className="rating-plus-ulasan-musics">
+                  {ratingplusUlasan}/{totalStarsplusUlasan}
+                </h6>
+                {[...Array(totalStarsplusUlasan)].map((_, index) => (
+                  <span
+                    key={index + 1}
+                    className={`star ${
+                      index + 1 <= ratingplusUlasan ? "filled" : ""
+                    } `}
+                    onClick={() => handleRatingplusUlasan(index + 1)} // Update rating on click
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "24px", // Size of the stars
+                      color: index + 1 <= ratingplusUlasan ? "black" : "gray", // Gold for selected, gray for unselected
+                    }}
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form>
+                <Form.Group className="mb-3 mt-3">
+                  <Form.Label className="mt-4">
+                    <h4>Masukkan Judul Ulasan Anda</h4>
+                  </Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    placeholder="Masukkan ulasan Anda"
+                    style={{
+                      backgroundColor: "#DCDDFF",
+                      color: "#251551",
+                    }}
+                  />
+                </Form.Group>
+                <div className="d-flex gap-2 mt-4 justify-content-end mb-2">
+                  <button
+                    type="button"
+                    className="button-batal-ulasan-musics"
+                    onClick={handleClose}
+                  >
+                    Batal
+                  </button>
+                  <button type="submit" className="button-submit-ulasan-musics">
+                    Kirim
+                  </button>
+                </div>
+              </Form>
+            </Col>
+          </Row>
+        </div>
+      </Modal>
     </div>
   );
 };
