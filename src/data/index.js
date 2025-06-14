@@ -99,6 +99,11 @@ import jumbo from "../assets/img/filmbioskop/jumbo.png";
 import mendadakdangdut from "../assets/img/filmbioskop/mendadakdangdut.png";
 import pengepungan from "../assets/img/filmbioskop/pengepungan.png";
 
+// HOT NEWS 
+import ashoka from "../assets/img/news/ashoka.jpg";
+import barbie from "../assets/img/news/barbie.jpg";
+import cnn from "../assets/img/news/cnn.jpg";
+import sr from "../assets/img/news/sr.jpg";
 
 import BrandNew1 from "../assets/img/news/brand1.png";
 import TicketFilms from "../components/TicketFilmsComponent";
@@ -196,19 +201,21 @@ export const carouselMusicItems = [
 export const hotsNews = [
   {
     id: 1,
-    image: KelasImage1,
-    brandnews: BrandNew1,
-    title: "Perdana ke Jakarta, RIIZE Tak Sabar Tampil di Konser SMTOWN: Kita Gugup Banget",
-    desc: "Boyband RIIZE menyapa fans Indonesia menjelang kunjungan perdananya ke Tanah Air. Sungchan cs ini rencananya bakal perform di konser SMTOWN.Kita punya kabar gembira buat kalian semua, kata Sungchan Read more",
-    time: "2 jam yang lalu",
+    image: barbie,
+    brandnews: cnn,
+    title: "Film Barbie Jadi Terlaris 2023 USAI Salip the Super Mario",
+    desc: "Film Barbie Resmi Menjadi Terlaris Tahun Ini, Menyalip the Super Mario Bros. Film Garapan Greta Gerwig Itu telah Mendapatkan lebih Dari US $ 1,38 Miliar Dari Box Office Global",
+    time: "3 jam yang lalu",
+    link: "https://www.cnnindonesia.com/hiburan/20230825113745-220-990374/barbie-jadi-film-terlaris-2023-di-box-office-amerika"
   },
   {
     id: 2,
-    image: KelasImage2,
-    brandnews: BrandNew1,
-    title: "Perdana ke Jakarta, RIIZE Tak Sabar Tampil di Konser SMTOWN: Kita Gugup Banget",
-    desc: "Boyband RIIZE menyapa fans Indonesia menjelang kunjungan perdananya ke Tanah Air. Sungchan cs ini rencananya bakal perform di konser SMTOWN.Kita punya kabar gembira buat kalian semua, kata Sungchan Read more",
-    time: "5 jam yang lalu",
+    image: ashoka,
+    brandnews: sr,
+    title: "Ahsoka menceritakan kisah sekuel Star Wars yang lebih baik daripada film",
+    desc: "Ahsoka mungkin bukan film Star Wars layar lebar, tetapi ceritanya adalah trilogi sekuel Skywalker Saga yang lebih baik daripada trilogi sekuel Star Wars milik Disney.",
+    time: "2 jam yang lalu",
+    link: "https://screenrant.com/ahsoka-better-star-wars-sequel-trilogy-story/"
   },
 ];
 
@@ -287,26 +294,26 @@ export const filmsTerbaru = [
   {
     id: 1,
     image: Poster1,
-    title: "One Piece",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    title: "The Nun II",
+    desc: "Kisah horor supranatural yang mencekam dan penuh teror tentang seorang biarawati",
   },
   {
     id: 2,
     image: Films02,
     title: "Everything Everywhere All at Once",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Film berkisah mengenai seorang imigran China yang terbawa ke dalam petualangan yang tak terduga.",
   },
   {
     id: 3,
     image: Films03,
     title: "Barbie",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "kehidupan para Barbie yang memiliki karakter berbeda-beda perempuan dipanggil Barbie dan laki-laki dipanggil Ken, tetapi mereka dapat saling mengenal.",
   },
   {
     id: 4,
     image: Films04,
     title: "Oppenheimer",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis.",
+    desc: "Kisah tentang seorang fisikawan Amerika Serikat bernama J. Robert Oppenheimer yang mengembangkan bom atom.",
   }
 ]
 
@@ -657,18 +664,47 @@ export const UlasanPopulerData = [
 ];
 
 export const BioskopFIlms = [
+    {
+    id: 1,
+    image: pengepungan,
+    genre: "Drama-Thriller",
+    title: "Pengepungan di Bukit Duri",
+    description: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
+  },
+  
+  {
+    id: 2,
+    image: jumbo,
+    genre: "Fantasi",
+    title: "Jumbo",
+    description: "Jumbo adalah film petualangan dengan genre fantasi animasi Indonesia tahun 2025 yang disutradarai oleh Ryan Adriandhy.",
+  },
+
+  // {
+  //   id: 1,
+  //   image: mendadakdangdut,
+  //   genre: "Musikal",
+  //   title: "Mendadak Dangdut",
+  //   description: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
+  //   date: "30",
+  //   month: "Apr",
+  //   year: "2025"
+
+  // },
+];
+
+export const bioskopFilmsData = [
   {
     id: 1,
-    image: mendadakdangdut,
-    genre: "Musikal",
-    title: "Mendadak Dangdut",
-    description: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
-    date: "30",
+    image: pengepungan,
+    genre: "Drama-Thriller",
+    title: "Pengepungan di Bukit Duri",
+    description: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
+    date: "17",
     month: "Apr",
     year: "2025"
-
   },
-  {
+   {
     id: 2,
     image: jumbo,
     genre: "Fantasi",
@@ -678,16 +714,16 @@ export const BioskopFIlms = [
     month: "Mar",
     year: "2025"
   },
-  // {
-  //   id: 3,
-  //   image: pengepungan,
-  //   genre: "Drama-Thriller",
-  //   title: "Pengepungan di Bukit Duri",
-  //   description: "Pengepungan di Bukit Duri adalah film cerita seru aksi Indonesia tahun 2025 yang disutradarai oleh Joko Anwar.",
-  //   date: "17",
-  //   month: "Apr",
-  //   year: "2025"
-  // }
+  {
+    id: 3,
+    image: mendadakdangdut,
+    genre: "Musikal",
+    title: "Mendadak Dangdut",
+    description: "Mendadak Dangdut adalah film drama komedi indonesia tahun 2006 yang disutradarai oleh Rudi Soedjarwo.",
+    date: "30",
+    month: "Apr",
+    year: "2025"
+  } 
 ];
 
 export const ReviewFilms = [

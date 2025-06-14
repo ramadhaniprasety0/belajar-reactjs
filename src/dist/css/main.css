@@ -820,7 +820,7 @@ header .container .btn-explore:hover {
 .homepage .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgb(213, 212, 212);
+  color: rgb(255, 255, 255);
 }
 .homepage .news-card .news-caption a {
   text-decoration: none;
@@ -1213,7 +1213,7 @@ header .container .btn-explore:hover {
 .homepage-films .news-card .news-caption p {
   font-size: 1rem;
   font-weight: 400;
-  color: #a7a7a7;
+  color:rgb(255, 255, 255);
 }
 
 .homepage-films .news-card .news-caption h5 {
@@ -2386,13 +2386,11 @@ header .container .btn-explore:hover {
 }
 .ticketfilms .btn-ticketfilms {
   font-size: 14px;
-  background-color: #5562fc;
   color: #ffeccc;
   border-radius: 100px;
-}
-
-.ticketfilms .btn-ticketfilms:hover {
-  background-color: #3f51b5;
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
 }
 
 .card-ticketfilms .card-title {
@@ -2405,15 +2403,15 @@ header .container .btn-explore:hover {
 }
 
 .ticketfilms .link-ticketfilms {
-  display: inline-block;
-  margin-top: 1rem;
   text-decoration: none;
-  color: black;
-  font-size: 0.9rem;
+  color: white;
+  background-color: #5562FC;
+  padding: 3px 10px;
+  border-radius: 30px;
 }
 
 .ticketfilms .link-ticketfilms:hover {
-  text-decoration: underline;
+  background-color: #3535cc;
 }
 
 .ticketfilms .date-ticketfilms {
@@ -5245,20 +5243,19 @@ header .container .btn-explore:hover {
   margin-bottom: -3px;
 }
 
-
-.button-submit-ulasan-films{
+.button-submit-ulasan-films {
   border-radius: 30px;
   color: white;
-  background-color: #5562FC;
+  background-color: #5562fc;
   border: 1px solid black;
   padding: 3px 20px;
   cursor: pointer;
   font-size: 15px;
 }
-.button-batal-ulasan-films{
+.button-batal-ulasan-films {
   border-radius: 30px;
   color: black;
-  background-color: #B8BAFF;
+  background-color: #b8baff;
   border: 1px solid black;
   padding: 3px 20px;
   cursor: pointer;
@@ -5267,7 +5264,7 @@ header .container .btn-explore:hover {
 
 /* POPUP +ULASAN MUSICS */
 .main-modals-musics {
-  background-color: #7881C4;
+  background-color: #7881c4;
 }
 
 .modals-title-albumtext-genre {
@@ -5289,7 +5286,7 @@ header .container .btn-explore:hover {
 }
 
 .genre-badge-musics {
-  background-color: #2E388A;
+  background-color: #2e388a;
   color: white;
   padding: 1px 6px;
   border-radius: 999px;
@@ -5311,19 +5308,44 @@ header .container .btn-explore:hover {
   margin-bottom: -3px;
 }
 
-.button-submit-ulasan-musics{
+.button-submit-ulasan-musics {
   border-radius: 30px;
   color: white;
-  background-color: #1D194D;
+  background-color: #1d194d;
   padding: 3px 20px;
   cursor: pointer;
   font-size: 15px;
 }
-.button-batal-ulasan-musics{
+.button-batal-ulasan-musics {
   border-radius: 30px;
-  background-color: #B8BAFF;
+  background-color: #b8baff;
   padding: 3px 20px;
   cursor: pointer;
   font-size: 15px;
 }
 
+/* RAPIHIN PAGE FILM */
+.homepage-films .btn-lihat-semua {
+  background-color: #2e388a; /* Sesuaikan warna biru sesuai gambar */
+  color: #fff; /* Teks putih */
+  border: none;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border-radius: 999px; /* Full rounded */
+  font-weight: 500;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+  margin-top: -5px;
+}
+
+.homepage-films .btn-lihat-semua:hover {
+  background-color: #25287a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homepage-films .box-bioskop-terbaru h1 {
+  font-size: 40px;
+  color: #251551;
+  font-weight: bold;
+}

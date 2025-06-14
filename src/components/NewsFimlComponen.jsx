@@ -12,10 +12,10 @@ const NewsFimlComponen = () => {
               <img src={hots.image} alt="NewsBrand" className="img-brand" />
               <div className="news-caption d-flex flex-column justify-content-between ">
                 <div>
-                  <img src={hots.brandnews} alt="" srcset="" />
+                  <img src={hots.brandnews} alt="" srcset="" style={{ width: "30px" }} />
                   <h5>{hots.title}</h5>
                   <p>{hots.desc}</p>
-                  <a href="#">Lihat Lebih Banyak</a>
+                  <a href={hots.link}>Lihat Lebih Banyak</a>
                 </div>
                 <p className="text-white">{hots.time}</p>
               </div>

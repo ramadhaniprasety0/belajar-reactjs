@@ -20,17 +20,27 @@ const FilmsPage = () => {
 
           {/* Film Hits */}
           <Row className="box-populer-films p-3 m-1 mt-5">
+            <div className="d-flex justify-content-between align-items-center">
             <h1>
               <b>Film Hits</b>
             </h1>
+              <a href="/ticketfilms" className="btn btn-lihat-semua btn-sm">
+                Lihat Semua
+              </a>
+            </div>
             <PopularComponentFilm />
           </Row>
 
           {/* Bioskop Terbaru */}
           <Row className="box-bioskop-terbaru p-3 m-1 mt-5">
+            <div className="d-flex justify-content-between align-items-center">
             <h1>
               <b>Bioskop Terbaru</b>
             </h1>
+              <a href="/ticketfilms" className="btn btn-lihat-semua btn-sm">
+                Lihat Semua
+              </a>
+            </div>
             <FilmBioskopComponent />
           </Row>
 

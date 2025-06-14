@@ -6,7 +6,7 @@ const PopularComponentFilm = () => {
   return (
     <>
       {filmsTerbaru.map((films, index) => (
-        <Col key={films.id || index} lg={3} md={6} sm={12} className='card-populer-films p-2 mb-3'>
+        <Col key={films.id || index} lg={3} md={6} sm={12} className='card-populer-films p-2 mb-4'>
           <Link to={`/films/${films.id}`} className="text-decoration-none text-dark">
             <div className='card-film'>
               <div className='card-film-img'>

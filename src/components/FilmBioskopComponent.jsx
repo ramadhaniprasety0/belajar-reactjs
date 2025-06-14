@@ -12,7 +12,7 @@ const FilmsBioskopComponent = () => {
   return (
     <>
       {chunkedFilms.map((filmPair, rowIndex) => (
-        <Row key={rowIndex} className="gx-3 mb-3 mt-3">
+        <Row key={rowIndex} className="gx-2 mb-4 mt-3">
           {filmPair.map((films, index) => (
             <Col lg={6} md={12} key={films.id || index}>
               <div className="bioskop-film-row d-flex overflow-hidden">
@@ -30,7 +30,7 @@ const FilmsBioskopComponent = () => {
                     <span className="bioskop-film-genre">{films.genre}</span>
                     <h3 className="bioskop-film-title">{films.title}</h3>
                     <p className="bioskop-film-desc">{films.description}</p>
-                    <Link to={`/films/${films.id}`} className="bioskop-film-link">
+                    <Link to={`/detailtiketfilms/${films.id}`} className="bioskop-film-link">
                       Lihat <span className="bioskop-arrow">›</span>
                     </Link>
                   </div>
